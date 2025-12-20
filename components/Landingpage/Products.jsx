@@ -32,7 +32,7 @@ const products = [
     desc:
       "Premium modular office workstations engineered to create organised, efficient, and modern workspaces. Ideal for corporate offices, IT companies, startups, and large commercial environments.",
     image:
-      "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766051576/shutterstock_238421017-min-scaled_amw2r4.webp",
+      "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766228880/0993f5_9f89cc419f0b4d46a0eb22d6c94330df_mv2_icqzns.avif",
     bullets: [
       "High-quality pre-laminated boards with long-lasting finish",
       "Concealed cable management for clutter-free desks",

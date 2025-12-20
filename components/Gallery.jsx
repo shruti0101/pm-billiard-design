@@ -34,7 +34,7 @@ const items = [
 
   { id: 5, title: "Office Workstation 1", category: "Office Workstation", image: "/gallery/workstation1.webp" },
   { id: 6, title: "Office Workstation 2", category: "Office Workstation", image: "/gallery/workstation2.webp" },
-  { id: 7, title: "Office Workstation 3", category: "Office Workstation", image: "/gallery/workstation.avif" },
+  { id: 7, title: "Office Workstation 3", category: "Office Workstation", image: "/gallery/workstation.webp" },
 
   { id: 8, title: "Meeting Table 1", category: "Meeting And Conference Room Table", image: "/gallery/meeting1.webp" },
   { id: 9, title: "Meeting Table 2", category: "Meeting And Conference Room Table", image: "/gallery/meeting3.webp" },

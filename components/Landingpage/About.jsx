@@ -1,235 +1,148 @@
-"use client";
+import React from 'react'
+import ElectricBorder from '@/components/ElectricBorder'
 
-import Image from "next/image";
 
-import Link from "next/link";
-import { Truck, Headset, ShieldCheck, BadgeCheck } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+const About = () => {
 
-export default function About() {
-  // Carousel images (place images in /public/officeimage/)
-  const slides = [
-      "/gallery/modular2.webp",
-    "/aboutusimg2.webp",
-  "/aboutusimg3.webp",
-    "/gallery/modular4.webp",
-  ];
 
-  const [index, setIndex] = useState(0);
-  const autoplayRef = useRef(null);
-  const touchStartX = useRef(null);
-  const touchEndX = useRef(null);
 
-  useEffect(() => {
-    startAutoplay();
-    return () => stopAutoplay();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
-  const startAutoplay = () => {
-    stopAutoplay();
-    autoplayRef.current = window.setInterval(() => {
-      setIndex((i) => (i + 1) % slides.length);
-    }, 4000);
-  };
 
-  const stopAutoplay = () => {
-    if (autoplayRef.current) {
-      clearInterval(autoplayRef.current);
-      autoplayRef.current = null;
-    }
-  };
-
-  const prev = () => setIndex((i) => (i - 1 + slides.length) % slides.length);
-  const next = () => setIndex((i) => (i + 1) % slides.length);
-  const goTo = (i) => setIndex(i);
-
-  // Touch handlers for mobile swipe
-  const onTouchStart = (e) => {
-    stopAutoplay();
-    touchStartX.current = e.touches ? e.touches[0].clientX : null;
-  };
-  const onTouchMove = (e) => {
-    touchEndX.current = e.touches ? e.touches[0].clientX : null;
-  };
-  const onTouchEnd = () => {
-    if (touchStartX.current == null || touchEndX.current == null) {
-      startAutoplay();
-      return;
-    }
-    const diff = touchStartX.current - touchEndX.current;
-    const threshold = 40; // swipe threshold px
-    if (diff > threshold) next();
-    else if (diff < -threshold) prev();
-
-    touchStartX.current = null;
-    touchEndX.current = null;
-    startAutoplay();
-  };
 
   return (
-    <>
+    <div>
+      <>
+
+
+      
+   {/* about */}
       
 
-      <section className="relative bg-white md:py-4 mb-4">
-        <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-6">
-          {/* Left - carousel */}
-          <div className="flex items-center justify-center">
-            <div
-              className="w-full max-w-md lg:max-w-lg rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/10 bg-white/20 backdrop-blur-sm relative"
-              onMouseEnter={stopAutoplay}
-              onMouseLeave={startAutoplay}
-              onTouchStart={onTouchStart}
-              onTouchMove={onTouchMove}
-              onTouchEnd={onTouchEnd}
-            >
-              {/* Slides container */}
-              <div className="relative h-[320px] md:h-[420px]">
-                {slides.map((src, i) => (
-                  <div
-                    key={src + i}
-                    className={`absolute inset-0 transition-transform duration-700 ease-in-out ${
-                      i === index ? "translate-x-0 z-10" : i < index ? "-translate-x-full z-0" : "translate-x-full z-0"
-                    }`}
-                  >
-                    <Image
-                      src={src}
-                      alt={`slide-${i}`}
-                      fill
-                      className="object-cover"
-                      priority={i === index}
-                    />
-                  </div>
-                ))}
-              </div>
+        <section style={{backgroundImage:"url(/zigzag.webp)"}} className="relative  w-full bg-center bg-cover text-white overflow-hidden ">
+      {/* Background gradient */}
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-stone-700 via-[#0b0f0e] to-stone-500" /> */}
 
-              {/* Left / Right arrows */}
-              <button
-                onClick={prev}
-                aria-label="Previous"
-                className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 text-black rounded-full w-10 h-10 flex items-center justify-center shadow hover:scale-105 transition"
-              >
-                ‹
-              </button>
-              <button
-                onClick={next}
-                aria-label="Next"
-                className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 text-black rounded-full w-10 h-10 flex items-center justify-center shadow hover:scale-105 transition"
-              >
-                ›
-              </button>
-
-              {/* Dots */}
-              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-                {slides.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => goTo(i)}
-                    className={`w-3 h-3 rounded-full transition ${i === index ? "bg-[#F7C600]" : "bg-white/60"}`}
-                    aria-label={`Go to slide ${i + 1}`}
-                  />
-                ))}
-              </div>
-            </div>
+      <div className="relative max-w-[1400px] mx-auto px-5 py-9 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        {/* LEFT CONTENT */}
+        <div>
+          {/* Top badges */}
+          <div className="flex items-center gap-3 mb-3">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#111] border border-[#222] text-sm">
+              ✨ Premium craftsmanship
+            </span>
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#111] border border-[#222] text-sm">
+              Expert installation
+            </span>
           </div>
 
-          {/* Right - content */}
-          <div className="text-left text-white">
-            <h3 className="font-serif text-sm tracking-widest text-black uppercase mb-2">About Dk Modular Contractor</h3>
+          {/* Heading */}
+          <h1 className=" text-4xl  leading-tight mb-6">
+           PM Billiards – 
+            <br />
+            <span className="text-[#f5c243]">Premium Pool Tables, Snooker Tables & Billiard Tables.</span>
+          </h1>
 
-            <h1 className="text-3xl font-extrabold leading-tight mb-4 text-amber-600">
-              Premium Modular Office Furniture
-            </h1>
+          {/* Description */}
+          <p className="text-white  mb-10 text-lg">
+           Welcome to PM Billiards, your trusted destination for premium Pool Tables, Snooker Tables, and Billiard Tables designed for homes, clubs, resorts, and professional gaming arenas. We specialize in manufacturing high-quality Pool Tables, professional-grade Snooker Tables, and premium Billiard Tables that deliver superior performance, precision gameplay, durability, and elegant design.
+Our expertly crafted Pool Tables offer smooth ball movement, perfect leveling, and long-lasting construction for both home and commercial use. Our professional Snooker Tables are built to tournament standards, featuring premium slate beds, high-quality cloth, and exceptional frame stability. We also provide classic and modern Billiard Tables designed for recreational players, clubs, and luxury entertainment spaces.
+Whether you are a professional player, a serious snooker enthusiast, or looking to install a premium Pool Table, Snooker Table, or Billiard Table in your home or business.
+          </p>
 
-            <p className="text-base  text-black leading-relaxed ">
-             As an experienced <Link className="font-bold" href="/categories/modular-office-workstation">Office Workstation Manufacturer</Link>  , Dk Modular Contractor designs and manufactures workstations that enhance employee comfort, optimize space utilization, and reflect a professional brand image. <br /> Our modular office workstations are engineered using premium materials and advanced manufacturing techniques to ensure durability and long-term performance. From compact office layouts to large corporate floors, we offer customized workstation solutions tailored to your specific requirements.
-            </p>
-
-            <div className="flex flex-wrap items-center gap-4 mt-4">
-              <Link
-                href="/contact-us"
-
-
-                
-                className="inline-flex items-center gap-3 px-5 py-3 bg-[#0b2545] text-white font-semibold rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-0.5"
-              >
-                Request a Quote
-              </Link>
-
-              <a href="tel:9999402424" className="inline-flex items-center gap-3 px-4 py-2 bg-white/10 text-black rounded-lg">
-                <span className="w-9 h-9 flex items-center justify-center rounded-full bg-[#F7C600] text-[#0b2545]">📞</span>
-                <div className="text-left">
-                  <div className="text-xs text-black">Call 24/7</div>
-                  <div className="font-semibold text-md animate-pulse">9999402424</div>
-                </div>
-              </a>
-            </div>
+          {/* CTA buttons */}
+          <div className="flex flex-wrap gap-4 mb-12">
+            <button className="inline-flex items-center gap-2 bg-[#2f8f6b] hover:bg-[#55b338] transition px-6 py-3 rounded-full text-white font-medium">
+              Explore our journey →
+            </button>
+            <button className="inline-flex items-center gap-2 border border-[#E0AE2E] hover:border-[#E0AE2E] transition px-6 py-3 rounded-full text-white">
+              Contact us
+            </button>
           </div>
-        </div>
-
-        {/* trust bar */}
-        <div className="relative max-w-7xl mx-auto mt-8 px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-black">
-          <div className="flex items-center gap-6 text-sm">
-            <div className="flex items-center gap-2 ">
-              <div className="w-8 h-8 flex items-center border border-black justify-center rounded-full bg-white/10">🏅</div>
-              <div>
-                <div className="font-bold">15+ years </div>
-                <div className="text-xs">of experience</div>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 flex border border-black  items-center justify-center rounded-full bg-white/10">🏢</div>
-              <div>
-                <div className="font-bold">600+ </div>
-                <div className="text-xs">clients</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-sm text-black ">Made in India • Warranty & Aftercare • Free site survey</div>
-        </div>
-
 
         
-      </section>
-
-
-      <section className="hidden md:block w-full my-8 bg-white">
-        <div className="max-w-7xl px-3 mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
-          <div className="flex items-center gap-4 justify-center md:justify-start">
-            <img src="officeimage/icon1.webp" alt="Fast Delivery" className="w-12 h-12" />
-            <div>
-              <h3 className="text-md font-semibold">Fast Delivery</h3>
-              <p className="text-gray-600">Quick dispatch for all office furniture orders</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4 justify-center md:justify-start">
-            <img src="officeimage/icon2.webp" alt="Design Support" className="w-12 h-12" />
-            <div>
-              <h3 className="text-md font-semibold">Design Assistance</h3>
-              <p className="text-gray-600">Expert guidance for workspace planning</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4 justify-center md:justify-start">
-            <img src="officeimage/icon3.webp" alt="Professional Installation" className="w-12 h-12" />
-            <div>
-              <h3 className="text-md font-semibold">Professional Installation</h3>
-              <p className="text-gray-600">End-to-end assembly by trained technicians</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4 justify-center md:justify-start">
-            <img src="officeimage/icon4.webp" alt="Warranty Guarantee" className="w-12 h-12" />
-            <div>
-              <h3 className="text-md font-semibold">Warranty Guarantee</h3>
-              <p className="text-gray-600">Reliable after-sales support & product warranty</p>
-            </div>
-          </div>
         </div>
-      </section>
-    </>
-  );
+
+  
+
+<ElectricBorder>
+
+ {/* RIGHT CARD */}
+<div
+  className="relative w-full max-w-[620px] rounded-[32px] p-8"
+  style={{
+    backgroundImage: "url(/pm-billiard-about.png)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Glow overlay */}
+  <div className="absolute inset-0 rounded-[32px] bg-gradient-to-b from-[#3c6a4f]/40 to-black/70" />
+
+  <div className="relative">
+    {/* MAIN CARD */}
+    <div className="rounded-[28px] border border-[#8ea97a]/40 bg-gradient-to-b from-[#1f3a2f] to-[#0f1f18] p-6 shadow-[0_0_40px_rgba(120,180,120,0.25)]">
+      <p className="text-sm text-gray-300 mb-2">Our Flagship Product</p>
+
+      <h3 className="font-serif text-2xl text-white mb-3">
+        Professional Tournament Snooker Table
+      </h3>
+
+      <p className="text-gray-300 text-sm leading-relaxed mb-6 max-w-[90%]">
+        Built to international tournament standards with precision slate,
+        premium cloth, reinforced hardwood frame, and perfectly tuned cushions
+        to deliver championship-level gameplay and long-term durability.
+      </p>
+
+      <div className="h-px bg-white/10 mb-5" />
+
+      <div className="flex items-center justify-between">
+        <p className="text-lg font-medium text-white">
+          From <span className="text-[#f5c243]">₹2,90,000</span>
+        </p>
+
+        <button className="bg-[#f5c243] text-black px-6 py-2 rounded-full text-sm font-medium hover:bg-[#e0ae2e] transition">
+          Explore Tables
+        </button>
+      </div>
+    </div>
+
+    {/* BOTTOM STATS */}
+    <div className="grid grid-cols-2 gap-4 mt-6">
+      <div className="rounded-2xl bg-gradient-to-b from-[#13251e] to-[#0b1611] p-5 shadow-inner">
+        <p className="text-sm text-gray-400 mb-1">Manufacturing Lead Time</p>
+        <p className="font-serif text-2xl text-white">7–14 days</p>
+      </div>
+
+      <div className="rounded-2xl bg-gradient-to-b from-[#13251e] to-[#0b1611] p-5 shadow-inner">
+        <p className="text-sm text-gray-400 mb-1">Professional Setup</p>
+        <p className="font-serif text-2xl text-white">4–6 hours</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</ElectricBorder>
+
+
+
+
+  
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+      
+
+      </>
+    </div>
+  )
 }
+
+export default About

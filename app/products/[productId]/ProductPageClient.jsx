@@ -6,17 +6,12 @@ import Head from "next/head";
 import Enquiry from "@/components/Enquiry";
 import { ArrowUpRight } from "lucide-react";
 
-
 export default function ProductPage({ params }) {
   const { productId } = React.use(params);
   const allProducts = categories.flatMap((c) => c.products);
   const product = allProducts.find((p) => p.id === productId);
   const [activeImage, setActiveImage] = useState(product?.image[0]);
   const [isFormOpen, setIsFormOpen] = useState(false);
-//   const [submitted, setSubmitted] = useState(false);
-// const [successMessage, setSuccessMessage] = useState("");
-// const [loading, setLoading] = useState(false);
-
 
   if (!product) {
     return (
@@ -25,194 +20,209 @@ export default function ProductPage({ params }) {
   }
 
   return (
+    <>
+      <Head>
+        <title>{product.metaTitle || product.name}</title>
+        <meta
+          name="description"
+          content={product.metaDescription || product.name}
+        />
+      </Head>
+
     
-      <>
-  <Head>
-    <title>{product.metaTitle || product.name}</title>
-    <meta
-      name="description"
-      content={product.metaDescription || product.name}
-    />
-  </Head>
 
-   {/* ===== Banner Section ===== */}
-      <div
-        className="relative bg-cover bg-center h-[50vh] md:h-[65vh] flex flex-col items-center justify-center text-center overflow-hidden"
-        style={{
-          backgroundImage:
-            "url('/footerbg.webp')",
-        }}
-      >
-   
-<div className="relative z-10 text-white px-6 ">
-  <h2 className="max-w-4xl  text-center font-serif  text-2xl md:text-5xl font-bold z-10 ">
-            {product.name}
-          </h2>
+      {/* MAIN WRAPPER */}
+      <section className="w-full bg-[#06090D] pt-35 mx-auto py-16 space-y-24">
 
+        {/* TOP: IMAGE + CONFIG PANEL */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start  mx-auto px-6">
 
-   
+          {/* PRODUCT IMAGE – PREMIUM CARD */}
+          <div className="p-2">
+            <div className="rounded-3xl overflow-hidden border border-gray-800 bg-[#0A0F14] shadow-2xl">
+              <Image
+                src={activeImage.src}
+                alt={activeImage.alt}
+                width={1000}
+                height={700}
+                className="object-cover "
+                
+              />
+            </div>
+          </div>
 
-</div>
+          {/* CONFIG PANEL */}
+          <div className="bg-[#070B0F] text-white rounded-3xl p-8 space-y-7 border border-gray-900 shadow-xl">
 
-         <div className="absolute inset-0 bg-black/70 h-[91vh]"></div>
-      </div>
-   
+            <h2 className="text-2xl font-semibold tracking-wide">
+           {product.name}
+            </h2>
 
-  {/* MAIN */}
-  <section className="max-w-7xl mx-auto px-6 py-10 space-y-20">
+            <p className="text-gray-400 text-sm">
+              Configure your professional-grade table
+            </p>
 
-    {/* TOP: IMAGE + CTA */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+            {/* COLOR GRID */}
+            <div className="grid grid-cols-3 gap-4 mt-4">
+              <div className="w-full h-28 rounded-xl bg-green-800 border border-green-900"></div>
 
-      {/* IMAGE */}
-      <div className=" ">
-        <div className="rounded-2xl overflow-hidden border shadow-sm">
-          <Image
-            src={activeImage.src}
-            alt={activeImage.alt}
-            width={600}
-            height={600}
-            className="object-contain bg-white"
-            unoptimized
-          />
-        </div>
-      </div>
-
-      {/* INFO */}
-      <div className="space-y-8">
-
-        <div>
-          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-black">
-            {product.name}
-          </h2>
-          <p className="text-black mt-2">
-            Premium modular furniture solution by Dk Modular Contractor 
-          </p>
-        </div>
-
-      
-
-        {/* SPECS */}
-        <div className="border rounded-2xl overflow-hidden">
-          <h3 className="px-6 py-3 text-lg font-semibold border-b bg-amber-500/30">
-            Specifications
-          </h3>
-          <table className="w-full text-sm">
-            <tbody>
-              {product.specs?.map((spec, i) => (
-                <tr key={i} className="border-b last:border-none">
-                  <td className="px-6 py-4 font-bold text-black w-1/2">
-                    {spec.label}
-                  </td>
-                  <td className="px-6 py-4 font-medium text-black">
-                    {spec.value}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-
-
-
-  {/* CTA */}
-        <div className="flex gap-4">
-          <button
-            onClick={() => setIsFormOpen(true)}
-            className="px-6 py-3 rounded-xl bg-black text-white font-medium hover:bg-gray-900 transition"
-          >
-            Enquire Now
-          </button>
-
-          <a
-            href={`https://wa.me/+919999402424?text=Hello, I am interested in ${encodeURIComponent(
-              product.name
-            )}`}
-            target="_blank"
-            className="px-6 py-3 rounded-xl border border-gray-300 text-white font-medium bg-green-500 hover:bg-green-400 transition"
-          >
-            WhatsApp
-          </a>
-        </div>
-      </div>
-    </div>
-
-    {/* DESCRIPTION */}
-    <div className="bg-white border rounded-2xl p-8 ">
-      <h2 className="text-2xl md:text-3xl font-serif font-semibold text-black mb-8">
-        Product Description
-      </h2>
-
-      <div className="space-y-8 text-black leading-relaxed">
-        {product.description.map((block, i) => {
-          if (block.type === "h2")
-            return (
-              <h3 key={i} className="text-xl font-semibold text-black">
-                {block.text}
-              </h3>
-            );
-
-          if (block.type === "p")
-            return <p key={i}>{block.text}</p>;
-
-          if (block.type === "ul")
-            return (
-              <ul key={i} className="list-disc ml-6 space-y-2">
-                {block.items.map((item, j) => (
-                  <li key={j}>{item}</li>
-                ))}
-              </ul>
-            );
-        })}
-      </div>
-    </div>
-
-    {/* RELATED */}
-    <div>
-      <h2 className="text-2xl md:text-3xl font-serif font-semibold text-black mb-10">
-        Related Products
-      </h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {categories
-          .find((c) => c.products.some((p) => p.id === product.id))
-          ?.products.filter((p) => p.id !== product.id)
-          .slice(0, 4)
-          .map((item) => (
-            <a
-              key={item.id}
-              href={`/products/${item.id}`}
-              className="group border rounded-2xl p-4 hover:shadow-md transition"
-            >
-              <div className="relative h-48 mb-4">
-                <Image
-                  src={item.image[0]?.src}
-                  alt={item.name}
-                  fill
-                  className="object-contain"
-                />
+              <div className="w-full h-28 rounded-xl bg-blue-600 border-2 border-cyan-400 flex items-center justify-center">
+                <span className="text-white text-xl">✔</span>
               </div>
-              <h3 className="text-sm font-semibold text-black">
-                {item.name}
+
+              <div className="w-full h-28 rounded-xl bg-red-800 border border-red-900"></div>
+            </div>
+
+            <div className="grid grid-cols-3 text-center text-sm text-gray-400">
+              <span>Green</span>
+              <span className="text-cyan-400">Elec Blue</span>
+              <span>Burgundy</span>
+            </div>
+
+            <h3 className="text-green-400 font-semibold tracking-wide mt-6">
+              LEG STYLES
+            </h3>
+
+            <div className="flex items-center justify-between border border-gray-700 rounded-xl p-4">
+              <div>
+                <p className="text-white font-medium">MODERN TAPERED</p>
+                <p className="text-gray-400 text-sm">
+                  Minimalist geometric profile
+                </p>
+              </div>
+              <div className="bg-gray-800 p-2 rounded-lg">⬇</div>
+            </div>
+
+            <div className="flex items-center justify-between border border-green-500 rounded-xl p-4 bg-[#0B1410]">
+              <div>
+                <p className="text-white font-medium">ARTISAN CARVED</p>
+                <p className="text-gray-400 text-sm">
+                  Traditional hand-finished details
+                </p>
+              </div>
+              <div className="bg-green-600 text-white p-2 rounded-lg">✔</div>
+            </div>
+
+            <div className="flex gap-4 mt-6">
+              <button
+                onClick={() => setIsFormOpen(true)}
+                className="px-6 py-3 rounded-xl bg-white text-black font-medium hover:bg-gray-200 transition"
+              >
+                Enquire Now
+              </button>
+
+              <a
+                href={`https://wa.me/+919999402424?text=Hello, I am interested in ${encodeURIComponent(
+                  product.name
+                )}`}
+                target="_blank"
+                className="px-6 py-3 rounded-xl bg-green-500 text-white font-medium hover:bg-green-400 transition"
+              >
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* PREMIUM DESCRIPTION */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#0B170E] rounded-3xl overflow-hidden border border-gray-900 shadow-2xl  mx-auto">
+
+          {/* LEFT – STORY */}
+          <div className="p-12 md:p-16 space-y-8 text-white relative">
+            <div className="absolute top-12 left-12 w-20 h-[2px] bg-yellow-400"></div>
+
+            <p className="text-yellow-400 tracking-[0.35em] text-xs font-semibold uppercase mt-6">
+              The Craft
+            </p>
+
+            <h2 className="text-4xl md:text-5xl text-yellow-500 font-bold leading-tight">
+              Masterfully Built for <br />
+              Professional Excellence
+            </h2>
+
+            <div className="text-white space-y-6 leading-relaxed max-w-xl">
+              {product.description
+                .filter(b => b.type === "p")
+                .slice(0, 3)
+                .map((block, i) => (
+                  <p key={i} className="text-lg opacity-90">
+                    {block.text}
+                  </p>
+                ))}
+            </div>
+
+            <div className="w-32 h-[1px] bg-gray-700 mt-6"></div>
+          </div>
+
+          {/* RIGHT – SPECS */}
+          <div className="bg-[#141A15] p-12 md:p-16 space-y-8 border-l border-gray-800">
+            <div>
+              <h3 className="text-white text-2xl font-semibold tracking-wide">
+                Technical Specifications
               </h3>
-              <span className="inline-flex items-center gap-1 text-sm text-amber-600 mt-2">
-                View Details <ArrowUpRight size={14} />
+              <p className="text-gray-400 text-sm mt-2">
+                Heritage Pro Series Details
+              </p>
+            </div>
 
-             
-              </span>
-            </a>
-          ))}
-      </div>
-    </div>
+            <div className="space-y-6">
+              {product.specs?.map((spec, i) => (
+                <div
+                  key={i}
+                  className="grid grid-cols-2 items-center border-t border-yellow-500/30 pt-5"
+                >
+                  <span className="text-white uppercase text-xs tracking-wider">
+                    {spec.label}
+                  </span>
+                  <span className="text-white text-right text-base font-medium">
+                    {spec.value}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
-    {isFormOpen && (
-      <Enquiry isOpen={isFormOpen} onClose={() => setIsFormOpen(false)} />
-    )}
+        {/* RELATED PRODUCTS */}
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-white mb-10">
+            Related Products
+          </h2>
 
-  </section>
-</>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {categories
+              .find((c) => c.products.some((p) => p.id === product.id))
+              ?.products.filter((p) => p.id !== product.id)
+              .slice(0, 4)
+              .map((item) => (
+                <a
+                  key={item.id}
+                  href={`/products/${item.id}`}
+                  className="group bg-[#070B0F] border border-gray-900 rounded-3xl p-6 hover:shadow-2xl transition"
+                >
+                  <div className="relative h-48 mb-4">
+                    <Image
+                      src={item.image[0]?.src}
+                      alt={item.name}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <h3 className="text-sm font-semibold text-white">
+                    {item.name}
+                  </h3>
+                  <span className="inline-flex items-center gap-1 text-sm text-yellow-500 mt-2">
+                    View Details <ArrowUpRight size={14} />
+                  </span>
+                </a>
+              ))}
+          </div>
+        </div>
 
-    
+        {isFormOpen && (
+          <Enquiry isOpen={isFormOpen} onClose={() => setIsFormOpen(false)} />
+        )}
+      </section>
+    </>
   );
 }

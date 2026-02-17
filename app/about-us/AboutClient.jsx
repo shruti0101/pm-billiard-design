@@ -1,280 +1,252 @@
 "use client";
-
 export const dynamic = "force-dynamic";
 import React from "react";
-
-// import Link from "next/link";
 import Image from "next/image";
 
-import Clientele from "../../components/Landingpage/Clientele";
 
 const AboutPage = () => {
-
-
-
-
-
-
-
- 
-
-
-
   return (
-    <div>
-   
-<div
-  className="relative h-[40vh] md:h-[70vh] flex items-center justify-center text-center bg-cover bg-center overflow-hidden"
-  style={{
-    backgroundImage: "url('/test5.webp')",
-  }}
->
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-900/60 to-slate-800/50" />
+    <div className=" text-white">
 
-  {/* Content */}
-  <div className="relative z-10 px-6 max-w-5xl">
-    {/* Accent Line */}
-    <div className="mx-auto mb-4 h-[2px] w-20 bg-amber-400 rounded-full" />
+      {/* ===== HERO BANNER ===== */}
+      <div
+        className="relative h-[45vh] md:h-[100vh] flex items-center justify-center text-center bg-cover  overflow-hidden"
+        style={{ backgroundImage: "url('/try/try11.webp')" }}
+      >
+        <div className="absolute inset-0 bg-black/40" />
 
-    <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
-      About Us
-    </h2>
+        <div className="relative z-10 px-6 max-w-5xl">
+          <div className="mx-auto mb-4 h-[2px] w-20 bg-[#EDBC41] rounded-full" />
 
-    <p className="mt-4 text-sm sm:text-base md:text-lg text-white max-w-3xl mx-auto leading-relaxed">
-      Crafting functional, elegant and ergonomic workspaces that inspire
-      productivity and elevate modern office environments.
-    </p>
-  </div>
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-white">
+            About PM Billiards
+          </h2>
 
+          <p className="mt-4 text-sm sm:text-base md:text-lg text-white max-w-3xl mx-auto leading-relaxed">
+            Crafting championship-grade snooker, pool, and billiard tables that
+            blend precision engineering, timeless design, and elite performance.
+          </p>
+        </div>
+      </div>
 
-</div>
+      {/* ===== INTRO SECTION ===== */}
+      <section style={{backgroundImage:"url(/mask-frame.png)"}} className="w-full bg-gray-200  bg-cover py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-6">
 
-<section className="w-full bg-white py-10 md:py-16">
-  <div className=" mx-auto px-2 md:px-7">
+          <div className="text-center mb-10">
+            <h1 className="text-2xl md:text-4xl font-semibold text-[#EDBC41]">
+              About PM Billiards
+            </h1>
 
-    {/* ===== TOP HEADING ===== */}
-    <div className="md:text-center mb-8 md:mb-17">
-      <h1 className="text-xl md:text-4xl font-semibold text-amber-600">
-        About Us – Dk Modular Contractor Office Furniture
-      </h1>
-
-      <p className=" mt-3 md:text-center text-black text-sm md:text-base leading-relaxed">
-        Founded with a vision to redefine modern workspaces, Dk Modular Contractor Office
-        Furniture is a trusted manufacturer and supplier of premium modular
-        office furniture solutions. We specialize in creating functional,
-        ergonomic, and aesthetically refined furniture that enhances workplace
-        productivity and comfort.
-      </p>
-    </div>
-
-    {/* ===== MAIN CONTENT GRID ===== */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-
-      {/* ===== LEFT CONTENT ===== */}
-      <div>
-        <h2 className="text-2xl md:text-4xl font-semibold text-amber-600 leading-tight mb-5">
-          We are the experts in modular design
-        </h2>
-
-        <p className="text-black text-sm md:text-md leading-relaxed">
-          Dk Modular Contractor Office Furniture began its journey with a commitment to
-          deliver reliable, durable, and innovative office furniture solutions.
-          From compact workstations to large corporate setups, we have grown
-          into a preferred partner for offices across diverse industries.
-        </p>
-
-        <p className="text-black text-sm md:text-md leading-relaxed">
-          Our designs blend modern aesthetics with practical functionality,
-          ensuring optimal space utilization and long-lasting performance. We
-          continuously innovate to meet evolving workplace needs, offering
-          customized modular furniture that adapts to every business environment.
-        </p>
-
-        <p className="text-black text-sm md:text-md leading-relaxed mb-2">
-          Client satisfaction is at the core of everything we do. We carefully
-          understand your requirements, deliver precise solutions, and ensure
-          timely execution. Quality manufacturing, professional installation,
-          and dependable after-sales support define our work culture.
-        </p>
-
-        {/* ===== STATS ===== */}
-        <div className="grid grid-cols-3 gap-3 text-center font-serif md:text-start">
-          <div>
-            <h3 className="text-2xl font-semibold text-[#962292]">700+</h3>
-            <p className="text-gray-900 text-sm">
-              Workspaces Delivered
+            <p className="mt-3 text-black text-sm md:text-base leading-relaxed max-w-4xl mx-auto">
+            At <strong>PM Billiards,</strong>  we are passionate about crafting the finest billiard tables in the world. Founded with a vision to redefine premium cue sports furniture, we combine traditional craftsmanship with modern engineering to deliver tables that excel in performance, durability, and luxury aesthetics.
             </p>
           </div>
 
-          <div>
-            <h3 className="text-2xl font-semibold text-[#962292]">15+</h3>
-            <p className="text-gray-900 text-sm">Years of Experience</p>
-          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
-          <div>
-            <h3 className="text-2xl font-semibold text-[#962292]">600+</h3>
-            <p className="text-gray-900 text-sm">Clients</p>
-          </div>
-        </div>
-      </div>
+            {/* LEFT CONTENT */}
+            <div>
+              <h2 className="text-2xl md:text-4xl font-semibold text-[#EDBC41] mb-5">
+                Masters of Precision Craft
+              </h2>
 
-      {/* ===== RIGHT IMAGES ===== */}
-      <div className="grid grid-cols-3 gap-3 ">
-        <div className="relative h-[400px] w-full">
-          <Image
-            src="/aboutusimg1.webp"
-            alt="Modular Office Workstations"
-            fill
-            className="object-cover"
-          />
-        </div>
+              <p className="text-black leading-relaxed mb-4">
+              Every <strong>PM Billiards</strong>  table is engineered for perfection—from home lounges to professional arenas. We use tournament-grade materials, precision slate beds, reinforced hardwood frames, and professional cloth to ensure <strong>flawless leveling, smooth ball roll, and consistent rebound for competitive gameplay.</strong> 
+Whether you are a serious competitor or a luxury enthusiast, our <strong>snooker tables</strong>  are designed to exceed expectations in both aesthetics and performance.
+              </p>
 
-        <div className="relative h-[400px] w-full">
-          <Image
-            src="/gallery/chair2.webp"
-            alt="Ergonomic Office Chairs"
-            fill
-            className="object-cover"
-          />
-        </div>
+              <p className="text-black leading-relaxed mb-4">
+                Every table is built on precision slate beds, reinforced hardwood frames,
+                and professional cloth — ensuring flawless leveling, smooth ball roll,
+                and consistent rebound for competitive gameplay.
+              </p>
 
-        <div className="relative h-[400px] w-full">
-          <Image
-            src="/gallery/wooden1.webp"
-            alt="Conference Table Furniture"
-            fill
-            className="object-cover"
-          />
-        </div>
-      </div>
+              {/* STATS */}
+              <div className="grid grid-cols-3  mt-6 text-center md:text-left">
+                <div>
+                  <h3 className="text-2xl font-semibold text-[#EDBC41]">1,200+</h3>
+                  <p className="text-black text-sm">Tables Delivered</p>
+                </div>
 
-    </div>
-  </div>
-</section>
+                <div>
+                  <h3 className="text-2xl font-semibold text-[#EDBC41]">20+</h3>
+                  <p className="text-black text-sm">Years of Expertise</p>
+                </div>
 
-    
+                <div>
+                  <h3 className="text-2xl font-semibold text-[#EDBC41]">900+</h3>
+                  <p className="text-black text-sm">Satisfied Clients</p>
+                </div>
+              </div>
+            </div>
 
-
-<section className="w-full bg-[#f9f9f9] py-8 md:py-10">
-  <div className="max-w-7xl mx-auto px-6">
-
-    {/* ===== SECTION HEADER ===== */}
-    <div className="text-center max-w-3xl mx-auto mb-10">
-      <h2 className="text-2xl md:text-4xl font-semibold text-gray-900">
-        Why Choose <span className="text-amber-600">Dk Modular Contractor</span>
-      </h2>
-      <p className="mt-2 text-black text-sm md:text-base leading-relaxed">
-        We combine thoughtful design, precision manufacturing, and reliable
-        service to create modular office furniture that performs beautifully
-        for years.
-      </p>
-    </div>
-
-    {/* ===== FEATURES GRID ===== */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-      {/* Feature 1 */}
-      <div className="bg-white  p-8 rounded-xl border border-amber-600 hover:shadow-lg transition">
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">
-          Premium Build Quality
-        </h3>
-        <p className="text-black text-sm leading-relaxed">
-          Crafted using high-grade materials, durable finishes, and precision
-          engineering to ensure long-lasting performance.
-        </p>
-      </div>
-
-      {/* Feature 2 */}
-      <div className="bg-white p-8 rounded-xl border border-amber-600 hover:shadow-lg transition">
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">
-          Ergonomic & Functional Design
-        </h3>
-        <p className="text-black text-sm leading-relaxed">
-          Our designs prioritize comfort, posture, and productivity, creating
-          workspaces that truly support people.
-        </p>
-      </div>
-
-      {/* Feature 3 */}
-      <div className="bg-white p-8 rounded-xl border border-amber-600 hover:shadow-lg transition">
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">
-          Custom Modular Solutions
-        </h3>
-        <p className="text-black text-sm leading-relaxed">
-          Flexible modular systems tailored to your space, workflow, and brand
-          aesthetics — from startups to enterprises.
-        </p>
-      </div>
-
-      {/* Feature 4 */}
-      <div className="bg-white p-8 rounded-xl border border-amber-600 hover:shadow-lg transition">
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">
-          Reliable Delivery & Support
-        </h3>
-        <p className="text-black text-sm leading-relaxed">
-          Committed timelines, professional installation, and dependable
-          after-sales support you can trust.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
- <section className="w-full bg-white py-15">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
-
-          {/* LEFT IMAGE */}
           <div className="relative w-full h-[420px]">
             <Image
-              src="/aboutusimg2.webp" 
-              alt="Modern Office Workspace"
+              src="/unnamed.png"
+              alt="Luxury Snooker Lounge"
               fill
-              className="object-cover rounded-xs"
+              className="object-cover rounded-lg"
               priority
             />
           </div>
 
-          {/* RIGHT CONTENT */}
+
+          </div>
+        </div>
+      </section>
+
+{/* ===== WHY CHOOSE US ===== */}
+<section 
+  style={{ backgroundImage: "url('/try/bgcheck.avif')" }} 
+  className="w-full bg-center bg-cover relative bg-fixed py-12 md:py-14"
+>
+
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black/40 z-10" />
+
+  <div className="max-w-7xl mx-auto px-6 relative z-20">
+
+    <div className="text-center max-w-3xl mx-auto mb-10">
+      <h2 className="text-2xl md:text-4xl font-semibold text-white">
+Why Choose <span className="text-yellow-500">PM Billiards</span>  as a Pool Table
+      </h2>
+      <p className="my-2 text-white text-sm  leading-relaxed">
+      At PM Billiards, we pride ourselves on blending expert craftsmanship, precision engineering, and luxury design to create Billiard Tables that deliver flawless performance and elevate any space. Our products are designed for both enthusiasts and professional players, ensuring smooth gameplay, durability, and elegance.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div className="bg-[#0B1511] p-8 rounded-xl border border-[#EDBC41]/30 hover:shadow-lg transition">
+        <h3 className="text-lg font-semibold text-[#EDBC41] mb-3">
+          Tournament Quality
+        </h3>
+        <p className="text-white/85 text-sm leading-relaxed">
+        Our Pool Tables are built to international competition standards, featuring precision slate, professional-grade cloth, and expert construction for consistent, high-level performance.
+        </p>
+      </div>
+
+      <div className="bg-[#0B1511] p-8 rounded-xl border border-[#EDBC41]/30 hover:shadow-lg transition">
+        <h3 className="text-lg font-semibold text-[#EDBC41] mb-3">
+          Luxury Craftsmanship
+        </h3>
+        <p className="text-white/85 text-sm leading-relaxed">
+        Every Billiard Table is hand-finished using premium hardwood frames and materials, combining durability with timeless elegance.
+        </p>
+      </div>
+
+      <div className="bg-[#0B1511] p-8 rounded-xl border border-[#EDBC41]/30 hover:shadow-lg transition">
+        <h3 className="text-lg font-semibold text-[#EDBC41] mb-3">
+          Custom Design
+        </h3>
+        <p className="text-white/85 text-sm leading-relaxed">
+         We offer customizable Snooker Tables, allowing you to select size, finish, cloth color, pocket style, and branding to perfectly match your space.
+        </p>
+      </div>
+
+      <div className="bg-[#0B1511] p-8 rounded-xl border border-[#EDBC41]/30 hover:shadow-lg transition">
+        <h3 className="text-lg font-semibold text-[#EDBC41] mb-3">
+          Expert Installation
+        </h3>
+        <p className="text-white/85 text-sm leading-relaxed">
+         Our team provides professional setup, leveling, and long-term maintenance support, ensuring your table performs perfectly for years to come.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+      {/* ===== OUR VISION ===== */}
+     <section className="relative bg-[#F6FBF9] py-20 px-6 overflow-hidden">
+
+      {/* Soft premium glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[#0c704b] blur-[180px] opacity-10"></div>
+
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+
+          <div className="relative w-full h-[420px]">
+            <Image
+              src="/try/try12.jpg"
+              alt="Luxury Snooker Lounge"
+              fill
+              className="object-cover rounded-lg"
+              priority
+            />
+          </div>
+
           <div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-amber-600 mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#EDBC41] mb-4">
               Our Vision
             </h2>
 
-            <p className="text-black text-[15px] leading-7 ">
-              At <strong>Dk Modular Contractor Office Furniture</strong>, our vision is driven
-              by a commitment to redefine modern workspaces through thoughtful
-              design, superior craftsmanship, and functional excellence. We aim
-              to deliver modular office furniture solutions that seamlessly blend
-              aesthetics, ergonomics, and durability.
+            <p className="text-black leading-7 mb-4">
+          Our mission is to set the global benchmark for premium cue sports tables—blending <strong>tradition, precision, and modern design.</strong>  We aim to create game tables that are more than just furniture; they are centerpieces of <strong>entertainment, competition, and luxury living.</strong> 
+With the expertise of our craftsmen and engineers, we continuously innovate and refine our designs, ensuring every <strong>snooker table</strong>  delivers world-class performance and timeless elegance.
             </p>
 
-            <p className="text-black text-[15px] leading-7 ">
-              Our focus is to create work environments that enhance productivity,
-              comfort, and collaboration. By combining innovative manufacturing
-              techniques with premium materials, we ensure that every product
-              reflects precision, reliability, and long-term value.
+            <p className="text-black leading-7 mb-4">
+              We aim to create game tables that are not just furniture, but centerpieces
+              of entertainment, competition, and luxury living.
             </p>
 
-            <p className="text-black text-[15px] leading-7">
-              With a team of experienced designers, engineers, and production
-              specialists, we continuously strive to deliver customized office
-              furniture solutions that align with evolving workplace needs.
-              Our ultimate goal is to help organizations build inspiring
-              workspaces where people feel motivated, comfortable, and empowered
-              to perform at their best.
+            <p className="text-black leading-7">
+              With expert craftsmen and engineers, we continue to innovate and refine our
+              designs — ensuring every PM Billiards table delivers world-class performance
+              and timeless elegance.
             </p>
           </div>
 
         </div>
-      </div>
-    </section>
+      </section>
 
-<Clientele></Clientele>
+    
+{/* our mission */}
 
-     
+
+     <section className="relative bg-[#F6FBF9] py-15 px-6 overflow-hidden">
+
+      {/* Soft premium glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[#0c704b] blur-[180px] opacity-10"></div>
+
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+
+         
+
+          <div>
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#EDBC41] mb-4">
+              Our Mission
+            </h2>
+
+            <p className="text-black leading-7 mb-4">
+         Our mission is to craft the finest cue sports tables that combine exceptional performance, exquisite craftsmanship, and sophisticated design. We are dedicated to enhancing the experience of every player, from casual enthusiasts to professional competitors, by delivering tables that inspire passion, precision, and enjoyment.
+Through innovation, attention to detail, and a commitment to quality, we strive to create game tables that are not just functional, but iconic pieces of luxury that elevate any space and define the standard for excellence in cue sports worldwide.
+            </p>
+
+
+            <p className="text-black leading-7">
+              With expert craftsmen and engineers, we continue to innovate and refine our
+              designs — ensuring every PM Billiards table delivers world-class performance
+              and timeless elegance.
+            </p>
+          </div>
+
+
+ <div className="relative w-full h-[420px]">
+            <Image
+              src="/try/try11.webp"
+              alt="Luxury Snooker Lounge"
+              fill
+              className="object-cover rounded-lg"
+              priority
+            />
+          </div>
+
+
+        </div>
+      </section>
     </div>
   );
 };

@@ -1,14 +1,14 @@
-import { Montserrat } from "next/font/google";
+import { Fraunces } from "next/font/google";
 import "./globals.css";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import Script from "next/script";
 import Whatsapp from "@/components/Whatsapp";
 import Stickbutton from "@/components/Stickbutton";
 
-const montserrat = Montserrat({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-montserrat",
+  weight: ["400"],
+  variable: "--font-fraunces",
 });
 
 export const metadata = {
@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={montserrat.variable}>
+    <html lang="en" className={fraunces.variable}>
       <head>
         <link
           href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body className="antialiased font-sans">
+      <body className="antialiased">
         <Stickbutton />
         <Whatsapp />
         <main>

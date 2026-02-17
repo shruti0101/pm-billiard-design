@@ -3,8 +3,8 @@
 export const categories = [
   // category 1 modular office workstation
   {
-     id: "modular-office-workstation",
-  name: "Modular Office Workstation",
+     id: "snooker-table",
+  name: "snooker table",
   metaTitle: "Custom Modular Office Workstations ",
   metaDescription:
     "Custom Modular Office Workstations",
@@ -15,455 +15,131 @@ export const categories = [
 
 
 // product 1
+// product – Snooker Table
 {
-  id: "modular-office-workstation",
-  name: "Modular Office Workstation",
-  metaTitle: "Modular Office Workstation",
+  id: "professional-snooker-table",
+  name: "Professional Snooker Table",
+  metaTitle: "Professional Snooker Table",
   metaDescription:
-    "Modular Office Workstation",
+    "Professional Snooker Table",
 
- description: [
-  {
-    type: "h2",
-    text: "Modular Office Workstation | Dk Modular Contractor Contractor",
-  },
-  {
-    type: "p",
-    text: "Dk Modular Contractor Contractor offers premium Modular Office Workstations designed to create efficient, organised, and modern office environments. Manufactured using high-quality pre-laminated boards and sturdy aluminium partitions, these workstations are ideal for corporate offices, IT companies, co-working spaces, and commercial workplaces. The modular design allows easy customization based on space requirements while maintaining a clean, professional appearance.",
-  },
-  {
-    type: "p",
-    text: "Our modular workstations are engineered for durability, comfort, and functionality. With options such as pin boards, marker boards, and glass partitions, they support collaboration while ensuring privacy where required. The matt surface finish enhances aesthetics and reduces glare, making them suitable for long working hours. Lockable storage drawers and ergonomic seating height add to everyday convenience and productivity.",
-  },
-  {
-    type: "h2",
-    text: "Key Features – Modular Office Workstation",
-  },
-  {
-    type: "ul",
-    items: [
-      "Strong Aluminium Frame – ensures long-lasting durability and structural stability.",
-      "Pre Laminated Board Finish – scratch-resistant, easy to maintain, and visually appealing.",
-      "Customisable Partitions – available in pin board, marker board, and glass options.",
-      "Ergonomic Design – comfortable seating height suitable for extended office use.",
-      "Space-Efficient Layout – ideal for optimizing office floor space with a professional look.",
-      "Lockable Storage – integrated drawers for secure document and accessory storage.",
-      "Portable & Modular – easy to assemble, reconfigure, and relocate as per office needs.",
-      "Best & Economical Design – cost-effective solution without compromising quality.",
-    ],
-  },
-],
+  description: [
+    {
+      type: "h2",
+      text: "Professional Snooker Table | PM Billiards",
+    },
+    {
+      type: "p",
+      text: "PM Billiards offers premium Professional Snooker Tables designed to meet international playing standards and deliver an exceptional gaming experience. Crafted for clubs, academies, tournaments, and luxury game rooms, these tables combine precision engineering with classic craftsmanship to ensure consistent performance and long-term durability.",
+    },
+    {
+      type: "p",
+      text: "Built using high-quality natural slate beds, solid hardwood frames, and professional-grade snooker cloth, our snooker tables provide accurate ball roll, controlled rebound, and superior stability. The robust construction and expert leveling ensure flawless gameplay, making them suitable for both professional players and serious enthusiasts.",
+    },
+    {
+      type: "h2",
+      text: "Key Features – Professional Snooker Table",
+    },
+    {
+      type: "ul",
+      items: [
+        "Tournament-Grade Slate Bed – ensures perfectly level and accurate ball movement.",
+        "Solid Hardwood Frame – provides strength, stability, and long-lasting durability.",
+        "Professional Snooker Cloth – smooth surface for precise speed and control.",
+        "Precision Rubber Cushions – delivers consistent rebound across all rails.",
+        "Classic & Elegant Design – enhances the look of clubs, lounges, and game rooms.",
+        "Expert Installation & Leveling – ensures optimal playing conditions.",
+        "Custom Size Options – available in full-size and customised dimensions.",
+        "Suitable for Clubs & Home Use – ideal for professional and personal setups.",
+      ],
+    },
+  ],
 
-
- specs: [
-  { label: "Material", value: "Pre Laminated Board" },
-  { label: "Frame Material", value: "Crca pipe" },
-    { label: "Table top height", value: "750mm" },
-  { label: "Usage/Application", value: "Office" },
-   { label: "total height ", value: "1050mm" },
-  { label: "Seating Height", value: "2 Feet" },
-  { label: "Brand", value: "Dk Modular Contractor Contractor" },
-  { label: "Surface Finishing", value: "laminate" },
-  { label: "Product Type", value: "Modular Workstation" },
-  { label: "Wood Style", value: "Pre Laminated Board" },
-  { label: "Is It Portable", value: "Yes" },
-  { label: "Is It Lockable", value: "Yes" },
-  { label: "Features", value: "Best and Economical Designs" },
-],
-
+  specs: [
+    { label: "Product Name", value: "Professional Snooker Table" },
+    { label: "Table Type", value: "Full Size / Custom Size" },
+    { label: "Slate Thickness", value: "Natural Slate (Precision Cut)" },
+    { label: "Frame Material", value: "Solid Hardwood" },
+    { label: "Cloth Type", value: "Professional Snooker Cloth" },
+    { label: "Cushion Type", value: "High-Quality Rubber Cushions" },
+    { label: "Usage/Application", value: "Clubs, Academies, Home, Tournaments" },
+    { label: "Finish", value: "Premium Polish / Matte Finish" },
+    { label: "Installation", value: "Professional Installation Provided" },
+    { label: "Brand", value: "PM Billiards" },
+  ],
 
   image: [
     {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766228880/0993f5_9f89cc419f0b4d46a0eb22d6c94330df_mv2_icqzns.avif",
-      alt: "modular office workstation",
+      src: "/unnamed1.png",
+      alt: "Professional Snooker Table",
     },
   ],
 },
+
 
 // product 2
 {
-  id: "L-shaped-workstation",
-  name: "L Shaped Workstation",
-  metaTitle: "L Shaped Workstation",
+  id: "red-snooker-table",
+  name: "Red Finish Snooker Table",
+  metaTitle: "Red Finish Snooker Table",
   metaDescription:
-    "L Shaped Workstation",
+    "Red Finish Snooker Table",
 
- description: [
-  {
-    type: "h2",
-    text: "L-Shaped Modular Office Workstation | Dk Modular Contractor Contractor",
-  },
-  {
-    type: "p",
-    text: "The L-Shaped Modular Office Workstation by Dk Modular Contractor Contractor is designed to maximise workspace efficiency while maintaining a modern and professional appearance. Ideal for individual users, this workstation is perfect for corporate offices, home offices, IT setups, and managerial cabins where optimal space utilisation is essential.",
-  },
-  {
-    type: "p",
-    text: "Manufactured using high-quality particle board with a durable pre-laminated finish, this 1-seater workstation offers strength, stability, and long-term performance. The L-shaped layout provides ample surface area for computers, documents, and accessories, ensuring a comfortable and organised working environment.",
-  },
-  {
-    type: "h2",
-    text: "Key Features – L-Shaped Modular Workstation",
-  },
-  {
-    type: "ul",
-    items: [
-      "Space-Efficient L-Shaped Design – ideal for corner placement and compact office layouts.",
-      "Strong Particle Board Construction – ensures durability and daily wear resistance.",
-      "Pre Laminated Surface – easy to clean, scratch-resistant, and visually appealing.",
-      "Ergonomic Work Height – supports comfortable posture for long working hours.",
-      "Customisable Storage Options – drawers and cabinets can be added as required.",
-      "Modern Brown Finish – complements contemporary office interiors.",
-      "Modular Structure – easy to assemble, dismantle, and relocate.",
-      "Suitable for Office & Home Office Use – professional design with practical functionality.",
-    ],
-  },
-],
-
-
- specs: [
-  { label: "Seating Capacity", value: "2 Seater" },
-  { label: "Material", value: "Particle Board" },
-  { label: "Layout Type", value: "L Shaped" },
-  { label: "Size", value: "1500 x 1350 mm" },
-  { label: "Usage/Application", value: "Office" },
-  { label: "Color", value: "Brown" },
-  { label: "Product Type", value: "Modular Office Workstation" },
-
-],
-
-  image: [
+  description: [
     {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766052989/GallaryImg_273_0_1682752254_pgkzw6.webp",
-      alt: "Titanium Dioxide Kronos R2450",
+      type: "h2",
+      text: "Red Finish Professional Snooker Table | PM Billiards",
+    },
+    {
+      type: "p",
+      text: "The Red Finish Professional Snooker Table by PM Billiards is crafted to deliver tournament-level performance while adding a bold and elegant visual appeal. Designed for clubs, academies, luxury game rooms, and professional setups, this table combines precision engineering with refined aesthetics.",
+    },
+    {
+      type: "p",
+      text: "Manufactured using premium natural slate beds, a reinforced hardwood frame, and professional-grade snooker cloth, this table ensures accurate ball movement, consistent rebound, and exceptional stability. The striking red finish enhances the overall ambiance while maintaining classic snooker standards.",
+    },
+    {
+      type: "h2",
+      text: "Key Features – Red Finish Snooker Table",
+    },
+    {
+      type: "ul",
+      items: [
+        "Tournament-Grade Slate Bed – delivers perfectly level and accurate ball roll.",
+        "Solid Hardwood Frame – provides strength, balance, and long-term durability.",
+        "Professional Snooker Cloth – ensures smooth speed and precise ball control.",
+        "Precision Rubber Cushions – offers consistent rebound across all rails.",
+        "Premium Red Finish – adds a bold, modern, and luxurious appearance.",
+        "Stable & Vibration-Free Construction – ideal for competitive gameplay.",
+        "Custom Size Options – available in full-size and customised dimensions.",
+        "Suitable for Clubs & Home Use – perfect for professional and personal environments.",
+      ],
     },
   ],
-},
 
-// product 3
-{
-  id: "computer-workstation-furniture",
-  name: "Computer Workstation Furniture",
-  metaTitle: "Computer Workstation Furniture",
-  metaDescription:
-    "Computer Workstation Furniture",
-
-description: [
-  {
-    type: "h2",
-    text: "Computer Workstation Furniture | Dk Modular Contractor Contractor",
-  },
-  {
-    type: "p",
-    text: "Dk Modular Contractor Contractor offers premium Computer Workstation Furniture designed to meet the functional and aesthetic needs of modern offices. These workstations are ideal for corporate environments, IT offices, co-working spaces, educational institutions, and home offices where efficient computer-based work is essential.",
-  },
-  {
-    type: "p",
-    text: "Manufactured using high-quality particle board with a durable pre-laminated finish, our computer workstations provide strength, stability, and long-lasting performance. The modular construction allows complete customization in size, layout, and colour to suit different workspace requirements while maintaining a clean and professional appearance.",
-  },
-  {
-    type: "h2",
-    text: "Key Features – Computer Workstation Furniture",
-  },
-  {
-    type: "ul",
-    items: [
-      "Customised Design – tailored layouts and dimensions to suit specific office requirements.",
-      "High-Quality Particle Board – ensures durability and resistance to daily wear and tear.",
-      "Modular Construction – easy to assemble, reconfigure, and expand as needed.",
-      "Multiple Colour Options – available in all colours to match office interiors.",
-      "Ergonomic Work Height – designed for comfortable and productive computer use.",
-      "Suitable for Single & Multiple Users – flexible designs for individual or team setups.",
-      "Professional Finish – enhances the overall look of modern workspaces.",
-      "New Product Only – supplied in brand-new condition with assured quality.",
-    ],
-  },
-],
-
-
-
-specs: [
-  { label: "Product Name", value: "Computer Workstation Furniture" },
-  { label: "Material", value: "Particle Board" },
-  { label: "Color Options", value: "All Colours Available" },
-  { label: "Modular", value: "Yes" },
-  { label: "Design Type", value: "Customised" },
-  { label: "Usage/Application", value: "Office / IT Workspace" },
-
-  { label: "Brand", value: "Dk Modular Contractor Contractor" },
-],
-
-
-  image: [
-    {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766054329/jai-215_etlwws.webp",
-      alt: "Titanium Dioxide Kronos R2450",
-    },
+  specs: [
+    { label: "Product Name", value: "Red Finish Snooker Table" },
+    { label: "Table Type", value: "Full Size / Custom Size" },
+    { label: "Slate Thickness", value: "Natural Slate (Precision Cut)" },
+    { label: "Frame Material", value: "Solid Hardwood" },
+    { label: "Cloth Type", value: "Professional Snooker Cloth" },
+    { label: "Cushion Type", value: "High-Quality Rubber Cushions" },
+    { label: "Usage/Application", value: "Clubs, Academies, Home, Tournaments" },
+    { label: "Color", value: "Red" },
+    { label: "Finish", value: "Premium Red Finish" },
+    { label: "Installation", value: "Professional Installation Provided" },
+    { label: "Brand", value: "PM Billiards" },
   ],
-},
-
-// product 4
-{
-  id: "single-seater-modular-office-workstation",
-  name: "Single Seater Modular Office Workstation",
-  metaTitle: "Single Seater Modular Office Workstation",
-  metaDescription:
-    "Single Seater Modular Office Workstation",
-
-description: [
-  {
-    type: "h2",
-    text: "Single Seater Modular Office Workstation | Dk Modular Contractor Contractor",
-  },
-  {
-    type: "p",
-    text: "The Single Seater Modular Office Workstation by Dk Modular Contractor Contractor is designed to provide privacy, comfort, and efficiency for individual users in modern office environments. Ideal for corporate offices, IT companies, call centres, co-working spaces, and professional workspaces, this workstation ensures focused and productive working conditions.",
-  },
-  {
-    type: "p",
-    text: "Constructed using a combination of high-quality particle board and glass panels, this workstation features a polished surface finish and a full-height partition design. With a height of 3.5 feet, it offers an optimal balance between openness and personal workspace separation, while maintaining a clean and contemporary office look.",
-  },
-  {
-    type: "h2",
-    text: "Key Features – Single Seater Modular Office Workstation",
-  },
-  {
-    type: "ul",
-    items: [
-      "Single Seater Design – ideal for individual workstations and focused tasks.",
-      "Glass & Particle Board Construction – combines durability with a modern aesthetic.",
-      "Full Height Partition (3.5 Feet) – ensures privacy without isolating the workspace.",
-      "Polished Surface Finish – enhances appearance and is easy to maintain.",
-      "Standard Thickness (18–19 mm) – provides strength and long-lasting performance.",
-      "Multiple Colour Options – available in white, blue, and other custom shades.",
-      "Modular Structure – easy to assemble, dismantle, and reconfigure.",
-      "Suitable for Corporate & IT Offices – professional design for everyday office use.",
-    ],
-  },
-],
-
-
-specs: [
-  { label: "Seating Capacity", value: "1 Person" },
-  { label: "Material", value: " partical board with aluminium section " },
-  { label: "Partition Thickness", value: " 45mm" },
-    { label: "Table top Thickness", value: " 25mm" },
-  { label: "Surface Finish", value: "laminate" },
-  { label: "Height", value: "3.5 Feet (Full Height)" },
-  { label: "Usage/Application", value: "Office" },
-  { label: "Color Options", value: "White, Blue & Custom Colours" },
-  { label: "Product Type", value: "Single Seater Modular Office Workstation" },
-  { label: "Modular", value: "Yes" },
-  { label: "Brand", value: "Dk Modular Contractor Contractor" },
-],
-
 
   image: [
     {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766054866/geeken-max-modular-office-workst_hhodmw.webp",
-      alt: "Single Seater Modular Office Workstation",
+      src: "/try/unnamed2.png",
+      alt: "Red Finish Professional Snooker Table",
     },
   ],
 },
 
 
-// product 5
-{
-  id: "modern-office-workstation",
-  name: "Modern Office Workstation",
-  metaTitle: "Modern Office Workstation",
-  metaDescription:
-    "Modern Office Workstation",
-
-description: [
-  {
-    type: "h2",
-    text: "Modern Office Workstation | Dk Modular Contractor Contractor",
-  },
-  {
-    type: "p",
-    text: "The Modern Office Workstation by Dk Modular Contractor Contractor is designed to support collaborative and efficient working environments. Ideal for corporate offices, IT companies, co-working spaces, and commercial workplaces, this workstation accommodates multiple users while maintaining a clean, professional, and contemporary design.",
-  },
-  {
-    type: "p",
-    text: "Manufactured using high-quality particle board with a polished surface finish, this 4-seater workstation offers durability, stability, and long-lasting performance. The thoughtfully designed layout encourages teamwork while ensuring each user has adequate personal workspace for computers, documents, and office essentials.",
-  },
-  {
-    type: "h2",
-    text: "Key Features – Modern Office Workstation",
-  },
-  {
-    type: "ul",
-    items: [
-      "4-Seater Configuration – ideal for team-based and collaborative workspaces.",
-      "Strong Particle Board Construction – ensures durability and resistance to daily wear.",
-      "Polished Surface Finish – enhances aesthetics and allows easy maintenance.",
-      "Standard Thickness (18–19 mm) – provides strength and long-term structural stability.",
-      "Modern & Functional Design – complements contemporary office interiors.",
-      "Multiple Colour Options – available in brown, red, white, and custom finishes.",
-      "Space-Efficient Layout – maximises productivity without overcrowding.",
-      "Suitable for Corporate & IT Offices – professional solution for modern workplaces.",
-    ],
-  },
-],
-
-
-
-specs: [
-  { label: "Seating Capacity", value: "4 Seater" },
-  { label: "Material", value: "partition board with 45mm aluminium section " },
-  { label: "Thickness", value: "25mm for table top" },
-  { label: "Surface Treatment", value: "laminate" },
-  { label: "Usage/Application", value: "Office" },
-  { label: "Color Options", value: "Brown, Red, White & Custom Colours" },
-  { label: "Product Type", value: "Modern Office Workstation" },
-  { label: "Modular", value: "Yes" },
-  { label: "Brand", value: "Dk Modular Contractor Contractor" },
-],
-
-
-
-  image: [
-    {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766055250/Furniture-shop-office-furniture-seats-desks-cabinets-tables-2023-09-13T121954.972_gfefkf.webp",
-      alt: "Single Seater Modular Office Workstation",
-    },
-  ],
-},
-
-// product 6
-{
-  id: "linear-modular-office-workstation",
-  name: "Linear Modular Office Workstation",
-  metaTitle: "Linear Modular Office Workstation",
-  metaDescription:
-    "Linear Modular Office Workstation",
-
-description: [
-  {
-    type: "h2",
-    text: "Linear Modern Office Workstation | Dk Modular Contractor Contractor",
-  },
-  {
-    type: "p",
-    text: "The Linear Modern Office Workstation by Dk Modular Contractor Contractor is designed for organised, streamlined, and collaborative office environments. Its linear layout is ideal for teams working side-by-side, making it a perfect solution for corporate offices, IT firms, BPOs, co-working spaces, and commercial workplaces that require efficient space utilisation.",
-  },
-  {
-    type: "p",
-    text: "Crafted using high-quality wood with a durable polished finish, this 4-seater workstation combines strength, comfort, and contemporary aesthetics. The linear design ensures each user has a clearly defined workspace while promoting teamwork and smooth communication. With an ergonomic table height of 2 feet, it supports comfortable daily working routines.",
-  },
-  {
-    type: "h2",
-    text: "Key Features – Linear Modern Office Workstation",
-  },
-  {
-    type: "ul",
-    items: [
-      "Linear 4-Seater Layout – ideal for team-based and aligned workstation setups.",
-      "High-Quality Wood Construction – ensures durability and a premium appearance.",
-      "Polished Surface Finish – smooth, easy to clean, and long-lasting.",
-      "Standard Thickness (18–19 mm) – provides structural stability and strength.",
-      "Ergonomic Table Height (2 Feet) – designed for comfortable working posture.",
-      "Modern & Minimal Design – enhances contemporary office interiors.",
-      "Multiple Colour Options – available in orange, white, brown, cream, and custom shades.",
-      "Suitable for Corporate & IT Offices – professional solution for modern workspaces.",
-    ],
-  },
-],
-
-
-
-
-specs: [
-  { label: "Seating Capacity", value: "4 Seater" },
-  { label: "Material", value: "prelame pratical board with 45mm aluminium section" },
-  { label: "Thickness", value: "25mm" },
-  { label: "Table Height", value: "750/1200mm" },
-  { label: "Surface Treatment", value: "laminated" },
-  { label: "Usage/Application", value: "Office" },
-  { label: "Color Options", value: "Orange, White, Brown, Cream & Custom Colours" },
-  { label: "Product Type", value: "Linear Modern Office Workstation" },
-  { label: "Modular", value: "Yes" },
-  { label: "Brand", value: "Dk Modular Contractor Contractor" },
-],
-
-
-
-
-  image: [
-    {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766055680/linear_3_person.png_yj9n1o.webp",
-      alt: "Linear Modular Office Workstation",
-    },
-  ],
-},
-
-
-// product 7
-{
-  id: "U-shape-modern-office-workstation",
-  name: "U Shape Modern Office Workstation",
-  metaTitle: "U Shape Modern Office Workstation",
-  metaDescription:
-    "U Shape Modern Office Workstation",
-
-description: [
-  {
-    type: "h2",
-    text: "U Shape Modern Office Workstation | Dk Modular Contractor Contractor",
-  },
-  {
-    type: "p",
-    text: "The U Shape Modern Office Workstation by Dk Modular Contractor Contractor is designed to offer maximum workspace efficiency with a modern and professional appearance. Ideal for corporate offices, IT companies, managerial cabins, and home offices, this workstation makes optimal use of corner spaces while providing ample working surface.",
-  },
-  {
-    type: "p",
-    text: "Manufactured using high-quality particle board with a polished surface finish, this workstation delivers durability, stability, and long-term performance. The U-shaped design allows better organisation of computers, files, and accessories, creating a comfortable and productive working environment.",
-  },
-  {
-    type: "h2",
-    text: "Key Features – U Shape Modern Office Workstation",
-  },
-  {
-    type: "ul",
-    items: [
-      "U Shape Layout – maximises workspace and efficiently utilises corner areas.",
-      "High-Quality Particle Board Construction – ensures strength and daily wear resistance.",
-      "Polished Surface Finish – smooth, easy to clean, and visually appealing.",
-      "Standard Thickness (18–19 mm) – offers structural stability and durability.",
-      "Modern & Functional Design – suitable for contemporary office interiors.",
-      "Multiple Colour Options – available in orange, white, ivory, and custom finishes.",
-      "Space-Efficient Design – ideal for individual and multi-user office setups.",
-      "Suitable for Corporate, IT & Home Offices – versatile solution for modern workspaces.",
-    ],
-  },
-],
-
-
-
-
-specs: [
-  { label: "Shape", value: "U Shape" },
-  { label: "Material", value: "Particle Board" },
-  { label: "Thickness", value: "25mm " },
-  { label: "Surface Treatment", value: "laminated" },
-  { label: "Usage/Application", value: "Office" },
-  { label: "Color Options", value: "Orange, White, Ivory & Custom Colours" },
-  { label: "Product Type", value: "L Shape Modern Office Workstation" },
-  { label: "Modular", value: "Yes" },
-  { label: "Brand", value: "Dk Modular Contractor Contractor" },
-],
-
-
-
-
-  image: [
-    {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766056316/linear-modular-office-workstation-1000x1000_birhsm.webp",
-      alt: "L Shape Modern Office Workstation",
-    },
-  ],
-},
 
     ],
   },
@@ -472,8 +148,8 @@ specs: [
 
   // category 2 office-workstation
 {
-  id: "office-workstation",
-  name: "Office-Workstation",
+  id: "snooker-ball",
+  name: "snooker ball",
   metaTitle: "office-workstation ",
   metaDescription:
     "office-workstation",
@@ -974,10 +650,10 @@ specs: [
 
 
 
-  // category 3 Computer Table
+  // category 3 Snooker cue
 {
-   id: "computer-table",
-  name: "Computer Table",
+   id: "Snooker-cue",
+  name: "Snooker cue",
   metaTitle: "Computer Tables for Office Workstations",
   metaDescription:
     "Find premium Computer Tables for Office Workstations. ",
@@ -1160,8 +836,8 @@ specs: [
 
   // category 4 office chair
 {
-    id: "office-chairs",
-  name: "Office Chairs",
+    id: "billiards-accessory",
+  name: "billiards accessory",
   metaTitle: "Office Chairs – Ergonomic & Executive Seating Solutions ",
   metaDescription:
     "Office Chairs – Explore our range of ergonomic and executive office chairs designed for comfort, support, and style. Perfect for workspaces of all sizes.",
@@ -1499,8 +1175,8 @@ specs: [
 
   // category 5 wooden
 {
-    id: "wooden-storage-units",
-  name: "Wooden Storage Units",
+    id: "snooker-table-cloth",
+  name: "snooker table cloth",
   metaTitle: "Wooden Storage Units – Aanya Enterprises",
   metaDescription:
     "Explore premium Wooden Storage Units for efficient organization and storage. Ideal for home and office use. Get quality solutions from Aanya Enterprises.",
@@ -1851,350 +1527,713 @@ specs: [
 
 
 
-  // category 6 meeting room
+  // category 6 cue case
 {
-    id: "meeting-and-conference-room-table",
-  name: "Meeting And Conference Room Table",
-  metaTitle: "Meeting And Conference Room Table ",
+    id: "cue-case",
+  name: "cue case",
+  metaTitle: "Wooden Storage Units – Aanya Enterprises",
   metaDescription:
-    "Meeting And Conference Room Table",
+    "Explore premium Wooden Storage Units for efficient organization and storage. Ideal for home and office use. Get quality solutions from Aanya Enterprises.",
 
   products: [
     // product 1
 
 
 {
-  id: "14-seater-meeting-table",
-  name: "14 Seater Meeting Table",
-  metaTitle: "14 Seater Meeting Table – Dk Modular Contractor Office Furniture",
+  id: "home-wooden-storage-cupboard",
+  name: "Home Wooden Storage Cupboard",
+  metaTitle: "Home Wooden Storage Cupboard – Dk Modular Contractor Furniture",
   metaDescription:
-    "14 Seater Meeting Table by Dk Modular Contractor – spacious wooden meeting table with polished finish, designed for corporate boardrooms and conference rooms.",
+    "Home Wooden Storage Cupboard by Dk Modular Contractor – modern 2 door wooden cabinet with polished finish and customized design. Ideal for home storage with a clean and elegant look.",
 
   description: [
     {
       type: "h2",
-      text: "14 Seater Meeting Table | Dk Modular Contractor",
+      text: "Home Wooden Storage Cupboard | Dk Modular Contractor",
     },
     {
       type: "p",
-      text: "The 14 Seater Meeting Table by Dk Modular Contractor is a premium conference and boardroom furniture solution designed for large corporate meetings and professional discussions. Crafted from high-quality wooden material and finished with a polished surface, this table offers durability, elegance, and ample seating space. Its rectangular design ensures effective communication, comfort, and a formal corporate environment during meetings and presentations.",
+      text: "The Home Wooden Storage Cupboard by Dk Modular Contractor is a stylish and functional storage solution designed to enhance modern home interiors. Crafted from quality wood with a polished finish, this cupboard offers ample storage space while maintaining a clean and elegant appearance. Its compact design and customizable structure make it suitable for bedrooms, living rooms, study areas, and utility spaces.",
     },
     {
       type: "h2",
-      text: "Key Features – 14 Seater Meeting Table",
+      text: "Key Features – Home Wooden Storage Cupboard",
     },
     {
       type: "ul",
       items: [
-        "Large Seating Capacity – comfortably accommodates up to 14 people, ideal for boardrooms and conference rooms.",
-        "Premium Wooden Construction – manufactured using quality wooden material for strength, stability, and long-term performance.",
-        "Rectangular Table Design – ensures organized seating arrangement and smooth interaction during meetings.",
-        "Polished Surface Finish – enhances visual appeal and provides a smooth, easy-to-maintain surface.",
-        "Corporate Office Ready – specifically designed for corporate offices, meeting rooms, and executive conference areas.",
-        "Classic Brown Finish – professional brown color complements modern and traditional corporate interiors.",
-        "Sturdy & Durable Structure – built to withstand daily corporate use with consistent performance.",
+        "2 Door Storage Cabinet – equipped with two hinged doors for easy access and organized storage.",
+        "Premium Wooden Construction – ensures durability, strength, and long-lasting performance for daily home use.",
+        "Polished Finish – smooth surface finish enhances appearance and makes cleaning easy.",
+        "Modern Appearance – clean lines and contemporary styling blend seamlessly with modern home interiors.",
+        "Customized Design Options – can be customized in design and layout as per space and storage requirements.",
+        "Natural Wood Color – elegant natural wood shade adds warmth and sophistication to the living space.",
+        "Ideal Height Range – available in 3 to 4 feet height, suitable for compact and medium-sized rooms.",
       ],
     },
   ],
 
   specs: [
-    { label: "Material", value: "Wooden" },
-    { label: "Shape", value: "Rectangular" },
-    { label: "Usage/Application", value: "Corporate Office" },
-    { label: "Colour", value: "Brown" },
-    { label: "Seating Capacity", value: "14 Seater" },
-    { label: "Surface Finishing", value: "Polished" },
+    { label: "Door Type", value: "Hinged Door" },
+    { label: "Number of Doors", value: "2 Door" },
+    { label: "Finish Type", value: "Polished" },
+    { label: "Type", value: "Cabinet" },
+    { label: "Color", value: "Natural Wood" },
+    { label: "Appearance", value: "Modern" },
+    { label: "Design", value: "Customized" },
+    { label: "Height", value: "3 – 4 feet" },
   ],
 
   image: [
     {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766135368/14_Seater_Meeting_Table_1_omsthn.avif",
-      alt: "14 Seater Meeting Table by Dk Modular Contractor",
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766129278/Home_Wooden_Storage_Cupboard_mgnofw.webp",
+      alt: "Home Wooden Storage Cupboard by Dk Modular Contractor",
     },
   ],
 },
-
-
-
 
 
     // product 2
 
 {
-  id: "executive-meeting-table",
-  name: "Executive Meeting Table",
-  metaTitle: "Executive Meeting Table – Dk Modular Contractor Office Furniture",
+  id: "wooden-storage-unit",
+  name: "Wooden Storage Unit",
+  metaTitle: "Wooden Storage Unit – Dk Modular Contractor Furniture",
   metaDescription:
-    "Executive Meeting Table by Dk Modular Contractor – premium wooden meeting table with drawer storage and polished finish. Ideal for executive meetings and corporate office use.",
+    "Wooden Storage Unit by Dk Modular Contractor – durable double door wooden cabinet with polished finish and practical shelving. Suitable for office and home storage needs.",
 
   description: [
     {
       type: "h2",
-      text: "Executive Meeting Table | Dk Modular Contractor",
+      text: "Wooden Storage Unit | Dk Modular Contractor",
     },
     {
       type: "p",
-      text: "The Executive Meeting Table by Dk Modular Contractor is a refined and functional furniture solution designed for professional office environments. Crafted from high-quality wooden material and finished with a smooth polished surface, this table combines elegance with practicality. Its rectangular design and integrated drawer storage make it ideal for executive meetings, discussions, and presentations where organization and professionalism are essential.",
+      text: "The Wooden Storage Unit by Dk Modular Contractor is a versatile and functional storage solution designed for both office and home use. Crafted from high-quality wood with a polished finish, this storage unit offers a perfect balance of durability, aesthetics, and practicality. Its clean design and well-organized shelving make it ideal for storing files, documents, office supplies, books, and household items.",
     },
     {
       type: "h2",
-      text: "Key Features – Executive Meeting Table",
+      text: "Key Features – Wooden Storage Unit",
     },
     {
       type: "ul",
       items: [
-        "Executive-Grade Meeting Table – designed specifically for senior management meetings and professional discussions.",
-        "Built-In Drawer Storage – integrated drawer storage allows convenient organization of documents, stationery, and meeting essentials.",
-        "Premium Wooden Construction – high-quality wooden material ensures durability, strength, and long-term performance.",
-        "Rectangular Table Design – offers structured seating and clear visibility for effective communication.",
-        "Polished Surface Finish – smooth and elegant finish enhances appearance and makes maintenance easy.",
-        "Office-Ready Application – suitable for corporate offices, boardrooms, and executive meeting spaces.",
-        "Classic Brown Color – professional brown tone complements modern and traditional office interiors.",
+        "Double Door Storage Design – equipped with two doors for easy access and secure, organized storage.",
+        "Premium Wooden Material – strong wooden construction ensures long-lasting durability for daily use.",
+        "Polished Finish – smooth surface finish enhances appearance and allows easy cleaning and maintenance.",
+        "Multi-Purpose Usage – suitable for both office and home applications, including document and utility storage.",
+        "Two-Shelf Configuration – includes two internal shelves for systematic arrangement of items.",
+        "Classic Brown Color – elegant brown finish blends seamlessly with modern and traditional interiors.",
+        "Space-Efficient Cabinet – compact yet spacious design ideal for offices, homes, and commercial spaces.",
       ],
     },
   ],
 
   specs: [
-    { label: "Shape", value: "Rectangular" },
-    { label: "Storage", value: "With Storage" },
-    { label: "Storage Type", value: "Drawer Storage" },
+    { label: "Door Type", value: "Double Door" },
+    { label: "Usage/Application", value: "Office and Home" },
+    { label: "Finish Type", value: "Polished" },
+    { label: "Color", value: "Brown" },
     { label: "Material", value: "Wooden" },
-    { label: "Colour", value: "Brown" },
-    { label: "Surface Finishing", value: "Polished" },
-    { label: "Application", value: "Office" },
+    { label: "Number Of Shelves", value: "2" },
   ],
 
   image: [
     {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766135603/Executive_Meeting_Table_ylt24m.webp",
-      alt: "Executive Meeting Table by Dk Modular Contractor",
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766129409/Office_Storage_Cabinets_1_soei4e.webp",
+      alt: "Wooden Storage Unit by Dk Modular Contractor",
     },
   ],
 },
-
-
-
 
 // product 3
 
-{
-  id: "large-conference-table",
-  name: "Large Conference Table",
-  metaTitle: "Large Conference Table – Dk Modular Contractor Office Furniture",
+
+ {
+  id: "smart-wooden-cabinet",
+  name: "Smart Wooden Cabinet",
+  metaTitle: "Smart Wooden Cabinet – Dk Modular Contractor Office Furniture",
   metaDescription:
-    "Large Conference Table by Dk Modular Contractor – premium wooden conference table with polished finish, designed for spacious boardrooms and professional office environments.",
+    "Smart Wooden Cabinet by Dk Modular Contractor – modern laminated file cabinet with sliding doors, spacious storage, and durable plywood construction. Ideal for office file and document storage.",
 
   description: [
     {
       type: "h2",
-      text: "Large Conference Table | Dk Modular Contractor",
+      text: "Smart Wooden Cabinet | Dk Modular Contractor",
     },
     {
       type: "p",
-      text: "The Large Conference Table by Dk Modular Contractor is a premium furniture solution designed for modern corporate offices and boardrooms that require spacious and professional meeting setups. Crafted from high-quality wooden material and finished with a smooth polished surface, this table offers durability, elegance, and ample space for productive discussions. Its rectangular design ensures comfortable seating, clear communication, and a strong executive presence during meetings.",
+      text: "The Smart Wooden Cabinet by Dk Modular Contractor is a modern and efficient file storage solution designed for organized office environments. Crafted using high-quality plywood and wooden materials with a laminated finish, this cabinet combines durability with a clean contemporary look. Its sliding door design and spacious internal layout make it ideal for storing files, documents, and office essentials while maintaining a clutter-free workspace.",
     },
     {
       type: "h2",
-      text: "Key Features – Large Conference Table",
+      text: "Key Features – Smart Wooden Cabinet",
     },
     {
       type: "ul",
       items: [
-        "Spacious Conference Table Design – ideal for large meetings, discussions, and collaborative sessions.",
-        "Premium Wooden Construction – manufactured using quality wooden material for strength, stability, and long-term use.",
-        "Rectangular Shape – provides organized seating and effective interaction among participants.",
-        "Polished Surface Finishing – enhances visual appeal and ensures easy cleaning and maintenance.",
-        "Professional Office Application – suitable for corporate offices, boardrooms, and conference halls.",
-        "Classic Brown Finish – elegant brown color complements modern and traditional office interiors.",
-        "Sturdy & Durable Build – designed to withstand daily corporate usage with reliable performance.",
+        "File Cabinet Design – specially designed for systematic storage of office files, documents, and records.",
+        "4 Door Sliding Mechanism – smooth sliding doors save space and provide easy access to stored items.",
+        "Premium Plywood Construction – ensures strength, stability, and long-term durability for office use.",
+        "Laminated Surface Finish – enhances appearance while offering resistance to scratches and daily wear.",
+        "Modern Rectangular Shape – clean and professional design suitable for contemporary office interiors.",
+        "Spacious Storage Capacity – well-organized internal layout for efficient document management.",
+        "Multiple Color Options – available in Brown, White, Black, Ivory, and other finishes to match office décor.",
+        "Free Standing Cabinet – easy to place and reposition without wall mounting.",
+        "Reliable Build Quality – sturdy construction with a balanced weight of approximately 30 kg.",
       ],
     },
   ],
 
   specs: [
+    { label: "Cabinet Type", value: "File Cabinet" },
+    { label: "Primary Material", value: "Plywood" },
     { label: "Material", value: "Wooden" },
+    { label: "Number of Doors", value: "4 Door" },
+    { label: "Door Type", value: "Sliding Door" },
+    { label: "Usage/Application", value: "Office" },
+    { label: "Finish Type", value: "Laminated" },
+    { label: "Color", value: "Brown, White, Black, Ivory etc" },
+    { label: "Style", value: "Modern" },
+    { label: "Design", value: "Standard" },
+    { label: "Dimensions", value: "1800mm (W) x 450mm (D) x 750mm (H)" },
+    { label: "Height", value: "30 inch" },
     { label: "Shape", value: "Rectangular" },
-    { label: "Colour", value: "Brown" },
-    { label: "Surface Finishing", value: "Polished" },
-    { label: "Application", value: "Office" },
+    { label: "Mount Type", value: "Free Standing" },
+    { label: "Weight", value: "30 Kg" },
+    { label: "Warranty", value: "1 Year" },
   ],
 
   image: [
     {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766135791/Large_Conference_Table_ilzwcz.avif",
-      alt: "Large Conference Table by Dk Modular Contractor",
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766129680/Smart_Wooden_Cabinet_z130aj.webp",
+      alt: "Smart Wooden Cabinet by Dk Modular Contractor",
     },
   ],
 },
 
-// product 4
+  //  product 4
 
-{
-  id: "oval-meeting-table",
-  name: "Oval Meeting Table",
-  metaTitle: "Oval Meeting Table – Dk Modular Contractor Office Furniture",
+  {
+  id: "wooden-storage-cabinet",
+  name: "Wooden Storage Cabinet",
+  metaTitle: "Wooden Storage Cabinet – Dk Modular Contractor Furniture",
   metaDescription:
-    "Oval Meeting Table by Dk Modular Contractor – premium 15 seater wooden meeting table with polished finish, designed for corporate offices and professional boardrooms.",
+    "Wooden Storage Cabinet by Dk Modular Contractor – durable double door wooden cabinet with polished finish and practical shelving. Ideal for office and home storage needs.",
 
   description: [
     {
       type: "h2",
-      text: "Oval Meeting Table | Dk Modular Contractor",
+      text: "Wooden Storage Cabinet | Dk Modular Contractor",
     },
     {
       type: "p",
-      text: "The Oval Meeting Table by Dk Modular Contractor is a premium corporate furniture solution designed to enhance collaboration and communication in professional office environments. Crafted from high-quality wooden material and finished with a smooth polished surface, this table combines elegance with functionality. Its oval shape promotes better interaction among participants, making it ideal for boardrooms, conference rooms, and corporate meeting spaces.",
+      text: "The Wooden Storage Cabinet by Dk Modular Contractor is a practical and elegant storage solution designed for both office and home environments. Crafted from high-quality wood and finished with a smooth polished surface, this cabinet offers durability, organized storage, and a professional appearance. Its compact yet spacious design makes it suitable for storing files, documents, office supplies, and household essentials.",
     },
     {
       type: "h2",
-      text: "Key Features – Oval Meeting Table",
+      text: "Key Features – Wooden Storage Cabinet",
     },
     {
       type: "ul",
       items: [
-        "15 Seater Capacity – comfortably accommodates up to fifteen participants, ideal for large corporate meetings.",
-        "Oval Table Design – promotes better visibility, communication, and a balanced seating arrangement.",
-        "Premium Wooden Construction – ensures strength, durability, and long-lasting performance in daily office use.",
-        "Polished Surface Finishing – smooth and refined finish enhances appearance and allows easy maintenance.",
-        "Optimal Seating Height – seating height range of 2.5 to 3.5 feet ensures comfort during extended meetings.",
-        "Corporate Office Application – perfectly suited for boardrooms, conference rooms, and executive meeting areas.",
-        "Elegant Brown Finish – classic brown color complements modern and traditional corporate interiors.",
+        "Double Door Cabinet Design – equipped with two doors for easy access and secure storage.",
+        "Premium Wooden Construction – strong wooden material ensures long-lasting durability and stability.",
+        "Polished Surface Finish – enhances visual appeal while allowing easy cleaning and maintenance.",
+        "Multi-Purpose Usage – suitable for both office and home applications, including document and utility storage.",
+        "Two-Shelf Storage Layout – includes two internal shelves for organized and efficient storage.",
+        "Classic Brown Finish – elegant brown color complements modern and traditional interior styles.",
+        "Space-Efficient Design – compact footprint with ample storage capacity for daily use.",
       ],
     },
   ],
 
   specs: [
-    { label: "Seating Capacity", value: "15 Seater" },
+    { label: "Door Type", value: "Double Door" },
+    { label: "Usage/Application", value: "Office and Home" },
+    { label: "Finish Type", value: "Polished" },
+    { label: "Color", value: "Brown" },
     { label: "Material", value: "Wooden" },
-    { label: "Shape", value: "Oval" },
-    { label: "Seating Height", value: "2.5 to 3.5 Feet" },
-    { label: "Colour", value: "Brown" },
-    { label: "Usage/Application", value: "Corporate Office" },
-    { label: "Surface Finishing", value: "Polished" },
+    { label: "Number Of Shelves", value: "2" },
   ],
 
   image: [
     {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766136028/Oval_Meeting_Table_klkipp.webp",
-      alt: "Oval Meeting Table by Dk Modular Contractor",
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766129842/Wooden_Storage_Cabinet_elqsch.avif",
+      alt: "Wooden Storage Cabinet by Dk Modular Contractor",
     },
   ],
-},
+}
+,
 
+// product 5
 
 {
-  id: "rectangular-meeting-table",
-  name: "Rectangular Meeting Table",
-  metaTitle: "Rectangular Meeting Table – Dk Modular Contractor Office Furniture",
+  id: "wooden-storage-cupboard",
+  name: "Wooden Storage Cupboard",
+  metaTitle: "Wooden Storage Cupboard – Dk Modular Contractor Furniture",
   metaDescription:
-    "Rectangular Meeting Table by Dk Modular Contractor – modern wooden meeting table with laminated finish and open storage. Ideal for corporate offices and professional meeting rooms.",
+    "Wooden Storage Cupboard by Dk Modular Contractor – spacious wooden cupboard with polished finish and double door design. Ideal for home and office storage requirements.",
 
   description: [
     {
       type: "h2",
-      text: "Rectangular Meeting Table | Dk Modular Contractor",
+      text: "Wooden Storage Cupboard | Dk Modular Contractor",
     },
     {
       type: "p",
-      text: "The Rectangular Meeting Table by Dk Modular Contractor is a practical and professional furniture solution designed for corporate office environments. Crafted from high-quality wooden material and finished with a durable laminated surface, this meeting table offers functionality, durability, and a clean modern appearance. Its rectangular shape ensures structured seating and smooth interaction, making it ideal for discussions, presentations, and team meetings.",
+      text: "The Wooden Storage Cupboard by Dk Modular Contractor is a robust and elegant storage solution designed to meet the needs of both home and office environments. Manufactured using high-quality wooden material and finished with a smooth polished surface, this cupboard offers ample storage capacity with a clean and professional appearance. Its tall structure makes it ideal for organizing files, documents, clothes, and household essentials efficiently.",
     },
     {
       type: "h2",
-      text: "Key Features – Rectangular Meeting Table",
+      text: "Key Features – Wooden Storage Cupboard",
     },
     {
       type: "ul",
       items: [
-        "Rectangular Table Design – classic straight-line design ensures organized seating and effective communication during meetings.",
-        "Premium Wooden Construction – strong wooden material provides stability and long-lasting performance.",
-        "Open Storage Facility – designed without enclosed storage, allowing easy access to meeting essentials when required.",
-        "Laminated Surface Finishing – durable laminated finish enhances appearance and protects against daily wear and tear.",
-        "Multiple Color Options – available in Brown, Ivory, White, and other suitable finishes to match office interiors.",
-        "Corporate Office Ready – ideal for corporate offices, conference rooms, and professional meeting spaces.",
-        "Office-Friendly Design – suitable for regular office meetings, discussions, and collaborative sessions.",
+        "Double Door Cupboard Design – equipped with two doors for convenient access and secure storage.",
+        "Premium Wooden Construction – ensures strength, durability, and long-lasting performance.",
+        "Polished Finish – enhances visual appeal and allows easy cleaning and maintenance.",
+        "Multi-Purpose Usage – suitable for both home and office applications.",
+        "Spacious Storage Capacity – ideal for storing files, documents, office supplies, clothing, and household items.",
+        "Classic Brown Color – neutral brown finish blends well with modern and traditional interiors.",
+        "Tall & Space-Efficient Structure – vertical design provides maximum storage without occupying excess floor space.",
       ],
     },
   ],
 
   specs: [
+    { label: "Usage/Application", value: "Home, Office" },
+    { label: "Finish Type", value: "Polished" },
+    { label: "Color", value: "Brown" },
     { label: "Material", value: "Wooden" },
-    { label: "Shape", value: "Rectangular" },
-    { label: "Storage", value: "Without Storage" },
-    { label: "Storage Type", value: "Open Storage" },
-    { label: "Colour", value: "Brown, Ivory, White etc" },
-    { label: "Usage/Application", value: "Corporate Office" },
-    { label: "Suitable For", value: "Office" },
-    { label: "Surface Finishing", value: "Laminated" },
+    { label: "Height", value: "5 – 7 Ft" },
+    { label: "Width", value: "3 – 4 Ft" },
+    { label: "Number Of Doors", value: "2" },
   ],
 
   image: [
     {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766136256/Rectangular_Meeting_Table_kbdezj.webp",
-      alt: "Rectangular Meeting Table by Dk Modular Contractor",
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766130017/Wooden_Storage_Cupboard_ytzpo0.avif",
+      alt: "Wooden Storage Cupboard by Dk Modular Contractor",
     },
   ],
-},
-
-{
-  id: "round-meeting-table",
-  name: "Round Meeting Table",
-  metaTitle: "Round Meeting Table – Dk Modular Contractor Office Furniture",
-  metaDescription:
-    "Round Meeting Table by Dk Modular Contractor – compact wooden meeting table with polished finish, ideal for small office meetings and collaborative discussions.",
-
-  description: [
-    {
-      type: "h2",
-      text: "Round Meeting Table | Dk Modular Contractor",
-    },
-    {
-      type: "p",
-      text: "The Round Meeting Table by Dk Modular Contractor is a compact and elegant furniture solution designed for small meetings and collaborative discussions in office environments. Crafted from high-quality wooden material and finished with a smooth polished surface, this table offers durability, comfort, and a professional appearance. Its round shape encourages open communication and equal participation, making it ideal for discussion rooms, cabins, and small meeting areas.",
-    },
-    {
-      type: "h2",
-      text: "Key Features – Round Meeting Table",
-    },
-    {
-      type: "ul",
-      items: [
-        "4 Seater Meeting Table – comfortably accommodates up to four people, ideal for small group discussions.",
-        "Round Table Design – promotes better interaction, collaboration, and equal seating arrangement.",
-        "Premium Wooden Construction – ensures strength, stability, and long-lasting performance for office use.",
-        "Polished Surface Finishing – smooth and refined finish enhances appearance and allows easy maintenance.",
-        "Office-Ready Application – suitable for offices, meeting rooms, cabins, and discussion areas.",
-        "Classic Brown Finish – elegant brown color complements modern and traditional office interiors.",
-        "Compact & Space-Efficient – ideal for offices with limited space while maintaining functionality.",
-      ],
-    },
-  ],
-
-  specs: [
-    { label: "Seating Capacity", value: "4 Seater" },
-    { label: "Material", value: "Wooden" },
-    { label: "Shape", value: "Round" },
-    { label: "Colour", value: "Brown" },
-    { label: "Surface Finishing", value: "Polished" },
-    { label: "Application", value: "Office" },
-  ],
-
-  image: [
-    {
-      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766136449/Round_Meeting_Table_eqygwr.webp",
-      alt: "Round Meeting Table by Dk Modular Contractor",
-    },
-  ],
-},
-
-
-
- 
-   
+}
+,
     
+{
+  id: "laminated-wooden-storage-cabinet",
+  name: "Laminated Wooden Storage Cabinet",
+  metaTitle: "Laminated Wooden Storage Cabinet – Dk Modular Contractor Furniture",
+  metaDescription:
+    "Laminated Wooden Storage Cabinet by Dk Modular Contractor – modern hinged-door cabinet with polished laminated finish. Ideal for office and home storage needs.",
+
+  description: [
+    {
+      type: "h2",
+      text: "Laminated Wooden Storage Cabinet | Dk Modular Contractor",
+    },
+    {
+      type: "p",
+      text: "The Laminated Wooden Storage Cabinet by Dk Modular Contractor is a modern and practical storage solution designed for both offices and homes. Crafted from high-quality wooden material and finished with a durable laminated polished surface, this cabinet offers long-lasting performance along with a refined contemporary look. Its compact height and smart design make it ideal for organized storage of files, documents, office supplies, and household essentials.",
+    },
+    {
+      type: "h2",
+      text: "Key Features – Laminated Wooden Storage Cabinet",
+    },
+    {
+      type: "ul",
+      items: [
+        "Hinged Door Cabinet Design – smooth-opening hinged doors provide easy access and secure storage.",
+        "Premium Wooden Construction – high-quality wooden material ensures strength, durability, and stability.",
+        "Polished Laminated Finish – laminated surface enhances appearance while offering resistance to scratches and daily wear.",
+        "Modern Styling – contemporary design and clean lines suit modern office and home interiors.",
+        "Multi-Purpose Usage – suitable for offices and homes for organized document and utility storage.",
+        "Elegant Light Brown Color – subtle light brown finish blends seamlessly with various interior themes.",
+        "Made in India – manufactured in India with quality craftsmanship and reliable materials.",
+      ],
+    },
+  ],
+
+  specs: [
+    { label: "Door Type", value: "Hinged Door" },
+    { label: "Finish Type", value: "Polished" },
+    { label: "Color", value: "Light Brown" },
+    { label: "Style", value: "Modern" },
+    { label: "Usage/Application", value: "Offices and Home" },
+    { label: "Material", value: "Wooden" },
+    { label: "Country of Origin", value: "Made in India" },
+    { label: "Height", value: "4 feet" },
+  ],
+
+  image: [
+    {
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766130189/Laminated_Wooden_Storage_Cabinet_kxoslh.webp",
+      alt: "Laminated Wooden Storage Cabinet by Dk Modular Contractor",
+    },
   ],
 },
 
 
+
+  ],
+},
+
+
+
+
+// cat 7 soccer table
+
+{
+    id: "soccer-table",
+  name: "Soccer Table",
+  metaTitle: "Wooden Storage Units – Aanya Enterprises",
+  metaDescription:
+    "Explore premium Wooden Storage Units for efficient organization and storage. Ideal for home and office use. Get quality solutions from Aanya Enterprises.",
+
+  products: [
+    // product 1
+
+
+{
+  id: "home-wooden-storage-cupboard",
+  name: "Home Wooden Storage Cupboard",
+  metaTitle: "Home Wooden Storage Cupboard – Dk Modular Contractor Furniture",
+  metaDescription:
+    "Home Wooden Storage Cupboard by Dk Modular Contractor – modern 2 door wooden cabinet with polished finish and customized design. Ideal for home storage with a clean and elegant look.",
+
+  description: [
+    {
+      type: "h2",
+      text: "Home Wooden Storage Cupboard | Dk Modular Contractor",
+    },
+    {
+      type: "p",
+      text: "The Home Wooden Storage Cupboard by Dk Modular Contractor is a stylish and functional storage solution designed to enhance modern home interiors. Crafted from quality wood with a polished finish, this cupboard offers ample storage space while maintaining a clean and elegant appearance. Its compact design and customizable structure make it suitable for bedrooms, living rooms, study areas, and utility spaces.",
+    },
+    {
+      type: "h2",
+      text: "Key Features – Home Wooden Storage Cupboard",
+    },
+    {
+      type: "ul",
+      items: [
+        "2 Door Storage Cabinet – equipped with two hinged doors for easy access and organized storage.",
+        "Premium Wooden Construction – ensures durability, strength, and long-lasting performance for daily home use.",
+        "Polished Finish – smooth surface finish enhances appearance and makes cleaning easy.",
+        "Modern Appearance – clean lines and contemporary styling blend seamlessly with modern home interiors.",
+        "Customized Design Options – can be customized in design and layout as per space and storage requirements.",
+        "Natural Wood Color – elegant natural wood shade adds warmth and sophistication to the living space.",
+        "Ideal Height Range – available in 3 to 4 feet height, suitable for compact and medium-sized rooms.",
+      ],
+    },
+  ],
+
+  specs: [
+    { label: "Door Type", value: "Hinged Door" },
+    { label: "Number of Doors", value: "2 Door" },
+    { label: "Finish Type", value: "Polished" },
+    { label: "Type", value: "Cabinet" },
+    { label: "Color", value: "Natural Wood" },
+    { label: "Appearance", value: "Modern" },
+    { label: "Design", value: "Customized" },
+    { label: "Height", value: "3 – 4 feet" },
+  ],
+
+  image: [
+    {
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766129278/Home_Wooden_Storage_Cupboard_mgnofw.webp",
+      alt: "Home Wooden Storage Cupboard by Dk Modular Contractor",
+    },
+  ],
+},
+
+
+    // product 2
+
+{
+  id: "wooden-storage-unit",
+  name: "Wooden Storage Unit",
+  metaTitle: "Wooden Storage Unit – Dk Modular Contractor Furniture",
+  metaDescription:
+    "Wooden Storage Unit by Dk Modular Contractor – durable double door wooden cabinet with polished finish and practical shelving. Suitable for office and home storage needs.",
+
+  description: [
+    {
+      type: "h2",
+      text: "Wooden Storage Unit | Dk Modular Contractor",
+    },
+    {
+      type: "p",
+      text: "The Wooden Storage Unit by Dk Modular Contractor is a versatile and functional storage solution designed for both office and home use. Crafted from high-quality wood with a polished finish, this storage unit offers a perfect balance of durability, aesthetics, and practicality. Its clean design and well-organized shelving make it ideal for storing files, documents, office supplies, books, and household items.",
+    },
+    {
+      type: "h2",
+      text: "Key Features – Wooden Storage Unit",
+    },
+    {
+      type: "ul",
+      items: [
+        "Double Door Storage Design – equipped with two doors for easy access and secure, organized storage.",
+        "Premium Wooden Material – strong wooden construction ensures long-lasting durability for daily use.",
+        "Polished Finish – smooth surface finish enhances appearance and allows easy cleaning and maintenance.",
+        "Multi-Purpose Usage – suitable for both office and home applications, including document and utility storage.",
+        "Two-Shelf Configuration – includes two internal shelves for systematic arrangement of items.",
+        "Classic Brown Color – elegant brown finish blends seamlessly with modern and traditional interiors.",
+        "Space-Efficient Cabinet – compact yet spacious design ideal for offices, homes, and commercial spaces.",
+      ],
+    },
+  ],
+
+  specs: [
+    { label: "Door Type", value: "Double Door" },
+    { label: "Usage/Application", value: "Office and Home" },
+    { label: "Finish Type", value: "Polished" },
+    { label: "Color", value: "Brown" },
+    { label: "Material", value: "Wooden" },
+    { label: "Number Of Shelves", value: "2" },
+  ],
+
+  image: [
+    {
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766129409/Office_Storage_Cabinets_1_soei4e.webp",
+      alt: "Wooden Storage Unit by Dk Modular Contractor",
+    },
+  ],
+},
+
+// product 3
+
+
+ {
+  id: "smart-wooden-cabinet",
+  name: "Smart Wooden Cabinet",
+  metaTitle: "Smart Wooden Cabinet – Dk Modular Contractor Office Furniture",
+  metaDescription:
+    "Smart Wooden Cabinet by Dk Modular Contractor – modern laminated file cabinet with sliding doors, spacious storage, and durable plywood construction. Ideal for office file and document storage.",
+
+  description: [
+    {
+      type: "h2",
+      text: "Smart Wooden Cabinet | Dk Modular Contractor",
+    },
+    {
+      type: "p",
+      text: "The Smart Wooden Cabinet by Dk Modular Contractor is a modern and efficient file storage solution designed for organized office environments. Crafted using high-quality plywood and wooden materials with a laminated finish, this cabinet combines durability with a clean contemporary look. Its sliding door design and spacious internal layout make it ideal for storing files, documents, and office essentials while maintaining a clutter-free workspace.",
+    },
+    {
+      type: "h2",
+      text: "Key Features – Smart Wooden Cabinet",
+    },
+    {
+      type: "ul",
+      items: [
+        "File Cabinet Design – specially designed for systematic storage of office files, documents, and records.",
+        "4 Door Sliding Mechanism – smooth sliding doors save space and provide easy access to stored items.",
+        "Premium Plywood Construction – ensures strength, stability, and long-term durability for office use.",
+        "Laminated Surface Finish – enhances appearance while offering resistance to scratches and daily wear.",
+        "Modern Rectangular Shape – clean and professional design suitable for contemporary office interiors.",
+        "Spacious Storage Capacity – well-organized internal layout for efficient document management.",
+        "Multiple Color Options – available in Brown, White, Black, Ivory, and other finishes to match office décor.",
+        "Free Standing Cabinet – easy to place and reposition without wall mounting.",
+        "Reliable Build Quality – sturdy construction with a balanced weight of approximately 30 kg.",
+      ],
+    },
+  ],
+
+  specs: [
+    { label: "Cabinet Type", value: "File Cabinet" },
+    { label: "Primary Material", value: "Plywood" },
+    { label: "Material", value: "Wooden" },
+    { label: "Number of Doors", value: "4 Door" },
+    { label: "Door Type", value: "Sliding Door" },
+    { label: "Usage/Application", value: "Office" },
+    { label: "Finish Type", value: "Laminated" },
+    { label: "Color", value: "Brown, White, Black, Ivory etc" },
+    { label: "Style", value: "Modern" },
+    { label: "Design", value: "Standard" },
+    { label: "Dimensions", value: "1800mm (W) x 450mm (D) x 750mm (H)" },
+    { label: "Height", value: "30 inch" },
+    { label: "Shape", value: "Rectangular" },
+    { label: "Mount Type", value: "Free Standing" },
+    { label: "Weight", value: "30 Kg" },
+    { label: "Warranty", value: "1 Year" },
+  ],
+
+  image: [
+    {
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766129680/Smart_Wooden_Cabinet_z130aj.webp",
+      alt: "Smart Wooden Cabinet by Dk Modular Contractor",
+    },
+  ],
+},
+
+  //  product 4
+
+  {
+  id: "wooden-storage-cabinet",
+  name: "Wooden Storage Cabinet",
+  metaTitle: "Wooden Storage Cabinet – Dk Modular Contractor Furniture",
+  metaDescription:
+    "Wooden Storage Cabinet by Dk Modular Contractor – durable double door wooden cabinet with polished finish and practical shelving. Ideal for office and home storage needs.",
+
+  description: [
+    {
+      type: "h2",
+      text: "Wooden Storage Cabinet | Dk Modular Contractor",
+    },
+    {
+      type: "p",
+      text: "The Wooden Storage Cabinet by Dk Modular Contractor is a practical and elegant storage solution designed for both office and home environments. Crafted from high-quality wood and finished with a smooth polished surface, this cabinet offers durability, organized storage, and a professional appearance. Its compact yet spacious design makes it suitable for storing files, documents, office supplies, and household essentials.",
+    },
+    {
+      type: "h2",
+      text: "Key Features – Wooden Storage Cabinet",
+    },
+    {
+      type: "ul",
+      items: [
+        "Double Door Cabinet Design – equipped with two doors for easy access and secure storage.",
+        "Premium Wooden Construction – strong wooden material ensures long-lasting durability and stability.",
+        "Polished Surface Finish – enhances visual appeal while allowing easy cleaning and maintenance.",
+        "Multi-Purpose Usage – suitable for both office and home applications, including document and utility storage.",
+        "Two-Shelf Storage Layout – includes two internal shelves for organized and efficient storage.",
+        "Classic Brown Finish – elegant brown color complements modern and traditional interior styles.",
+        "Space-Efficient Design – compact footprint with ample storage capacity for daily use.",
+      ],
+    },
+  ],
+
+  specs: [
+    { label: "Door Type", value: "Double Door" },
+    { label: "Usage/Application", value: "Office and Home" },
+    { label: "Finish Type", value: "Polished" },
+    { label: "Color", value: "Brown" },
+    { label: "Material", value: "Wooden" },
+    { label: "Number Of Shelves", value: "2" },
+  ],
+
+  image: [
+    {
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766129842/Wooden_Storage_Cabinet_elqsch.avif",
+      alt: "Wooden Storage Cabinet by Dk Modular Contractor",
+    },
+  ],
+}
+,
+
+// product 5
+
+{
+  id: "wooden-storage-cupboard",
+  name: "Wooden Storage Cupboard",
+  metaTitle: "Wooden Storage Cupboard – Dk Modular Contractor Furniture",
+  metaDescription:
+    "Wooden Storage Cupboard by Dk Modular Contractor – spacious wooden cupboard with polished finish and double door design. Ideal for home and office storage requirements.",
+
+  description: [
+    {
+      type: "h2",
+      text: "Wooden Storage Cupboard | Dk Modular Contractor",
+    },
+    {
+      type: "p",
+      text: "The Wooden Storage Cupboard by Dk Modular Contractor is a robust and elegant storage solution designed to meet the needs of both home and office environments. Manufactured using high-quality wooden material and finished with a smooth polished surface, this cupboard offers ample storage capacity with a clean and professional appearance. Its tall structure makes it ideal for organizing files, documents, clothes, and household essentials efficiently.",
+    },
+    {
+      type: "h2",
+      text: "Key Features – Wooden Storage Cupboard",
+    },
+    {
+      type: "ul",
+      items: [
+        "Double Door Cupboard Design – equipped with two doors for convenient access and secure storage.",
+        "Premium Wooden Construction – ensures strength, durability, and long-lasting performance.",
+        "Polished Finish – enhances visual appeal and allows easy cleaning and maintenance.",
+        "Multi-Purpose Usage – suitable for both home and office applications.",
+        "Spacious Storage Capacity – ideal for storing files, documents, office supplies, clothing, and household items.",
+        "Classic Brown Color – neutral brown finish blends well with modern and traditional interiors.",
+        "Tall & Space-Efficient Structure – vertical design provides maximum storage without occupying excess floor space.",
+      ],
+    },
+  ],
+
+  specs: [
+    { label: "Usage/Application", value: "Home, Office" },
+    { label: "Finish Type", value: "Polished" },
+    { label: "Color", value: "Brown" },
+    { label: "Material", value: "Wooden" },
+    { label: "Height", value: "5 – 7 Ft" },
+    { label: "Width", value: "3 – 4 Ft" },
+    { label: "Number Of Doors", value: "2" },
+  ],
+
+  image: [
+    {
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766130017/Wooden_Storage_Cupboard_ytzpo0.avif",
+      alt: "Wooden Storage Cupboard by Dk Modular Contractor",
+    },
+  ],
+}
+,
+    
+{
+  id: "laminated-wooden-storage-cabinet",
+  name: "Laminated Wooden Storage Cabinet",
+  metaTitle: "Laminated Wooden Storage Cabinet – Dk Modular Contractor Furniture",
+  metaDescription:
+    "Laminated Wooden Storage Cabinet by Dk Modular Contractor – modern hinged-door cabinet with polished laminated finish. Ideal for office and home storage needs.",
+
+  description: [
+    {
+      type: "h2",
+      text: "Laminated Wooden Storage Cabinet | Dk Modular Contractor",
+    },
+    {
+      type: "p",
+      text: "The Laminated Wooden Storage Cabinet by Dk Modular Contractor is a modern and practical storage solution designed for both offices and homes. Crafted from high-quality wooden material and finished with a durable laminated polished surface, this cabinet offers long-lasting performance along with a refined contemporary look. Its compact height and smart design make it ideal for organized storage of files, documents, office supplies, and household essentials.",
+    },
+    {
+      type: "h2",
+      text: "Key Features – Laminated Wooden Storage Cabinet",
+    },
+    {
+      type: "ul",
+      items: [
+        "Hinged Door Cabinet Design – smooth-opening hinged doors provide easy access and secure storage.",
+        "Premium Wooden Construction – high-quality wooden material ensures strength, durability, and stability.",
+        "Polished Laminated Finish – laminated surface enhances appearance while offering resistance to scratches and daily wear.",
+        "Modern Styling – contemporary design and clean lines suit modern office and home interiors.",
+        "Multi-Purpose Usage – suitable for offices and homes for organized document and utility storage.",
+        "Elegant Light Brown Color – subtle light brown finish blends seamlessly with various interior themes.",
+        "Made in India – manufactured in India with quality craftsmanship and reliable materials.",
+      ],
+    },
+  ],
+
+  specs: [
+    { label: "Door Type", value: "Hinged Door" },
+    { label: "Finish Type", value: "Polished" },
+    { label: "Color", value: "Light Brown" },
+    { label: "Style", value: "Modern" },
+    { label: "Usage/Application", value: "Offices and Home" },
+    { label: "Material", value: "Wooden" },
+    { label: "Country of Origin", value: "Made in India" },
+    { label: "Height", value: "4 feet" },
+  ],
+
+  image: [
+    {
+      src: "https://res.cloudinary.com/dzbkxqqo9/image/upload/v1766130189/Laminated_Wooden_Storage_Cabinet_kxoslh.webp",
+      alt: "Laminated Wooden Storage Cabinet by Dk Modular Contractor",
+    },
+  ],
+},
+
+
+
+  ],
+},
 
 
 ];

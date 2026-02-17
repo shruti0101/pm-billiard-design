@@ -96,10 +96,10 @@ export default async function BlogDetail({ params }) {
     <>
      {/* ===== Banner Section ===== */}
           <div
-            className="relative bg-cover bg-center h-[60vh] md:h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden"
+            className="relative bg-cover bg-center h-[60vh] md:h-[80vh] flex flex-col items-center justify-center text-center overflow-hidden"
             style={{
               backgroundImage:
-                "url('/test5.webp')",
+                "url('/try/bgcheck.avif')",
             }}
           >
             {/* Overlay Gradient */}

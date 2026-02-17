@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useRef } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
-
 import axios from "axios";
+
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -13,7 +13,6 @@ const Contact = () => {
     setLoading(true);
 
     const form = formRef.current;
-
     const name = form.name.value;
     const phone = form.phone.value;
     const email = form.email.value;
@@ -22,12 +21,12 @@ const Contact = () => {
 
     try {
       const payload = {
-        platform: "Dk Modular Contractor Office Furniture Contact Form",
-        platformEmail: "dkmodularcontractor@gmail.com",
+        platform: "PM Billiards Snooker Tables Contact Form",
+        platformEmail: "info@pmbilliards.com",
         name,
         phone,
         email,
-        place: "N/A",
+        place: "New Delhi Showroom",
         product,
         message,
       };
@@ -69,93 +68,90 @@ Contact: ${phone}`;
 
   return (
     <>
-      {/* ===== Banner Section ===== */}
+      {/* ===== HERO BANNER ===== */}
       <div
-        className="relative bg-cover bg-center h-[50vh] md:h-[85vh] flex flex-col items-center justify-center text-center overflow-hidden"
+        className="relative bg-cover bg-center h-[60vh] md:h-[100vh] flex flex-col items-center justify-center text-center overflow-hidden"
         style={{
-          backgroundImage: "url('/test5.webp')",
+          backgroundImage: "url('/snooker2.webp')",
         }}
       >
-        <div className="relative z-10 text-white px-6 mt-8">
-          <div className="mx-auto mb-4 h-[2px] w-20 bg-amber-400 rounded-full" />
-          <h1 className="text-2xl md:text-5xl font-bold tracking-wide">
-            Contact Dk Modular Contractor Office Furniture
+        <div className="relative z-10 text-white px-6">
+          <div className="mx-auto mb-4 h-[2px] w-20 bg-[#EDBC41] rounded-full" />
+          <h1 className="text-3xl md:text-6xl font-bold tracking-wide">
+            Contact PM Billiards
           </h1>
 
-          <p className="mt-3 max-w-2xl mx-auto text-sm md:text-lg text-white">
-            Premium modular office furniture solutions crafted for modern
-            workspaces. Let’s design a workspace that reflects professionalism,
-            comfort, and efficiency.
+          <p className="mt-4 max-w-3xl mx-auto text-sm md:text-lg text-white/90">
+            Premium snooker, pool, and billiard tables crafted for professionals, 
+            clubs, and luxury homes. Let’s build your championship table.
           </p>
         </div>
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-900/60 to-slate-800/50" />
+        {/* Dark cinematic overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/30" />
       </div>
 
-      {/* ===== Contact Section ===== */}
-      <section className="w-full bg-gradient-to-b from-white to-[#F6DB9C] py-12 sm:py-10  relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
-          {/* Left Side - Form */}
+      {/* ===== CONTACT SECTION ===== */}
+      <section className="w-full bg-[#0B1511] py-16 relative">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-          {/* LEFT SIDE - FORM (UNCHANGED) */}
-          <div className="bg-white shadow-xl rounded-2xl p-6 sm:p-8 md:p-10 border border-gray-100">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#002B5B] mb-6 md:mb-8 leading-snug text-center md:text-left">
-              Let’s Build Your Perfect Workspace
+          {/* LEFT — FORM */}
+          <div className="bg-[#101C17] shadow-xl rounded-2xl p-8 border border-[#EDBC41]/20">
+            <h2 className="text-3xl font-bold text-white mb-6">
+              Enquire for a Snooker Table
             </h2>
 
             {!submitted ? (
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
-                className="space-y-4 sm:space-y-5"
+                className="space-y-4"
               >
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <input
                     type="text"
                     name="name"
                     required
                     placeholder="Your Name"
-                    className="flex-1 p-3 rounded-lg border border-gray-300"
+                    className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
                   />
+
                   <select
                     name="products"
                     required
-                    className="flex-1 p-3 rounded-lg border border-gray-300"
+                    className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
                   >
                     <option disabled>Select Product</option>
-                    <option value="Modular Office Workstation">
-                      Modular Office Workstation
+                    <option value="Professional Snooker Table">
+                      Professional Snooker Table
                     </option>
-                    <option value="Office Workstation">
-                      Office Workstation
+                    <option value="Tournament Pool Table">
+                      Tournament Pool Table
                     </option>
-                    <option value="Meeting And Conference Room Table">
-                      Conference Room Table
+                    <option value="Luxury Billiard Table">
+                      Luxury Billiard Table
                     </option>
-                    <option value="Computer Table">Computer Table</option>
-                    <option value="Office Chair">Office Chair</option>
-
-                    <option value="Wooden Storage Unit">
-                      Wooden Storage Unit
+                    <option value="Snooker Cues">
+                      Snooker Cues
                     </option>
                   </select>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <input
                     type="email"
                     name="email"
                     required
                     placeholder="Your Email"
-                    className="flex-1 p-3 rounded-lg border border-gray-300"
+                    className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
                   />
+
                   <input
                     type="text"
                     name="phone"
                     required
                     placeholder="Phone Number"
-                    className="flex-1 p-3 rounded-lg border border-gray-300"
+                    className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
                   />
                 </div>
 
@@ -163,140 +159,79 @@ Contact: ${phone}`;
                   name="message"
                   rows="4"
                   required
-                  placeholder="Message"
-                  className="w-full border border-gray-200 rounded-lg px-4 py-3"
+                  placeholder="Your requirements..."
+                  className="w-full bg-[#0B1511] border border-[#EDBC41]/30 rounded-lg px-4 py-3 text-white"
                 ></textarea>
 
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-[#F86613] text-white px-8 py-3 rounded-lg"
+                  className="bg-[#EDBC41] text-black px-8 py-3 rounded-lg font-semibold"
                 >
-                  {loading ? "Sending..." : "Send Message"}
+                  {loading ? "Sending..." : "Send Enquiry"}
                 </button>
               </form>
             ) : (
               <div className="text-center py-12">
-                <h3 className="text-2xl font-bold text-[#002B5B]">
-                  🎉 Thank you for contacting us!
+                <h3 className="text-2xl font-bold text-[#EDBC41]">
+                  🎉 Enquiry Submitted!
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-white/80">
                   Our team will contact you shortly.
                 </p>
               </div>
             )}
           </div>
 
-          {/* Right Side - Info */}
-          <div className="md:pl-6 lg:pl-10">
-            <p className="text-gray-700 text-base leading-relaxed mb-8 sm:mb-10 font-medium text-center md:text-left">
-              <span className="block text-[#002B5B] text-xl sm:text-2xl md:text-3xl font-extrabold mb-4">
-                Connect with{" "}
-                <span className="text-[#F86613]">
-                  Dk Modular Contractor Office Furniture
-                </span>
-              </span>
+          {/* RIGHT — INFO */}
+          <div>
+            <h3 className="text-2xl font-bold text-[#EDBC41] mb-4">
+              Visit Our Showroom
+            </h3>
 
-              <span className="block mb-3 text-gray-800">
-                Looking for <b>modular workstations</b>, <b>office chairs</b>,{" "}
-                <b>conference tables</b>, or <b>custom office furniture</b>?
-              </span>
-
-              <span className="block mb-3 text-gray-700">
-                At <b>Dk Modular Contractor Office Furniture</b>, we specialize in
-                designing and manufacturing premium, ergonomic, and
-                space-efficient office furniture solutions tailored for
-                corporate offices, startups, and commercial spaces.
-              </span>
-
-              <span className="block text-gray-600">
-                Share your requirements with us — our experts will connect with
-                you within{" "}
-                <span className="text-[#F86613] font-semibold">24 hours</span>{" "}
-                to help you plan a workspace that enhances productivity and
-                aesthetics.
-              </span>
+            <p className="text-white/90 mb-6">
+              PM Billiards specializes in tournament-grade snooker tables, 
+              precision-crafted with premium slate, professional cloth, and 
+              handcrafted wooden frames.
             </p>
 
-            {/* Contact Items */}
-            <div className="space-y-6 sm:space-y-8">
-              {/* Address */}
-              <div className="flex items-start gap-4 group">
-                <div className="bg-[#F86613]/10 p-3 sm:p-4 rounded-xl group-hover:scale-105 transition">
-                  <MapPin className="text-[#F86613] w-5 h-5 sm:w-6 sm:h-6" />
-                </div>
-                <div>
-                  <h4 className="text-base sm:text-lg font-semibold text-[#F86613] mb-1">
-                    Address:
-                  </h4>
-                  <p className="text-black text-sm sm:text-base md:text-lg leading-snug">
-                    Plot no. 1 Khasra No. 52/10/2 Ranhola Vihar, 
-                <br />
-              Neta ji Subhash Nagar Near Nangloi Najafgarh Road Near Ranhola Police Station 
-                <br />
-                New Delhi , 110041
-                  </p>
-                </div>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <MapPin className="text-[#EDBC41] w-6 h-6" />
+                <p className="text-white/90">
+                  PM Billiards Showroom,  
+                  <br />
+                  Ranhola Vihar, Najafgarh Road  
+                  <br />
+                  New Delhi, 110041
+                </p>
               </div>
 
-              {/* Phone */}
-              <div className="flex items-start gap-4 group">
-                <div className="bg-[#F86613]/10 p-3 sm:p-4 rounded-xl group-hover:scale-105 transition">
-                  <Phone className="text-[#002B5B] w-5 h-5 sm:w-6 sm:h-6" />
-                </div>
-                <div>
-                  <h4 className="text-base sm:text-lg font-semibold text-[#F86613] mb-1">
-                    Phone:
-                  </h4>{" "}
-                  <a
-                    href="tel:9999402424"
-                    className="text-black text-sm sm:text-base md:text-lg leading-snug"
-                  >
-                    9999402424
-                  </a>{" "}
-                  ,{" "}
-                  <a
-                    href="tel:8595063087"
-                    className="text-black text-sm sm:text-base md:text-lg leading-snug"
-                  >
-                    8595063087
-                  </a>
-                </div>
+              <div className="flex items-start gap-4">
+                <Phone className="text-[#EDBC41] w-6 h-6" />
+                <p className="text-white/90">
+                  <a href="tel:9999402424">9999402424</a>,{" "}
+                  <a href="tel:8595063087">8595063087</a>
+                </p>
               </div>
 
-              {/* Email */}
-              <div className="flex items-start gap-4 group">
-                <div className="bg-[#F86613]/10 p-3 sm:p-4 rounded-xl group-hover:scale-105 transition">
-                  <Mail className="text-[#002B5B] w-5 h-5 sm:w-6 sm:h-6" />
-                </div>
-                <div>
-                  <h4 className="text-base sm:text-lg font-semibold text-[#F86613] mb-1">
-                    Email:
-                  </h4>
-                  <p className="text-black text-sm sm:text-base md:text-lg leading-snug break-words">
-                    dkmodularcontractor@gmail.com
-                  </p>
-                </div>
+              <div className="flex items-start gap-4">
+                <Mail className="text-[#EDBC41] w-6 h-6" />
+                <p className="text-white/90">
+                  info@pmbilliards.com
+                </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Decorative Circles */}
-        <div className="absolute -top-10 -left-10 w-24 h-24 sm:w-40 sm:h-40 bg-[#F86613]/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-6 right-6 w-40 h-40 sm:w-56 sm:h-56 bg-[#002B5B]/10 rounded-full blur-3xl"></div>
-
-        {/* Map */}
-        <div className="w-full h-[300px] sm:h-[400px] md:h-[550px] overflow-hidden mt-12 sm:mt-16">
+        {/* GOOGLE MAP */}
+        <div className="w-full h-[450px] mt-16">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.4432326985357!2d77.0358914!3d28.650409499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05002326f073%3A0xcf13e39666787a09!2sDK%20MODULAR%20CONTRACTOR!5e1!3m2!1sen!2sin!4v1766224607220!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.674029824373!2d77.0564707!3d28.6616964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01c4c2d1a55f%3A0x3f38e96f6a92c4b1!2sRanhola%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000"
             className="w-full h-full border-0"
-          ></iframe>
+            loading="lazy"
+          />
         </div>
       </section>
     </>

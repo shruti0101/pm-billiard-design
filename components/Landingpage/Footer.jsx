@@ -27,124 +27,136 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative text-white pt-10 pb-7 overflow-hidden">
-      {/* BACKGROUND IMAGE - behind everything */}
+<footer className="relative text-white pt-12 pb-8 overflow-hidden">
+
+      {/* BACKGROUND IMAGE */}
       <div
-        className="absolute inset-0 -z-20 bg-cover bg-center"
+        className="absolute inset-0 -z-20 bg-cover "
         style={{
-          backgroundImage:
-            "url('/footerbg.webp')",
+          backgroundImage: "url('/try/mainbg.jpg')",
         }}
         aria-hidden="true"
       />
 
-      {/* DARK OVERLAY - behind content but above the image */}
-      <div
-        className="absolute inset-0 -z-10"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 100%)",
-        }}
-        aria-hidden="true"
-      />
+      {/* DARK LUXURY OVERLAY */}
+   {/* PREMIUM TINTED OVERLAY (lets image show through) */}
+<div
+  className="absolute inset-0 -z-10 backdrop-blur-[1px]"
+style={{
+  background:
+    "linear-gradient(180deg, rgba(0,96,76,0.90) 0%, rgba(0,0,0,0.825) 100%)",
+}}
 
-      {/* Top Accent Line (above bg but below content) */}
-      <div className="absolute top-0 left-0 h-1 w-full -z-5 bg-gradient-to-r from-amber-400 to-amber-600" />
+
+  aria-hidden="true"
+/>
+
+
+
+
+      {/* GOLD ACCENT LINE */}
+      <div className="absolute top-0 left-0 h-1 w-full -z-5 bg-gradient-to-r from-[#EDBC41] to-[#C89A2F]" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
+
         {/* MAIN GRID */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+
           {/* BRAND */}
           <div>
-            <div className=" inline-block rounded-full overflow-hidden">
+            <div className="inline-block rounded-sm overflow-hidden bg-white p-2">
               <Image
-                src="/logo.webp"
-                width={150}
+                src="/logo.png"
+                width={160}
                 height={50}
-                alt="Dk Modular Contractor Furniture"
-                className="object-cover"
+                alt="PM Billiards"
+                className="object-contain"
               />
             </div>
 
-            <p className="leading-relaxed text-sm text-white">
-              Dk Modular Contractor specializes in modern office furniture — workstations,
-              conference tables, storage units and ergonomic seating with
-              precision, durability and elegant design.
+            <p className="mt-4 leading-relaxed text-sm text-white/90">
+              PM Billiards is a premium manufacturer of professional snooker,
+              pool, and billiard tables — crafted with precision engineering,
+              tournament-grade materials, and timeless luxury design for homes,
+              clubs, and competitive arenas.
             </p>
-
-         
           </div>
 
           {/* QUICK LINKS */}
           <div>
-            <h3 className="text-white font-serif font-semibold text-xl mb-4">
+            <h3 className="text-[#EDBC41] font-semibold text-xl mb-4">
               Quick Links
             </h3>
+
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/" className="text-white hover:text-amber-400">
+                <Link href="/" className="text-white hover:text-[#EDBC41]">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about-us" className="text-white hover:text-amber-400">
+                <Link href="/about-us" className="text-white hover:text-[#EDBC41]">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/blogs" className="text-white hover:text-amber-400">
-               Blogs
+                <Link href="/snooker-tables" className="text-white hover:text-[#EDBC41]">
+                  Snooker Tables
                 </Link>
               </li>
               <li>
-                <Link href="/contact-us" className="text-white hover:text-amber-400">
-                  Contact Us
+                <Link href="/pool-tables" className="text-white hover:text-[#EDBC41]">
+                  Pool Tables
                 </Link>
               </li>
-
-
-                    <li>
-                <Link href="/sitemap" className="text-white hover:text-amber-400">
-            Sitemap
+              <li>
+                <Link href="/accessories" className="text-white hover:text-[#EDBC41]">
+                  Accessories
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact-us" className="text-white hover:text-[#EDBC41]">
+                  Contact Us
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* FURNITURE CATEGORIES */}
+          {/* PRODUCT CATEGORIES */}
           <div>
-            <h3 className="text-white font-serif font-semibold text-xl mb-4">
-              Furniture Categories
+            <h3 className="text-[#EDBC41] font-semibold text-xl mb-4">
+              Our Products
             </h3>
+
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/categories/modular-office-workstation" className="text-white hover:text-amber-400">
-                  Modular Office Workstations
+                <Link href="/snooker-tables" className="text-white hover:text-[#EDBC41]">
+                  Professional Snooker Tables
                 </Link>
               </li>
               <li>
-                <Link href="/categories/office-workstation" className="text-white hover:text-amber-400">
-                  Office Workstation
+                <Link href="/pool-tables" className="text-white hover:text-[#EDBC41]">
+                  Tournament Pool Tables
                 </Link>
               </li>
               <li>
-                <Link href="/categories/meeting-and-conference-room-table" className="text-white hover:text-amber-400">
-                  Conference Room Tables
+                <Link href="/billiard-tables" className="text-white hover:text-[#EDBC41]">
+                  Luxury Billiard Tables
                 </Link>
               </li>
               <li>
-                <Link href="/categories/computer-table" className="text-white hover:text-amber-400">
-                  Computer Tables
+                <Link href="/cues" className="text-white hover:text-[#EDBC41]">
+                  Premium Cues
                 </Link>
               </li>
               <li>
-                <Link href="/categories/office-chairs" className="text-white hover:text-amber-400">
-                  Office Chairs
+                <Link href="/cloth" className="text-white hover:text-[#EDBC41]">
+                  Snooker Cloth
                 </Link>
               </li>
               <li>
-                <Link href="/categories/wooden-storage-units" className="text-white hover:text-amber-400">
-                  Wooden Storage Units
+                <Link href="/cue-cases" className="text-white hover:text-[#EDBC41]">
+                  Cue Cases
                 </Link>
               </li>
             </ul>
@@ -152,90 +164,96 @@ export default function Footer() {
 
           {/* CONTACT INFO */}
           <div>
-            <h3 className="text-white font-serif font-semibold text-xl mb-4">
+            <h3 className="text-[#EDBC41] font-semibold text-xl mb-4">
               Contact Us
             </h3>
 
             <div className="flex items-start gap-3 mb-4">
-              <MapPin className="text-amber-400 w-5 h-5" />
+              <MapPin className="text-[#EDBC41] w-5 h-5" />
               <p className="text-sm text-white/95">
-                Plot no. 1 Khasra No. 52/10/2 Ranhola Vihar, 
+                PM Billiards Showroom  
                 <br />
-              Neta ji Subhash Nagar Near Nangloi Najafgarh Road Near Ranhola Police Station 
+                Ranhola Vihar, Najafgarh Road  
                 <br />
-                New Delhi , 110041
+                New Delhi, 110041
               </p>
             </div>
 
             <div className="space-y-2 text-sm">
               <p className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-amber-400" />
-                <a href="tel:9999402424" className="text-white hover:text-amber-400">
-                9999402424
+                <Phone className="w-4 h-4 text-[#EDBC41]" />
+                <a href="tel:9999402424" className="text-white hover:text-[#EDBC41]">
+                  9999402424
                 </a>
-  {" "},  {" "}
-                <a href="tel:8595063087" className="text-white hover:text-amber-400">
-                 8595063087
+                ,{" "}
+                <a href="tel:8595063087" className="text-white hover:text-[#EDBC41]">
+                  8595063087
                 </a>
               </p>
 
               <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-amber-400" />
-                <a href="mailto:dkmodularcontractor@gmail.com" className="text-white hover:text-amber-400">
-                  dkmodularcontractor@gmail.com
+                <Mail className="w-4 h-4 text-[#EDBC41]" />
+                <a
+                  href="mailto:info@pmbilliards.com"
+                  className="text-white hover:text-[#EDBC41]"
+                >
+                  info@pmbilliards.com
                 </a>
               </p>
             </div>
 
-
-
-
-   {/* Social icons */}
-            <div className="flex text-center gap-4 mt-5">
-              
-
-
-            
-          
-                
-                   <a
-
-                  href="https://www.facebook.com/profile.php?id=61585018361307#"
-                  className="flex items-center justify-center  rounded-md transition transform hover:-translate-y-0.5"
-                  aria-label="social"
-                >
-                  <Instagram className="w-5 h-5 text-amber-500 b" />
-                </a>
+            {/* SOCIAL ICONS */}
+            <div className="flex gap-4 mt-5">
               <a
+                href="#"
+                className="text-[#EDBC41] hover:text-white transition"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
 
-                  href="https://www.facebook.com/profile.php?id=61585018361307#"
-                  className="flex items-center justify-center  rounded-md transition transform hover:-translate-y-0.5"
-                  aria-label="social"
-                >
-                  <Facebook className="w-5 h-5 text-amber-500 " />
-                </a>
-              
-           
-               
-             
-         
+              <a
+                href="#"
+                className="text-[#EDBC41] hover:text-white transition"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+
+              <a
+                href="#"
+                className="text-[#EDBC41] hover:text-white transition"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-5 h-5" />
+              </a>
+
+              <a
+                href="#"
+                className="text-[#EDBC41] hover:text-white transition"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
             </div>
-
           </div>
-
-
-
-          
         </div>
-
-      
 
         {/* COPYRIGHT */}
         <div className="mt-10 border-t border-white/10 pt-4 text-center text-sm text-white">
-        <div className="flex flex-col md:flex-row justify-between items-center ">
-          <p>  © 2025 Dk Modular Contractor Furniture. All Rights Reserved.</p>
-          <p>Website Designed By Promozione Branding Pvt. Ltd. <a className="underline text-amber-500" href="https://promozionebranding.com/">Website Designing Company.</a> </p>
-        </div>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-2">
+            <p>© 2025 PM Billiards. All Rights Reserved.</p>
+
+            <p>
+              Website Designed By{" "}
+              <a
+                className="underline text-[#EDBC41]"
+                href="https://promozionebranding.com/"
+              >
+                Promozione Branding Pvt. Ltd.
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -15,27 +15,25 @@ export default function CategoryPage({ params }) {
 
   return (
     <>
-       {/* ===== Banner Section ===== */}
+      {/* ===== HERO BANNER ===== */}
       <div
-        className="relative bg-cover bg-center h-[40vh] md:h-[65vh] flex flex-col items-center justify-center text-center overflow-hidden"
-        style={{
-          backgroundImage:
-            "url('/test5.webp')",
-        }}
+        className="relative h-[45vh] md:h-[90vh] flex items-center justify-center text-center bg-cover  overflow-hidden"
+        style={{ backgroundImage: "url('/try/try11.webp')" }}
       >
-   
-<div className="relative z-10 text-white px-6 ">
-  <h2 className="max-w-4xl  text-center font-serif  text-2xl md:text-5xl font-bold z-10 ">
-            {category.name}
+        <div className="absolute inset-0 bg-black/40" />
+
+        <div className="relative z-10 px-6 max-w-5xl">
+          <div className="mx-auto mb-4 h-[2px] w-20 bg-[#EDBC41] rounded-full" />
+
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-white">
+         Our Categories
           </h2>
 
-
-   
-
-</div>
-   {/* Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-900/60 to-slate-800/50" />
-      
+          <p className="mt-4 text-sm sm:text-base md:text-lg text-white max-w-3xl mx-auto leading-relaxed">
+            Crafting championship-grade snooker, pool, and billiard tables that
+            blend precision engineering, timeless design, and elite performance.
+          </p>
+        </div>
       </div>
     
 
@@ -63,14 +61,14 @@ export default function CategoryPage({ params }) {
                     />
 
                     {/* Arrow Icon */}
-                    <div className="absolute top-4 right-4 bg-amber-600/90 p-2 rounded-full shadow">
-                      <ArrowUpRight className="w-4 h-4 text-white" />
+                    <div className="absolute top-4 right-4 bg-[#2F8F6B] group-hover:bg-yellow-500 p-2 rounded-full shadow">
+                      <ArrowUpRight className="w-6 h-6 text-white" />
                     </div>
                   </div>
 
                   {/* Button Title (like screenshot) */}
                   <div className="py-6 flex justify-center">
-                    <span className="px-6 py-2 border-2 border-amber-700 text-amber-700 rounded-full font-semibold text-sm group-hover:bg-amber-700 group-hover:text-white transition">
+                    <span className="px-6 py-2 e bg-[#2F8F6B]  text-white rounded-full font-semibold text-sm group-hover:bg-yellow-500 group-hover:text-white transition">
                       {product.name}
                     </span>
                   </div>

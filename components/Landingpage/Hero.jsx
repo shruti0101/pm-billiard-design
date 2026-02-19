@@ -4,47 +4,80 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-/* Images */
-const desktopImages = ["/hero1.png", "/try/bg1.webp"];
+const desktopImages = [ "/try/bg1.webp","/hero1.png"];
 
 export default function Hero() {
+
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => prev + 1);
-    }, 5000);
+    }, 8000); // ultra slow slide change
     return () => clearInterval(timer);
   }, []);
 
   return (
     <section
       className="
-        relative w-full overflow-hidden
-        h-[190px] sm:h-[370px] md:h-[80vh] mt-20 md:mt-0 xl:h-[110vh] bg-[#F5F7F9]
+      relative w-full overflow-hidden bg-black
+      h-[190px] sm:h-[370px] md:h-[80vh] xl:h-[110vh]
+      mt-20 md:mt-0
       "
     >
-      <AnimatePresence mode="sync">
+
+      <AnimatePresence >
         <motion.div
           key={index}
-          initial={{ opacity: 0, scale: 1.02 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+
+          /* 🎬 START */
+          initial={{
+            opacity: 0,
+            scale: 1.35,
+            y: 80
+          }}
+
+          /* 🎬 DRAMATIC MOTION */
+          animate={{
+            opacity: 1,
+            scale: 1,
+            y: 0
+          }}
+
+          exit={{
+            opacity: 0
+          }}
+
+          /* 🎬 LUXURY CURVE */
+          transition={{
+            opacity: {
+              duration: 1.8,
+              ease: "easeInOut"
+            },
+            scale: {
+              duration: 8,
+              ease: [0.16, 1, 0.3, 1]   // cinematic ease curve
+            },
+            y: {
+              duration: 8,
+              ease: [0.16, 1, 0.3, 1]
+            }
+          }}
+
           className="absolute inset-0"
         >
-          {/* ✅ Next Image Responsive */}
           <Image
             src={desktopImages[index % desktopImages.length]}
             alt="Hero banner"
-            width={3000}
-            height={3000}
-            className="w-full h-auto object-cover"
+            width={2000}
+            height={800}
+            priority
+            className="object-cover"
           />
-
         </motion.div>
       </AnimatePresence>
+
+
     </section>
-    
   );
 }

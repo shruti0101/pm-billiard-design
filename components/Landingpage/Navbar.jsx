@@ -73,7 +73,7 @@ export default function Navbar() {
           </div>
 
           <div
-            className="relative hidden lg:flex justify-center gap-8 mt-4 text-white text-md font-medium"
+            className="relative hidden lg:flex justify-center gap-5 mt-4 text-white text-md font-medium"
             onMouseLeave={() => setActiveMenu(null)}
           >
             {categories.map((cat) => (
@@ -133,7 +133,7 @@ export default function Navbar() {
               <Image src="/logo.png" alt="Logo" width={60} height={30} />
             </Link>
 
-            <div className="hidden lg:flex gap-12 text-white text-sm font-semibold">
+            <div className="hidden lg:flex gap-12 text-white text-lg font-semibold">
               <Link href="/">Home</Link>
               <Link href="/about-us">About Us</Link>
               <Link href="/blogs">Blogs</Link>

@@ -3,7 +3,7 @@ import React from 'react'
 const Premium = () => {
   return (
     <div>
-      <section className='w-full bg-[#073147] py-4 '>
+      <section className='w-full bg-[#073147] py-4 hidden md:block'>
 
 
 

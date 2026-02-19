@@ -13,6 +13,7 @@ import PremiumTablesSection from "@/components/Landingpage/Premium";
 import Soccer from "@/components/Landingpage/Soccer";
 
 import Faq from "@/components/Landingpage/Faq";
+import BestSeller from "@/components/Landingpage/Bestseller";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       {/* <Popup></Popup> */}
       <Hero></Hero>
       <ProductCategorySection></ProductCategorySection>
-
+<BestSeller></BestSeller>
       <AboutUs></AboutUs>
       <Products></Products>
       <Soccer></Soccer>

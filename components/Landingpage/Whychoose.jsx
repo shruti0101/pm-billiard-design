@@ -30,7 +30,7 @@ const Whychoose = () => {
     {/* LEFT — TEXT CONTENT */}
     <div className="space-y-6">
       <h2 className="text-3xl lg:text-4xl font-extrabold text-white leading-tight">
-        Why PM Billiards is the Preferred Choice
+        Why PM Billiards is the Preferred Choice 🏅
       </h2>
 
       <p className="text-white">

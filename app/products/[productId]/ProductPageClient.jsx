@@ -5,6 +5,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { ArrowUpRight, Shield, Droplet, Dumbbell, Recycle } from "lucide-react";
 import { motion } from "framer-motion";
+import ElectricBorder from '@/components/ElectricBorder'
 
 export default function ProductPage({ params }) {
 
@@ -116,22 +117,98 @@ ${selectedColor?.name===color.name?"text-yellow-400":"text-gray-400 group-hover:
 </div>
 )}
 
-<div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-10 mt-10 md:mt-14">
+<div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10 md:mt-14">
 
-<motion.button whileHover={{scale:1.05}} whileTap={{scale:0.95}}
-className="px-6 py-3 rounded-xl bg-white text-black font-medium hover:bg-gray-200 transition">
-Enquire Now
-</motion.button>
+  {/* ================= ENQUIRE ================= */}
+  <ElectricBorder>
+    <motion.button
+      whileHover={{ scale: 1.06, y: -3 }}
+      whileTap={{ scale: 0.96 }}
+      className="
+      relative overflow-hidden
+      px-8 py-3
+      rounded-full
+      text-white
+      font-semibold
+      tracking-wide
+      bg-white/5
+      backdrop-blur-xl
+      border border-white/10
+      shadow-[0_0_25px_rgba(255,255,255,0.08)]
+      hover:shadow-[0_0_35px_rgba(255,215,0,0.35)]
+      transition-all duration-500
+      w-full sm:w-auto
+      group
+      "
+    >
+      <span className="relative z-10">
+        Enquire Now
+      </span>
 
-<motion.a whileHover={{scale:1.05}} whileTap={{scale:0.95}}
-href={`https://wa.me/+919999402424?text=Hello, I am interested in ${encodeURIComponent(product.name)}`}
-target="_blank"
-className="px-6 py-3 rounded-xl bg-green-500 text-white font-medium hover:bg-green-400 transition">
-WhatsApp
+      {/* Glow layer */}
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-r from-yellow-400/20 via-white/10 to-yellow-400/20 blur-xl"/>
+    </motion.button>
+  </ElectricBorder>
+
+
+  {/* ================= WHATSAPP ================= */}
+<motion.a
+  whileHover={{ scale: 1.05, y: -2 }}
+  whileTap={{ scale: 0.96 }}
+  href={`https://wa.me/+919999402424?text=Hello, I am interested in ${encodeURIComponent(product.name)}`}
+  target="_blank"
+  className="
+  relative
+  overflow-hidden
+  px-8 py-3
+  rounded-full
+  text-white
+  font-semibold
+  tracking-wide
+  bg-gradient-to-r from-[#10d28b] to-[#1bb67d]
+  shadow-[0_8px_25px_rgba(47,143,107,0.35)]
+  transition-all duration-500
+  w-full sm:w-auto
+  text-center
+  group
+  "
+>
+  {/* Shine Sweep */}
+  <span className="
+    absolute top-0 left-[-120%] 
+    w-[120%] h-full 
+    bg-gradient-to-r 
+    from-transparent 
+    via-white/30 
+    to-transparent 
+    skew-x-12
+    group-hover:left-[120%] 
+    transition-all duration-700
+  "/>
+
+  {/* Inner Glass Layer */}
+  <span className="
+    absolute inset-[1px] 
+    rounded-full 
+    bg-gradient-to-b 
+    from-white/20 
+    to-transparent 
+    opacity-30
+  "/>
+
+  {/* Text */}
+  <span className="relative z-10 flex items-center justify-center gap-2">
+    WhatsApp
+  </span>
 </motion.a>
 
+
 </div>
+
+
 </motion.div>
+
+
 </div>
 
 {/* DESCRIPTION */}

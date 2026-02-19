@@ -27,7 +27,7 @@ export default function CategorySection() {
     <section className="w-full">
       <div className="text-center my-5 md:my-10 px-6">
         <h2 className="text-black text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight">
-          Explore Our Collection
+          Explore Our Collection 🎱🎯
         </h2>
 
         <p className="text-black mt-4 max-w-2xl mx-auto text-sm sm:text-base md:text-lg">
@@ -50,7 +50,7 @@ export default function CategorySection() {
           {categories.map((cat, i) => (
             <SwiperSlide key={i}>
               <div
-                className="relative h-[220px] group overflow-hidden perspective-[1000px]"
+                className="relative h-[220px] border-2 border-white group overflow-hidden perspective-[1000px]"
                 style={{
                   backgroundImage: `url(${cat.imagebg})`,
                   backgroundSize: "cover",
@@ -83,7 +83,7 @@ export default function CategorySection() {
         {categories.map((cat, i) => (
           <div
             key={i}
-            className="relative flex-1 group overflow-hidden perspective-[1000px]"
+            className="relative flex-1 border-2 border-yellow-500 group overflow-hidden perspective-[1000px]"
             style={{
               backgroundImage: `url(${cat.imagebg})`,
               backgroundSize: "cover",

@@ -8,11 +8,45 @@ import "swiper/css/effect-coverflow";
 import RotatingText from "@/components/RotatingText";
 
 const products = [
-  { id: 1, name: "Aurora Headphones", desc: "Studio-grade wireless sound", img: "/try/office10.webp", tag: "Best Seller" },
-  { id: 2, name: "Nebula Watch", desc: "Luxury smart timepiece", img: "/try/temp.webp", tag: "Premium" },
-  { id: 3, name: "Zenith Camera", desc: "Professional 4K capture", img: "/try/temp.jpg", tag: "New" },
-  { id: 4, name: "Lume Laptop", desc: "Ultra-slim performance", img: "/try/temp4.jpg", tag: "Editor’s Pick" },
-  { id: 5, name: "Lume Laptop", desc: "Ultra-slim performance", img: "/try/temp5.webp", tag: "Editor’s Pick" },
+  { 
+    id: 1, 
+    name: "Snooker Table", 
+    desc: "Tournament-grade slate bed with precision leveling for smooth, professional gameplay.", 
+    img: "/product/snookertable/1.webp", 
+    tag: "Best Seller" 
+  },
+
+  { 
+    id: 2, 
+    name: "Pool Table", 
+    desc: "Premium hardwood construction designed for durability, balance, and luxury performance.", 
+    img: "/product/snookertable/p5.webp", 
+    tag: "Best Seller" 
+  },
+
+  { 
+    id: 3, 
+    name: "Soccer Table", 
+    desc: "Heavy-duty frame with smooth rods for fast-paced, competitive foosball matches.", 
+    img: "/product/soccertable/2.webp", 
+    tag: "New" 
+  },
+
+  { 
+    id: 4, 
+    name: "Snooker Cue", 
+    desc: "Engineered for accuracy with superior grip and balanced weight control.", 
+    img: "/product/billiardstick/3.webp", 
+    tag: "New" 
+  },
+
+  { 
+    id: 5, 
+    name: "Cue Case", 
+    desc: "Protective premium case crafted for safe storage and easy transport.", 
+    img: "/product/cuecase/2.webp", 
+    tag: "Editor’s Pick" 
+  },
 ];
 
 export default function PremiumProductSlider() {
@@ -93,7 +127,7 @@ className="max-w-7xl mx-auto"
 
 {products.map((p) => (
 <SwiperSlide key={p.id}>
-<div className="bg-white border border-[#E3F2EC] rounded-3xl p-4 sm:p-5 lg:p-6 shadow-xl transition-all duration-400 hover:scale-[1.03] hover:shadow-2xl">
+<div className="bg-white border border-[#E3F2EC] rounded-3xl p-2  shadow-xl transition-all duration-400 hover:scale-[1.03] hover:shadow-2xl">
 
 <div className="relative">
 <span className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-[#2F8F6B] text-white text-xs px-3 py-1 rounded-full">
@@ -103,7 +137,7 @@ className="max-w-7xl mx-auto"
 <img
 src={p.img}
 alt={p.name}
-className="w-full h-48 sm:h-60 md:h-72 object-cover rounded-2xl"
+className="w-full h-48 sm:h-60 md:h-82 object-cover rounded-2xl"
 />
 </div>
 
@@ -111,9 +145,7 @@ className="w-full h-48 sm:h-60 md:h-72 object-cover rounded-2xl"
 {p.name}
 </h3>
 
-<p className="text-gray-600 mt-1 text-sm sm:text-base">
-{p.desc}
-</p>
+
 
 <button className="mt-5 w-full bg-[#2F8F6B] text-white py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium hover:bg-[#256f55] transition">
 Explore Product

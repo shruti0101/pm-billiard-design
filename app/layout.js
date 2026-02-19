@@ -2,7 +2,7 @@ import { Fraunces } from "next/font/google";
 import "./globals.css";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import Script from "next/script";
-import Whatsapp from "@/components/Whatsapp";
+// import Whatsapp from "@/components/Whatsapp";
 
 
 const fraunces = Fraunces({
@@ -23,17 +23,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={fraunces.variable}>
-      <head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/daisyui@5"
-          rel="stylesheet"
-          type="text/css"
-        />
-      </head>
+  
 
       <body className="antialiased">
      
-        <Whatsapp />
+        {/* <Whatsapp /> */}
         <main>
           <LayoutWrapper>{children}</LayoutWrapper>
         </main>

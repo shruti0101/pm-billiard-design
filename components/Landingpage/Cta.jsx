@@ -18,7 +18,7 @@ export default function VideoCTA() {
   }, []);
 
   return (
-    <section className="bg-cover bg-center relative w-full h-[80vh] overflow-hidden flex items-center justify-center">
+    <section className="bg-cover bg-center relative w-full h-[60vh] md:h-[80vh] overflow-hidden flex items-center justify-center">
 
       {/* ONLY RENDER BALLPIT ON DESKTOP */}
       {isDesktop && (
@@ -39,7 +39,7 @@ export default function VideoCTA() {
         />
       )}
 
-      <div className="absolute inset-0 bg-black/30 pointer-events-none" />
+      <div className="hidden md:block absolute inset-0 bg-black/30 pointer-events-none" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
         <h2 className="text-white text-4xl md:text-7xl font-semibold leading-[1.1] tracking-tight">

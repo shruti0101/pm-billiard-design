@@ -37,7 +37,7 @@ export default function Navbar() {
         <header className="fixed top-0 md:top-5 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-7xl">
           <div className="backdrop-blur-xl bg-white/40 border border-white/20 shadow-xl rounded-2xl px-8 h-17 flex items-center">
             <Link href="/" className="bg-white rounded-md px-2 shrink-0">
-              <Image src="/2.png" alt="Logo" width={66} height={40} />
+              <Image src="/2.png" alt="2" width={66} height={40} />
             </Link>
 
             <div className="hidden lg:flex uppercase flex-1 justify-center gap-10 text-white text-lg font-medium">
@@ -131,7 +131,7 @@ export default function Navbar() {
         <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-[#1a1a24]/70 border-b border-white/10 shadow-xl">
           <div className="px-6 h-18 flex items-center justify-between">
             <Link href="/" className="bg-white rounded-md px-2 shrink-0">
-              <Image src="/logo.png" alt="Logo" width={60} height={30} />
+              <Image src="/2.png" alt="2" width={60} height={30} />
             </Link>
 
             <div className="hidden lg:flex gap-12 text-white text-lg font-semibold">
@@ -163,7 +163,7 @@ export default function Navbar() {
 
             <div className="fixed right-0 top-0 h-screen w-[85%] max-w-sm bg-white shadow-2xl overflow-y-auto z-[1000000]">
               <div className="flex items-center justify-between px-5 py-4 border-b">
-                <Image src="/logo.png" alt="Logo" width={60} height={30} />
+                <Image src="/2.png" alt="2" width={60} height={30} />
                 <X size={28} className="cursor-pointer text-yellow-500 " onClick={closeMenu} />
               </div>
 

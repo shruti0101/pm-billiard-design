@@ -20,13 +20,7 @@ window.addEventListener("scroll", onScroll);
 return () => window.removeEventListener("scroll", onScroll);
 }, []);
 
-useEffect(() => {
-if (mobileOpen) {
-document.body.style.overflow = "hidden";
-} else {
-document.body.style.overflow = "auto";
-}
-}, [mobileOpen]);
+
 
 const closeMenu = () => {
 setActiveMenu(null);
@@ -150,20 +144,26 @@ onClick={() => setMobileOpen(!mobileOpen)}
 )}
 
 {/* MOBILE MENU */}
-<div className={`fixed inset-0 lg:hidden transition-all duration-500 ${
-mobileOpen ? "visible opacity-100 z-[999]" : "invisible opacity-0"
-}`}>
+<div
+className={`fixed inset-0 lg:hidden ${
+mobileOpen ? "pointer-events-auto" : "pointer-events-none"
+}`}
+>
+
 
 <div
-className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[999]"
 onClick={closeMenu}
+className={`fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${
+mobileOpen ? "opacity-100" : "opacity-0"
+}`}
 />
 
 <div
-className={`fixed right-0 top-0 h-full w-[85%] max-w-sm bg-white shadow-2xl transition-transform duration-500 overflow-y-auto z-[1000] ${
+className={`fixed right-0 top-0 h-full w-[85%] max-w-sm bg-white shadow-2xl transform transition-transform duration-300 ${
 mobileOpen ? "translate-x-0" : "translate-x-full"
 }`}
 >
+
 
 <div className="flex items-center justify-between px-5 py-4 border-b">
 <Image src="/logo.png" alt="Logo" width={60} height={30}/>

@@ -34,7 +34,7 @@ export default function Navbar() {
     <>
       {/* FLOAT NAVBAR */}
       {!scrolled && (
-        <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-7xl">
+        <header className="fixed top-0 md:top-5 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-7xl">
           <div className="backdrop-blur-xl bg-white/40 border border-white/20 shadow-xl rounded-2xl px-8 h-17 flex items-center">
             <Link href="/" className="bg-white rounded-md px-2 shrink-0">
               <Image src="/logo.png" alt="Logo" width={60} height={30} />

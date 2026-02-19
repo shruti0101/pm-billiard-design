@@ -12,7 +12,7 @@ export default function VideoCTA() {
 
 <section
   style={{ backgroundImage: "" }}
-  className="bg-cover bg-center relative w-full h-[80vh]  overflow-hidden flex items-center justify-center"
+  className="bg-cover bg-center relative w-full h-[80vh] hidden md:flex overflow-hidden  items-center justify-center"
 >
   {/* Ballpit */}
   <Ballpit

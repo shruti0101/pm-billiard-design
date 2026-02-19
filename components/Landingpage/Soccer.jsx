@@ -1,118 +1,122 @@
 import React from 'react'
 
 const Soccer = () => {
+
 const iconItems = [
-  {
-    label: "CHOOSE YOUR TABLE",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2">
-        <circle cx="12" cy="12" r="10" />
-        <path d="M8 12h8" />
-        <path d="M12 8v8" />
-      </svg>
-    ),
-  },
-  {
-    label: "PROFESSIONAL QUALITY",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2">
-        <path d="M12 2l3 7h7l-5.5 4.5 2 7L12 16l-6.5 4.5 2-7L2 9h7z" />
-      </svg>
-    ),
-  },
-  {
-    label: "TOURNAMENT STANDARD",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2">
-        <path d="M8 4h8v8H8z" />
-        <path d="M12 12v8" />
-      </svg>
-    ),
-  },
+{
+label: "CHOOSE YOUR TABLE",
+icon: (
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2">
+<circle cx="12" cy="12" r="10" />
+<path d="M8 12h8" />
+<path d="M12 8v8" />
+</svg>
+),
+},
+{
+label: "PROFESSIONAL QUALITY",
+icon: (
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2">
+<path d="M12 2l3 7h7l-5.5 4.5 2 7L12 16l-6.5 4.5 2-7L2 9h7z" />
+</svg>
+),
+},
+{
+label: "TOURNAMENT STANDARD",
+icon: (
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2">
+<path d="M8 4h8v8H8z" />
+<path d="M12 12v8" />
+</svg>
+),
+},
 ];
 
+return (
+<>
 
-  return (
-    <div>
-<section className="w-full h-[700px] flex overflow-x-hidden relative">
+{/* ================= HERO ================= */}
 
-  {/* FULL BACKGROUND IMAGE */}
-  <div
-    className="absolute inset-0 w-full h-full bg-cover bg-center"
-    style={{ backgroundImage: "url('/try/try2.jpg')" }}
-  />
+<section className="w-full min-h-[90vh] relative overflow-hidden flex items-center">
 
-  {/* SOFT OVERLAY */}
-  <div className="absolute inset-0 bg-black/10" />
+{/* BG */}
+<div
+className="absolute inset-0 bg-cover bg-center"
+style={{ backgroundImage: "url('/try/try2.jpg')" }}
+/>
 
-  {/* CONTENT LAYER */}
-  <div className="relative w-full h-full flex">
+<div className="absolute inset-0 bg-black/20" />
 
-    {/* LEFT GLASS PANEL (TEXT SIDE) */}
-    <div className="w-1/2 h-full relative backdrop-blur-md bg-[#008065]/45 text-white px-16 py-20 flex flex-col justify-center">
+{/* GLASS PANEL */}
+<div className="relative w-full lg:w-1/2 h-full backdrop-blur-md bg-[#008065]/45 text-white px-5 sm:px-10 lg:px-16 py-12 lg:py-20 flex flex-col justify-center">
 
-      {/* Subtle texture */}
-      <div className="absolute inset-0 bg-[url('/blue-texture.png')] opacity-20" />
+<div className="max-w-xl mx-auto lg:mx-0">
 
-      <div className="relative max-w-[600px]">
+{/* ICONS */}
+<div className="flex flex-wrap gap-6 sm:gap-10 mb-8">
 
-        {/* ICON ROW */}
-        <div className="flex items-center gap-10 mb-10">
-          {iconItems.map((item, i) => (
-            <div key={i} className="flex flex-col items-start gap-2">
-              <div className="w-12 h-12 bg-white flex items-center justify-center rounded-sm">
-                {item.icon}
-              </div>
-              <p className="text-xs tracking-widest font-semibold">
-                {item.label}
-              </p>
-            </div>
-          ))}
-        </div>
+{iconItems.map((item, i) => (
+<div key={i} className="flex flex-col items-start gap-2 w-[30%] sm:w-auto">
 
-        {/* MAIN HEADING */}
-        <h1 className="text-4xl font-bold leading-tight mb-6">
-          PREMIUM CRAFTED  
-          <br />
-          BILLIARDS, POOL & SNOOKER  
-          <br />
-          TABLES FOR EVERY SPACE
-        </h1>
+<div className="w-10 h-10 sm:w-12 sm:h-12 bg-white flex items-center justify-center rounded-sm">
+{item.icon}
+</div>
 
-        <div className="w-16 h-1 bg-white mb-6" />
+<p className="text-[10px] sm:text-xs tracking-widest font-semibold">
+{item.label}
+</p>
 
-        {/* DESCRIPTION */}
-        <p className="text-base leading-relaxed mb-10 max-w-lg">
-          PM Billiards is a leading manufacturer of premium Pool Tables,
-          professional Snooker Tables, and classic Billiard Tables designed for
-          homes, clubs, resorts, and competitive gaming arenas. Every table is
-          engineered with precision, high-quality materials, and expert
-          craftsmanship to deliver superior gameplay, perfect leveling, and
-          long-term durability.
-        </p>
+</div>
+))}
 
-        {/* BUTTONS */}
-        <div className="flex gap-6">
-          <button className="border border-white px-8 py-3 text-sm font-semibold hover:bg-white hover:text-[#008065] transition">
-            EXPLORE TABLES
-          </button>
+</div>
 
-          <button className="border border-white px-8 py-3 text-sm font-semibold hover:bg-white hover:text-[#008065] transition">
-            CONTACT US
-          </button>
-        </div>
+{/* HEADING */}
+<h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-5">
+PREMIUM CRAFTED  
+<br />
+BILLIARDS, POOL & SNOOKER  
+<br />
+TABLES FOR EVERY SPACE
+</h1>
 
-      </div>
-    </div>
+<div className="w-14 h-1 bg-white mb-5" />
 
-  </div>
+{/* TEXT */}
+<p className="text-sm sm:text-base leading-relaxed mb-8">
+PM Billiards is a leading manufacturer of premium Pool Tables,
+professional Snooker Tables, and classic Billiard Tables designed for
+homes, clubs, resorts, and competitive gaming arenas.
+</p>
+
+{/* BUTTONS */}
+<div className="flex flex-col sm:flex-row gap-4">
+
+<button className="border border-white px-6 py-3 text-sm font-semibold hover:bg-white hover:text-[#008065] transition">
+EXPLORE TABLES
+</button>
+
+<button className="border border-white px-6 py-3 text-sm font-semibold hover:bg-white hover:text-[#008065] transition">
+CONTACT US
+</button>
+
+</div>
+
+</div>
+</div>
+
 </section>
 
 
-<section style={{backgroundImage:"url(/try/manu.png)"}} className='bg-center bg-cover h-[55vh] bg-fixed'></section>
+{/* ================= SECOND SECTION ================= */}
 
-</div>
-  )
+<section
+style={{ backgroundImage: "url(/try/manu.png)" }}
+className="hidden md:block bg-center bg-cover h-[40vh] sm:h-[55vh] lg:bg-fixed"
+/>
+
+</>
+)
 }
 
 export default Soccer

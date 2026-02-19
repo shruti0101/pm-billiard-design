@@ -7,7 +7,7 @@ const Letter = () => {
   
 
       {/* Main container */}
-      <div className="w-full flex  overflow-hidden justify-center items-center gap-10   relative">
+      <div className="hidden lg:flex w-full   overflow-hidden justify-center items-center gap-10   relative">
 
         {/* IMAGE NEXT TO "PM" */}
         <img

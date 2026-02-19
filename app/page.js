@@ -1,7 +1,7 @@
 import Hero from "@/components/Landingpage/Hero";
 import Whychoose from "@/components/Landingpage/Whychoose";
 
-// import AboutUs from "@/components/Landingpage/About";
+import AboutUs from "@/components/Landingpage/About";
 import Products from "@/components/Landingpage/Products";
 // import ProductCategorySection from "@/components/Landingpage/Categories";
 import Cta from "@/components/Landingpage/Cta";
@@ -30,7 +30,7 @@ export default function Home() {
 {/* <ProductCategorySection></ProductCategorySection> */}
 
 {/* <Enquiry></Enquiry> */}
-{/* <AboutUs></AboutUs> */}
+<AboutUs></AboutUs>
 {/* <Products></Products> */}
 <Soccer></Soccer>
 

@@ -5,6 +5,8 @@ import Image from "next/image";
 import Head from "next/head";
 import Enquiry from "@/components/Enquiry";
 import { ArrowUpRight } from "lucide-react";
+import { Shield, Droplet , Dumbbell , Recycle  } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function ProductPage({ params }) {
   const { productId } = React.use(params);
@@ -12,12 +14,38 @@ export default function ProductPage({ params }) {
   const product = allProducts.find((p) => p.id === productId);
   const [activeImage, setActiveImage] = useState(product?.image[0]);
   const [isFormOpen, setIsFormOpen] = useState(false);
+const [selectedColor, setSelectedColor] = useState(
+  product?.colors?.[0] || null
+);
 
   if (!product) {
     return (
       <h2 className="text-center text-red-500 mt-10">Product not found</h2>
     );
   }
+
+const features = [
+  {
+    icon: <Shield size={38} />,
+    title: "PREMIUM HARDWOOD FRAME",
+    desc: "Crafted using seasoned hardwood for maximum durability, structural strength, and long-term stability.",
+  },
+  {
+    icon: <Droplet size={38} />,
+    title: "PRECISION LEVELED SLATE",
+    desc: "Tournament-grade natural slate ensures perfectly smooth ball roll and professional gameplay accuracy.",
+  },
+  {
+    icon: <Dumbbell size={38} />,
+    title: "HEAVY-DUTY CONSTRUCTION",
+    desc: "Engineered with reinforced legs and frame support to handle intensive commercial and club usage.",
+  },
+  {
+    icon: <Recycle size={38} />,
+    title: "CUSTOM FINISH & DESIGN",
+    desc: "Available in multiple finishes, cloth colors, and custom sizes to match luxury interiors and club standards.",
+  },
+];
 
   return (
     <>
@@ -29,133 +57,185 @@ export default function ProductPage({ params }) {
         />
       </Head>
 
-    
-
-      {/* MAIN WRAPPER */}
-      <section className="w-full bg-[#06090D] pt-35 mx-auto py-16 space-y-24">
+      <section className="w-full bg-[#06090D]  mx-auto py-16 space-y-20 overflow-x-hidden">
 
         {/* TOP: IMAGE + CONFIG PANEL */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start  mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_500px] px-20 mt-26 items-start  mx-auto ">
 
-          {/* PRODUCT IMAGE – PREMIUM CARD */}
-          <div className="p-2">
+          {/* PRODUCT IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="p-2"
+          >
             <div className="rounded-3xl overflow-hidden border border-gray-800 bg-[#0A0F14] shadow-2xl">
               <Image
                 src={activeImage.src}
                 alt={activeImage.alt}
                 width={1000}
-                height={700}
-                className="object-cover "
-                
+                height={500}
+                className="object-fill h-140"
               />
             </div>
-          </div>
+          </motion.div>
 
           {/* CONFIG PANEL */}
-          <div className="bg-[#070B0F] text-white rounded-3xl p-8 space-y-7 border border-gray-900 shadow-xl">
-
-            <h2 className="text-2xl font-semibold tracking-wide">
-           {product.name}
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, delay: 0.2 }}
+            className="bg-[#070B0F] text-white rounded-3xl p-8 space-y-7 border border-gray-900 shadow-xl "
+          >
+            <h2 className="text-2xl md:text-3xl font-bold capitalize  tracking-wide">
+              {product.name}
             </h2>
 
-            <p className="text-gray-400 text-sm">
-              Configure your professional-grade table
+            <p className="text-white text-md">
+            {product.excerpt}
             </p>
 
-            {/* COLOR GRID */}
-            <div className="grid grid-cols-3 gap-4 mt-4">
-              <div className="w-full h-28 rounded-xl bg-green-800 border border-green-900"></div>
+            <div className="">
+             {/* COLOR OPTIONS */}
+{/* COLOR OPTIONS */}
+{product.colors && product.colors.length > 0 && (
+  <div className="mt-14">
+    <p className="text-lg  text-gray-400 tracking-[0.3em] uppercase mb-6">
+      Available Finishes
+    </p>
 
-              <div className="w-full h-28 rounded-xl bg-blue-600 border-2 border-cyan-400 flex items-center justify-center">
-                <span className="text-white text-xl">✔</span>
+    <div className="grid grid-cols-3  gap-8 ">
+      {product.colors.map((color, index) => (
+        <button
+          key={index}
+          onClick={() => setSelectedColor(color)}
+          className="flex flex-col items-center group"
+        >
+          {/* Circle Swatch */}
+          <div
+            className={`
+              relative w-22 h-22 rounded-md transition-all duration-300
+              ${color.class}
+              ${
+                selectedColor?.name === color.name
+                  ? "ring-2 ring-yellow-400 ring-offset-4 ring-offset-[rgb(7,11,15)] scale-110 shadow-[0_0_25px_rgba(255,215,0,0.4)]"
+                  : "opacity-70 group-hover:opacity-100 group-hover:scale-105"
+              }
+            `}
+          >
+            {selectedColor?.name === color.name && (
+              <div className="absolute inset-0 flex items-center justify-center text-white text-sm font-bold">
+                ✓
               </div>
+            )}
+          </div>
 
-              <div className="w-full h-28 rounded-xl bg-red-800 border border-red-900"></div>
+          {/* Label */}
+          <span
+            className={`mt-3 text-sm tracking-wide transition-all duration-300
+              ${
+                selectedColor?.name === color.name
+                  ? "text-yellow-400"
+                  : "text-gray-400 group-hover:text-white"
+              }`}
+          >
+            {color.name}
+          </span>
+        </button>
+      ))}
+    </div>
+  </div>
+)}
+
+
             </div>
 
-            <div className="grid grid-cols-3 text-center text-sm text-gray-400">
-              <span>Green</span>
-              <span className="text-cyan-400">Elec Blue</span>
-              <span>Burgundy</span>
-            </div>
+         
 
-            <h3 className="text-green-400 font-semibold tracking-wide mt-6">
-              LEG STYLES
-            </h3>
+         
 
-            <div className="flex items-center justify-between border border-gray-700 rounded-xl p-4">
-              <div>
-                <p className="text-white font-medium">MODERN TAPERED</p>
-                <p className="text-gray-400 text-sm">
-                  Minimalist geometric profile
-                </p>
-              </div>
-              <div className="bg-gray-800 p-2 rounded-lg">⬇</div>
-            </div>
+           
 
-            <div className="flex items-center justify-between border border-green-500 rounded-xl p-4 bg-[#0B1410]">
-              <div>
-                <p className="text-white font-medium">ARTISAN CARVED</p>
-                <p className="text-gray-400 text-sm">
-                  Traditional hand-finished details
-                </p>
-              </div>
-              <div className="bg-green-600 text-white p-2 rounded-lg">✔</div>
-            </div>
+         
 
-            <div className="flex gap-4 mt-6">
-              <button
+            <div className="flex items-center justify-center gap-10 mt-14 ">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 onClick={() => setIsFormOpen(true)}
                 className="px-6 py-3 rounded-xl bg-white text-black font-medium hover:bg-gray-200 transition"
               >
                 Enquire Now
-              </button>
+              </motion.button>
 
-              <a
-                href={`https://wa.me/+919999402424?text=Hello, I am interested in ${encodeURIComponent(
-                  product.name
-                )}`}
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href={`https://wa.me/+919999402424?text=Hello, I am interested in ${encodeURIComponent(product.name)}`}
                 target="_blank"
                 className="px-6 py-3 rounded-xl bg-green-500 text-white font-medium hover:bg-green-400 transition"
               >
                 WhatsApp
-              </a>
+              </motion.a>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        {/* PREMIUM DESCRIPTION */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#0B170E] rounded-3xl overflow-hidden border border-gray-900 shadow-2xl  mx-auto">
-
-          {/* LEFT – STORY */}
+        {/* DESCRIPTION */}
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9 }}
+          className="grid grid-cols-1 lg:grid-cols-2 bg-[#0B170E] rounded-3xl overflow-hidden border border-gray-900 shadow-2xl  mx-auto"
+        >
           <div className="p-12 md:p-16 space-y-8 text-white relative">
             <div className="absolute top-12 left-12 w-20 h-[2px] bg-yellow-400"></div>
-
             <p className="text-yellow-400 tracking-[0.35em] text-xs font-semibold uppercase mt-6">
               The Craft
             </p>
-
             <h2 className="text-4xl md:text-5xl text-yellow-500 font-bold leading-tight">
               Masterfully Built for <br />
               Professional Excellence
             </h2>
+          <div className="text-white space-y-6 leading-relaxed max-w-2xl">
+  {product.description?.map((block, i) => {
+    if (block.type === "p") {
+      return (
+        <p key={i} className="text-xl text-white">
+          {block.text}
+        </p>
+      );
+    }
 
-            <div className="text-white space-y-6 leading-relaxed max-w-xl">
-              {product.description
-                .filter(b => b.type === "p")
-                .slice(0, 3)
-                .map((block, i) => (
-                  <p key={i} className="text-lg opacity-90">
-                    {block.text}
-                  </p>
-                ))}
-            </div>
+    if (block.type === "h2") {
+      return (
+        <h3 key={i} className="text-2xl font-semibold text-yellow-500 pt-4">
+          {block.text}
+        </h3>
+      );
+    }
 
-            <div className="w-32 h-[1px] bg-gray-700 mt-6"></div>
+    if (block.type === "ul") {
+      return (
+        <ul key={i} className="list-disc  ml-5 space-y-2 text-white">
+          {block.items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      );
+    }
+
+    return null;
+  })}
+</div>
+
+
+
+            <div className="w-32 h-[1px] bg-gray-500 mt-6"></div>
           </div>
 
-          {/* RIGHT – SPECS */}
-          <div className="bg-[#141A15] p-12 md:p-16 space-y-8 border-l border-gray-800">
+          <div className="bg-[#141A15] h-240 p-12 md:p-16 space-y-8 border-l border-gray-800">
             <div>
               <h3 className="text-white text-2xl font-semibold tracking-wide">
                 Technical Specifications
@@ -171,17 +251,47 @@ export default function ProductPage({ params }) {
                   key={i}
                   className="grid grid-cols-2 items-center border-t border-yellow-500/30 pt-5"
                 >
-                  <span className="text-white uppercase text-xs tracking-wider">
+                  <span className="text-white uppercase text-base tracking-wider">
                     {spec.label}
                   </span>
-                  <span className="text-white text-right text-base font-medium">
+                  <span className="text-white text-right text-lg font-medium">
                     {spec.value}
                   </span>
                 </div>
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
+
+        {/* FEATURES */}
+        <section className="relative w-full overflow-hidden bg-[#07382D] py-18 px-6">
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,200,0,0.08)_1px,transparent_1px)] [background-size:30px_30px] opacity-20"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,200,0,0.08),transparent_70%)]"></div>
+
+          <div className="relative max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 text-center">
+            {features.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                whileHover={{ y: -8 }}
+                className="flex flex-col items-center"
+              >
+                <div className="w-20 h-20 flex items-center justify-center rounded-full border border-yellow-500/40 text-yellow-400 bg-yellow-500/5 shadow-[0_0_25px_rgba(255,200,0,0.1)]">
+                  {item.icon}
+                </div>
+                <h3 className="mt-6 text-xl tracking-[2px] font-semibold text-white">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-md text-white max-w-xs leading-relaxed">
+                  {item.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </section>
 
         {/* RELATED PRODUCTS */}
         <div className="max-w-7xl mx-auto px-6">
@@ -195,9 +305,11 @@ export default function ProductPage({ params }) {
               ?.products.filter((p) => p.id !== product.id)
               .slice(0, 4)
               .map((item) => (
-                <a
+                <motion.a
                   key={item.id}
                   href={`/products/${item.id}`}
+                  whileHover={{ y: -8 }}
+                  transition={{ type: "spring", stiffness: 200 }}
                   className="group bg-[#070B0F] border border-gray-900 rounded-3xl p-6 hover:shadow-2xl transition"
                 >
                   <div className="relative h-48 mb-4">
@@ -214,7 +326,7 @@ export default function ProductPage({ params }) {
                   <span className="inline-flex items-center gap-1 text-sm text-yellow-500 mt-2">
                     View Details <ArrowUpRight size={14} />
                   </span>
-                </a>
+                </motion.a>
               ))}
           </div>
         </div>

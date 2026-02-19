@@ -56,7 +56,7 @@ export default function CategoryPage({ params }) {
                       src={product.image?.[0]?.src || "/placeholder.webp"}
                       alt={product.name}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="object-contain transition-transform duration-700 group-hover:scale-105"
                       unoptimized
                     />
 

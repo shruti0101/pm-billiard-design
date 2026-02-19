@@ -3,7 +3,7 @@ import "./globals.css";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import Script from "next/script";
 import Whatsapp from "@/components/Whatsapp";
-import Stickbutton from "@/components/Stickbutton";
+
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className="antialiased">
-        <Stickbutton />
+     
         <Whatsapp />
         <main>
           <LayoutWrapper>{children}</LayoutWrapper>

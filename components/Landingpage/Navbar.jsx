@@ -11,12 +11,23 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
   const [scrolled, setScrolled] = useState(false);
+const [activeMobileCat, setActiveMobileCat] = useState(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+
+  useEffect(() => {
+  if (mobileOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+}, [mobileOpen]);
+
 
   const closeMenu = () => {
     setActiveMenu(null);
@@ -40,18 +51,18 @@ export default function Navbar() {
    
     <div className="hidden lg:flex uppercase flex-1 justify-center gap-10 text-white text-lg font-medium">
       <Link href="/" className="hover:text-[#F6BB31] transition">Home</Link>
-      <Link href="/about-us" className="hover:text-[#F6BB31] transition">About</Link>
+      <Link href="/about-us" className="hover:text-[#F6BB31] transition">About Us</Link>
       <Link href="/blogs" className="hover:text-[#F6BB31] transition">Blogs</Link>
-      <Link href="/contact-us" className="hover:text-[#F6BB31] transition">Contact</Link>
+      <Link href="/contact-us" className="hover:text-[#F6BB31] transition">Contact Us</Link>
     </div>
 
 
     <div className="hidden lg:flex items-center">
       <Link
         href="/contact-us"
-        className="bg-[#2F8F6B] text-white px-4 py-3 rounded-md text-sm font-semibold hover:scale-105 transition"
+        className="bg-[#2F8F6B] text-white px-4 py-3 rounded-md text-md font-semibold hover:scale-105 transition"
       >
-        Enquire
+        Enquire Now
       </Link>
     </div>
 
@@ -96,12 +107,12 @@ export default function Navbar() {
                       .find(c => c.id === activeMenu)
                       ?.products.map(prod => (
                         <Link key={prod.id} href={`/products/${prod.id}`} onClick={closeMenu}>
-                          <div className="relative h-56 bg-gray-100 overflow-hidden rounded-md">
+                          <div className="relative h-50 bg-gray-100 overflow-hidden rounded-md">
                             <Image
                               src={prod.image?.[0]?.src}
                               alt={prod.name}
                               fill
-                              className="object-cover hover:scale-110 transition"
+                              className="object-contain hover:scale-110 transition"
                             />
                           </div>
                           <p className="mt-4 text-sm text-center font-medium hover:text-amber-600">
@@ -178,6 +189,102 @@ export default function Navbar() {
       >
         <FaWhatsapp size={22}/>
       </a>
+
+
+
+
+
+
+      {/* ================= MOBILE RESPONSIVE MENU ================= */}
+
+<div
+className={`fixed inset-0 z-[999] lg:hidden transition-all duration-500 ${
+mobileOpen ? "visible opacity-100" : "invisible opacity-0"
+}`}
+>
+
+<div
+className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+onClick={closeMenu}
+/>
+
+<div
+className={`absolute right-0 top-0 h-full w-[85%] max-w-sm bg-white shadow-2xl transition-transform duration-500 overflow-y-auto ${
+mobileOpen ? "translate-x-0" : "translate-x-full"
+}`}
+>
+
+<div className="flex items-center justify-between px-5 py-4 border-b">
+<Image src="/logo.png" alt="Logo" width={60} height={30}/>
+<X size={26} className="cursor-pointer" onClick={closeMenu}/>
+</div>
+
+<div className="flex flex-col px-5 py-4 gap-4 text-[15px] font-medium">
+<Link href="/" onClick={closeMenu}>Home</Link>
+<Link href="/about-us" onClick={closeMenu}>About Us</Link>
+<Link href="/blogs" onClick={closeMenu}>Blogs</Link>
+<Link href="/contact-us" onClick={closeMenu}>Contact Us</Link>
+</div>
+
+<div className="border-t px-5 py-4">
+
+<p className="text-xs mb-4 tracking-widest uppercase text-gray-500">
+Categories
+</p>
+
+{categories.map(cat => (
+<div key={cat.id} className="border-b py-2">
+
+<button
+onClick={() =>
+setActiveMobileCat(activeMobileCat === cat.id ? null : cat.id)
+}
+className="flex justify-between items-center w-full text-left font-semibold"
+>
+{cat.name}
+<ChevronDown
+size={18}
+className={`transition ${
+activeMobileCat === cat.id ? "rotate-180" : ""
+}`}
+/>
+</button>
+
+<div
+className={`grid transition-all duration-500 overflow-hidden ${
+activeMobileCat === cat.id ? "max-h-[500px] mt-3" : "max-h-0"
+}`}
+>
+{cat.products.map(prod => (
+<Link
+key={prod.id}
+href={`/products/${prod.id}`}
+onClick={closeMenu}
+className="py-2 pl-3 text-sm text-gray-600 hover:text-black"
+>
+{prod.name}
+</Link>
+))}
+</div>
+
+</div>
+))}
+
+</div>
+
+<div className="p-5">
+<Link
+href="/contact-us"
+onClick={closeMenu}
+className="block text-center bg-[#2F8F6B] text-white py-3 rounded-md font-semibold"
+>
+Enquire Now
+</Link>
+</div>
+
+</div>
+</div>
+
     </>
   );
 }

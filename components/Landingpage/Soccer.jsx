@@ -34,7 +34,7 @@ const iconItems = [
 
   return (
     <div>
-<section className="w-full h-[700px] flex overflow-hidden relative">
+<section className="w-full h-[700px] flex overflow-x-hidden relative">
 
   {/* FULL BACKGROUND IMAGE */}
   <div

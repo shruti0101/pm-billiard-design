@@ -23,13 +23,14 @@ export default function Home() {
       <ProductCategorySection></ProductCategorySection>
 <BestSeller></BestSeller>
       <AboutUs></AboutUs>
+          <Letter></Letter>
       <Products></Products>
       <Soccer></Soccer>
 
       <Whychoose></Whychoose>
       <Cta></Cta>
 
-      <Letter></Letter>
+  
       <PremiumTablesSection></PremiumTablesSection>
 
       <Faq></Faq>

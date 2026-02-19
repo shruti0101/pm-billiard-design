@@ -110,7 +110,7 @@ const Soccer = () => {
                 EXPLORE TABLES
               </button>
 
-              <button className="border border-white px-6 py-3 text-sm font-semibold hover:bg-white hover:text-[#008065] transition">
+              <button className="border text-black border-white px-6 py-3 text-sm font-semibold bg-white hover:text-[#008065] transition">
                 CONTACT US
               </button>
             </div>

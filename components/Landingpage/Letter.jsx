@@ -23,7 +23,7 @@ const Letter = () => {
         {/* TEXT WITH IMAGE FILL */}
         <div
           className="
-            text-[96px] md:text-[130px] font-extrabold tracking-tight leading-none
+            text-[96px] md:text-[120px] font-extrabold tracking-tight leading-none
             bg-cover bg-center bg-no-repeat
             text-transparent bg-clip-text 
             transition-transform duration-500 hover:scale-[1.02]

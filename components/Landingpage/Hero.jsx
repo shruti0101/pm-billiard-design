@@ -21,7 +21,7 @@ export default function Hero() {
     <section
       className="
         relative w-full overflow-hidden
-        h-[190px] sm:h-[370px] md:h-[80vh] xl:h-[110vh] bg-[#F5F7F9]
+        h-[190px] sm:h-[370px] md:h-[80vh] mt-20 md:mt-0 xl:h-[110vh] bg-[#F5F7F9]
       "
     >
       <AnimatePresence mode="sync">

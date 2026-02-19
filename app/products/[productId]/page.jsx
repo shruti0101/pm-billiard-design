@@ -1,9 +1,10 @@
 import { categories } from "@/Data";
 import ProductPageClient from "./ProductPageClient";
 
-// ✅ Dynamic metadata for each product
+
+
 export async function generateMetadata({ params }) {
-  const { productId } = params;
+  const { productId } = await params;
 
   const allProducts = categories.flatMap((c) => c.products);
   const product = allProducts.find((p) => p.id === productId);

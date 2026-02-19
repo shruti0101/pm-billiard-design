@@ -1,12 +1,12 @@
 import Hero from "@/components/Landingpage/Hero";
 import Whychoose from "@/components/Landingpage/Whychoose";
 
-import AboutUs from "@/components/Landingpage/About";
+// import AboutUs from "@/components/Landingpage/About";
 import Products from "@/components/Landingpage/Products";
 // import ProductCategorySection from "@/components/Landingpage/Categories";
 import Cta from "@/components/Landingpage/Cta";
 // import Popup from "@/components/Popup"
-import Enquiry from "@/components/Enquiry"
+// import Enquiry from "@/components/Enquiry"
 
 
 import Letter from "@/components/Landingpage/Letter";
@@ -29,16 +29,16 @@ export default function Home() {
 <Hero></Hero> 
 {/* <ProductCategorySection></ProductCategorySection> */}
 
-<Enquiry></Enquiry>
-<AboutUs></AboutUs>
-<Products></Products>
+{/* <Enquiry></Enquiry> */}
+{/* <AboutUs></AboutUs> */}
+{/* <Products></Products> */}
 <Soccer></Soccer>
 
 <Whychoose></Whychoose>
-<Cta></Cta>
+{/* <Cta></Cta> */}
 {/* <Cta2></Cta2> */}
 <Letter></Letter>
-<PremiumTablesSection></PremiumTablesSection>
+{/* <PremiumTablesSection></PremiumTablesSection> */}
 
 
 

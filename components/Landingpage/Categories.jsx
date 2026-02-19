@@ -50,7 +50,7 @@ export default function CategorySection() {
           {categories.map((cat, i) => (
             <SwiperSlide key={i}>
               <div
-                className="relative h-[220px] border-2 border-white group overflow-hidden perspective-[1000px]"
+                className="relative h-[220px] border-2 border-yellow-500 group overflow-hidden perspective-[1000px]"
                 style={{
                   backgroundImage: `url(${cat.imagebg})`,
                   backgroundSize: "cover",

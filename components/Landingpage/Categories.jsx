@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -93,10 +93,11 @@ export default function CategorySection() {
             <div className="absolute inset-0 bg-black/45 group-hover:bg-black/35 transition duration-300" />
 
             <div className="absolute inset-0 flex items-center justify-center">
-              <img
+              <Image
                 src={cat.icon}
                 alt={cat.title}
-                className="w-60 h-60 object-contain drop-shadow-lg transition-all duration-500 ease-out group-hover:scale-125 group-hover:-translate-y-2"
+                fill
+                className=" object-contain  drop-shadow-lg transition-all duration-500 ease-out group-hover:scale-125 group-hover:-translate-y-2"
               />
             </div>
 

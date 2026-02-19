@@ -1,8 +1,10 @@
 @import "tailwindcss";
-/* @import "tw-animate-css"; */
+@import "tw-animate-css";
 
 
-
+body{
+  overflow-y: auto;
+}
 
 
 /* @keyframes fadeIn {

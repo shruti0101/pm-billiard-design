@@ -1,15 +1,27 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Ballpit from "../Ballpit";
 
 export default function VideoCTA() {
-  return (
-    <section
-      className="bg-cover bg-center relative w-full h-[80vh] hidden md:flex overflow-hidden items-center justify-center"
-    >
 
-      {/* Ballpit FIXED */}
-      <div className="absolute inset-0 pointer-events-none">
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const check = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
+
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  return (
+    <section className="bg-cover bg-center relative w-full h-[80vh] overflow-hidden flex items-center justify-center">
+
+      {/* ONLY RENDER BALLPIT ON DESKTOP */}
+      {isDesktop && (
         <Ballpit
           count={50}
           gravity={0.01}
@@ -25,15 +37,10 @@ export default function VideoCTA() {
             clearcoatRoughness: 0.04,
           }}
         />
-      </div>
+      )}
 
-      {/* Overlay FIXED */}
       <div className="absolute inset-0 bg-black/30 pointer-events-none" />
 
-      {/* Spotlight */}
-      <div className="absolute w-[700px] h-[700px] blur-[100px] rounded-full pointer-events-none" />
-
-      {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl">
         <h2 className="text-white text-4xl md:text-7xl font-semibold leading-[1.1] tracking-tight">
           Crafted for Champions.

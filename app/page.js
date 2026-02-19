@@ -8,7 +8,7 @@ import Cta from "@/components/Landingpage/Cta";
 // import Popup from "@/components/Popup"
 
 import Letter from "@/components/Landingpage/Letter";
-import PremiumTablesSection from "@/components/Landingpage/Premium";
+// import PremiumTablesSection from "@/components/Landingpage/Premium";
 
 import Soccer from "@/components/Landingpage/Soccer";
 
@@ -29,7 +29,7 @@ export default function Home() {
       <Cta></Cta>
 
       <Letter></Letter>
-      <PremiumTablesSection></PremiumTablesSection>
+      {/* <PremiumTablesSection></PremiumTablesSection> */}
 
       <Faq></Faq>
     </>

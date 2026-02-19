@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { categories } from "@/Data";
 import Image from "next/image";
 import Head from "next/head";
-import Enquiry from "@/components/Enquiry";
+// import Enquiry from "@/components/Enquiry";
 import { ArrowUpRight } from "lucide-react";
 import { Shield, Droplet , Dumbbell , Recycle  } from "lucide-react";
 import { motion } from "framer-motion";
@@ -331,9 +331,9 @@ const features = [
           </div>
         </div>
 
-        {isFormOpen && (
+        {/* {isFormOpen && (
           <Enquiry isOpen={isFormOpen} onClose={() => setIsFormOpen(false)} />
-        )}
+        )} */}
       </section>
     </>
   );

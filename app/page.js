@@ -4,7 +4,7 @@ import Whychoose from "@/components/Landingpage/Whychoose";
 import AboutUs from "@/components/Landingpage/About";
 import Products from "@/components/Landingpage/Products";
 import ProductCategorySection from "@/components/Landingpage/Categories";
-// import Cta from "@/components/Landingpage/Cta";
+import Cta from "@/components/Landingpage/Cta";
 // import Popup from "@/components/Popup"
 // import Enquiry from "@/components/Enquiry"
 
@@ -35,7 +35,7 @@ export default function Home() {
 <Soccer></Soccer>
 
 <Whychoose></Whychoose>
-{/* <Cta></Cta> */}
+<Cta></Cta>
 
 <Letter></Letter>
 {/* <PremiumTablesSection></PremiumTablesSection> */}

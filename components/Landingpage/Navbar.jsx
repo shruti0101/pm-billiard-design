@@ -7,7 +7,7 @@ import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { categories } from "@/Data";
-
+import { usePathname } from "next/navigation";
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
@@ -30,6 +30,9 @@ export default function Navbar() {
     setMobileOpen(false);
   };
 
+  const pathname = usePathname();
+const isProductPage = pathname.startsWith("/products/");
+const navTextColor = isProductPage ? "text-black" : "text-white";
   return (
     <>
       {/* FLOAT NAVBAR */}
@@ -40,8 +43,7 @@ export default function Navbar() {
               <Image src="/2.png" alt="2" width={66} height={40} />
             </Link>
 
-            <div className="hidden lg:flex uppercase flex-1 justify-center gap-10 text-white text-lg font-medium">
-              <Link href="/" className="hover:text-[#F6BB31]">
+<div className={`hidden lg:flex uppercase flex-1 justify-center gap-10 ${navTextColor} text-lg font-medium`}>              <Link href="/" className="hover:text-[#F6BB31]">
                 Home
               </Link>
               <Link href="/about-us" className="hover:text-[#F6BB31]">
@@ -74,7 +76,7 @@ export default function Navbar() {
           </div>
 
           <div
-            className="relative hidden lg:flex justify-center gap-5 mt-4 text-white text-md font-medium"
+            className={`relative hidden lg:flex justify-center gap-5 mt-4 ${navTextColor} text-md font-medium`}
             onMouseLeave={() => setActiveMenu(null)}
           >
             {categories.map((cat) => (

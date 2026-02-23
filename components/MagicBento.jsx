@@ -462,19 +462,7 @@ const BentoCardGrid = ({ children, gridRef }) => (
   <div
     ref={gridRef}
     className="bento-section grid gap-2 p-3 select-none relative"
-    style={{
-      fontSize: 'clamp(1rem, 0.9rem + 0.5vw, 1.5rem)',
-      backgroundImage: `
-        linear-gradient(
-          rgba(6, 0, 16, 0.35),
-          rgba(6, 0, 16, 0.45)
-        ),
-        url('/try/count.jpg')
-      `,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
-    }}
+    
   >
     {children}
   </div>
@@ -656,11 +644,11 @@ const MagicBento = ({
     Precision • Legacy • Mastery
   </p>
 
-  <h2 className="text-3xl md:text-4xl  text-white mb-2">
+  <h2 className="text-3xl md:text-5xl font-bold  text-black mb-2">
     Premium Gaming Tables
   </h2>
 
-  <p className="text-white/70">
+  <p className="text-black">
     by <span className="text-[#B48623]">PM Billiards</span>
   </p>
 </div>

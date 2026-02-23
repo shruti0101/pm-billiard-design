@@ -17,18 +17,18 @@ const bestSellers = [
 
 export default function BestSellerSection() {
   return (
-    <section className="w-full bg-[#1c3129] py-13 relative overflow-hidden">
+    <section className="w-full bg-white py-13 relative overflow-hidden">
 
       {/* GOLD SPOTLIGHT */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#EDBC41] blur-[260px] opacity-10 pointer-events-none" />
 
       {/* HEADING */}
       <div className="text-center max-w-3xl mx-auto mb-13 px-4">
-        <p className="text-yellow-500 uppercase tracking-[0.35em] text-xs mb-3">
+        <p className="text-yellow-500 uppercase tracking-[0.35em] text-xs font-bold mb-3">
           Top Picks ✨
         </p>
 
-        <h2 className="text-4xl md:text-5xl text-white font-semibold leading-tight">
+        <h2 className="text-4xl md:text-5xl text-black font-semibold leading-tight">
           Best Selling <span className="text-yellow-500">Tables</span>
         </h2>
       </div>

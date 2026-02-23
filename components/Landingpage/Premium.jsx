@@ -3,7 +3,7 @@ import React from 'react'
 const Premium = () => {
   return (
     <div>
-      <section className='w-full bg-[#073147] h-auto'>
+      <section className='w-full bg-white h-auto'>
 
 
 

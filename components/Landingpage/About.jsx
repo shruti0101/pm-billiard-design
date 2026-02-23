@@ -17,12 +17,9 @@ const About = () => {
       
    {/* about */}
       
-
-    <section
-style={{ backgroundImage: "url(/zigzag.webp)" }}
-className="relative w-full bg-center bg-cover text-white overflow-hidden"
+<section
+className="relative w-full bg-[#2d291a] bg-center bg-cover text-white overflow-hidden"
 >
-
 <div className="relative max-w-[1400px] mx-auto px-4 sm:px-5 py-7 sm:py-12 grid grid-cols-1 lg:grid-cols-2  sm:gap-14 lg:gap-20 items-center">
 
 {/* LEFT CONTENT */}

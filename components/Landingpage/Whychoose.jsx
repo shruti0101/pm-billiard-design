@@ -24,16 +24,16 @@ const Whychoose = () => {
   return (
     <div>
 
-<section style={{backgroundImage:"url(/try/whbg.png)"}} className="w-full bg-center bg-cover py-16">
+<section className="w-full bg-center bg-cover py-16 bg-white">
   <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-18 items-center">
 
     {/* LEFT — TEXT CONTENT */}
     <div className="space-y-6">
-      <h2 className="text-3xl lg:text-4xl font-extrabold text-white leading-tight">
+      <h2 className="text-3xl lg:text-4xl font-extrabold text-black leading-tight">
         Why PM Billiards is the Preferred Choice 🏅
       </h2>
 
-      <p className="text-white">
+      <p className="text-black">
         At PM Billiards, we are committed to delivering premium Pool Tables,
         Snooker Tables, and Billiard Tables that meet the highest standards of
         quality, performance, and design. With expert craftsmanship, superior
@@ -43,8 +43,8 @@ const Whychoose = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
 
-        <div className="bg-white p-5 rounded-2xl shadow-sm">
-          <h3 className="font-semibold text-lg text-gray-900">
+        <div className="bg-yellow-100 p-5 rounded-2xl shadow-sm">
+          <h3 className="font-semibold text-lg text-black">
             Premium Materials & Build
           </h3>
           <p className="text-sm text-black mt-2">
@@ -53,8 +53,8 @@ const Whychoose = () => {
           </p>
         </div>
 
-        <div className="bg-white p-5 rounded-2xl shadow-sm">
-          <h3 className="font-semibold text-lg text-gray-900">
+        <div className="bg-green-100 p-5 rounded-2xl shadow-sm">
+          <h3 className="font-semibold text-lg text-black">
             Professional Craftsmanship
           </h3>
           <p className="text-sm text-black mt-2">
@@ -63,8 +63,8 @@ const Whychoose = () => {
           </p>
         </div>
 
-        <div className="bg-white p-5 rounded-2xl shadow-sm">
-          <h3 className="font-semibold text-lg text-gray-900">
+        <div className="bg-green-100 p-5 rounded-2xl shadow-sm">
+          <h3 className="font-semibold text-lg text-black">
             Custom-Built Tables
           </h3>
           <p className="text-sm text-black mt-2">
@@ -73,8 +73,8 @@ const Whychoose = () => {
           </p>
         </div>
 
-        <div className="bg-white p-5 rounded-2xl shadow-sm">
-          <h3 className="font-semibold text-lg text-gray-900">
+        <div className="bg-yellow-100 p-5 rounded-2xl shadow-sm">
+          <h3 className="font-semibold text-lg text-black">
             Tournament Grade
           </h3>
           <p className="text-sm text-black mt-2">

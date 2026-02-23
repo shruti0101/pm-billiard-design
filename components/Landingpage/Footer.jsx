@@ -66,11 +66,11 @@ style={{
           <div>
             <div className="inline-block rounded-sm overflow-hidden bg-white ">
               <Image
-                src="/product/logo.png"
+                src="/2.png"
                 width={100}
                 height={50}
                 alt="PM Billiards"
-                className="object-cover"
+                className="object-contain"
               />
             </div>
 

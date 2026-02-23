@@ -87,7 +87,7 @@ export default function ProductPage({ params }) {
             <p className="text-[#1a1a1a] text-md">{product.excerpt}</p>
 
             {product.colors && (
-              <div className="mt-10 md:mt-14">
+              <div className="mt-10 md:mt-10">
                 <p className="text-lg text-gray-400 tracking-[0.3em] uppercase mb-6">
                   Available Finishes
                 </p>

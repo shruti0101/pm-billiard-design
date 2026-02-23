@@ -64,13 +64,13 @@ style={{
 
           {/* BRAND */}
           <div>
-            <div className="inline-block rounded-sm overflow-hidden bg-white p-2">
+            <div className="inline-block rounded-sm overflow-hidden bg-white ">
               <Image
                 src="/product/logo.png"
-                width={160}
+                width={100}
                 height={50}
                 alt="PM Billiards"
-                className="object-contain"
+                className="object-cover"
               />
             </div>
 

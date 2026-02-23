@@ -92,7 +92,7 @@ const navTextColor = isProductPage ? "text-black" : "text-white";
             ))}
 
             {activeMenu && (
-              <div className="fixed left-0 right-0 top-[115px] bg-white h-130 overflow-y-auto text-black shadow-xl py-12 z-[60]">
+              <div className="fixed left-0 right-0 top-[112px] bg-white h-130 overflow-y-auto text-black shadow-xl py-12 z-[60]">
                 <div className="w-full mx-auto px-8">
                   <p className="mb-8 text-xs capitalize tracking-[0.3em]">
                     {categories.find((c) => c.id === activeMenu)?.name}

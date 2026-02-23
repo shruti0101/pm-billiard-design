@@ -66,7 +66,7 @@ style={{
           <div>
             <div className="inline-block rounded-sm overflow-hidden bg-white p-2">
               <Image
-                src="/logo.png"
+                src="/product/logo.png"
                 width={160}
                 height={50}
                 alt="PM Billiards"

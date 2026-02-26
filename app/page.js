@@ -6,7 +6,7 @@ import Products from "@/components/Landingpage/Products";
 import ProductCategorySection from "@/components/Landingpage/Categories";
 import Cta from "@/components/Landingpage/Cta";
 // import Popup from "@/components/Popup"
-
+import TestimonialsSection from "@/components/Landingpage/Testmonial";
 import Letter from "@/components/Landingpage/Letter";
 import PremiumTablesSection from "@/components/Landingpage/Premium";
 
@@ -32,8 +32,9 @@ export default function Home() {
 
   
       <PremiumTablesSection></PremiumTablesSection>
-
+<TestimonialsSection></TestimonialsSection>
       <Faq></Faq>
+      
     </>
   );
 }

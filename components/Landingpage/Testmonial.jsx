@@ -1,118 +1,142 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+
+import { Playfair_Display, Inter } from "next/font/google";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+
+const playfair = Playfair_Display({ subsets: ["latin"], weight: ["600"] });
+const inter = Inter({ subsets: ["latin"] });
+
+export default function TestimonialsSection() {
 
 const testimonials = [
   {
-    text: "Dk Modular Contractor transformed our office into a modern, efficient workspace. Their modular workstations are not only visually premium but also extremely comfortable for our team. From design planning to final installation, everything was handled professionally and delivered on time.",
-    name: "Corporate Office – Delhi",
+    name: "Sushanto Bhattachaya",
+    review:
+      "Amazing tables and service. The Leadsuper tables installed at Savio Pool & Snooker Academy are perfectly smooth to play on. They provide excellent spin and cue ball control. Highly recommended for snooker tables.",
   },
   {
-    text: "We were looking for customized office furniture that matched our brand identity and space constraints. Dk Modular Contractor understood our requirements perfectly and delivered high-quality workstations and storage units that improved both aesthetics and productivity.",
-    name: "IT Company – Delhi",
+    name: "Mesmer Savio",
+    review:
+      "We recently purchased the Leadsuper Table from PM Billiards for Savio's Snooker Academy, Bangalore. The tables meet the highest standards and are truly worth it.",
   },
   {
-    text: "The executive cabins and conference tables designed by Dk Modular Contractor have elevated the overall look of our office. The material quality, finish, and detailing clearly reflect their expertise in modular office furniture solutions.",
-    name: "Real Estate & Infrastructure Firm – Delhi-NCR",
+    name: "Chandan Bhatti",
+    review:
+      "Genuine pricing and good quality. Bought Omin Gunman cue and it performs very well.",
   },
   {
-    text: "Dk Modular Contractor provided us with a complete office setup including workstations, partitions, and reception furniture. Their ergonomic designs and smart space planning helped us utilize our floor area efficiently without compromising comfort.",
-    name: "Co-Working Space – Delhi-NCR",
+    name: "Viraj Misal",
+    review:
+      "Good table options with excellent quality. Owner Manmeet Singh ji is very cooperative and supportive.",
   },
   {
-    text: "What sets Dk Modular Contractor apart is their commitment to timelines and quality. The installation team was skilled, disciplined, and ensured everything was perfectly aligned. We highly recommend them for any corporate office furniture project.",
-    name: "Manufacturing Company – Delhi-NCR",
+    name: "Shuddu Sharma",
+    review:
+      "Overall experience with PM Billiards Factory has been exceptional. Highly recommend their products and services for top-notch pool tables and customer care.",
   },
+  {
+    name: "Govinder Puri",
+    review:
+      "Good quality tables at a reasonable price. Very professional and humble staff. The cues provided are also of great quality.",
+  },
+  {
+    name: "Pratap Deependra",
+    review:
+      "Best place to buy cues and snooker accessories at reasonable prices. Very polite staff who guide you well according to your needs.",
+  },
+  {
+    name: "teTodAS 342",
+    review:
+      "Great value for money. The table quality exceeded expectations. Well packed delivery and quick seller response. Very happy with the purchase.",
+  },
+  {
+    name: "Vijaysharma Sharma",
+    review:
+      "Lead Super tables exceeded my expectations in terms of quality, finishing, and performance. Mr. Manmeet Singh's professionalism is commendable.",
+  },
+  {
+    name: "Gul Mohammad (Faiz)",
+    review:
+      "Best products with genuine items at the lowest price. Very helpful and kind support from Mr. Puneet.",
+  },
+  {
+    name: "Fahad Baig",
+    review:
+      "Fantastic opportunity to play snooker qualifiers locally. The Leadsuper case cover has very good material quality.",
+  },
+  {
+    name: "Ashish Gore",
+    review:
+      "Cue case cover is highly recommended. Looks professional, lightweight, sturdy, and easy to carry.",
+  }
 ];
-
-
-export default function TestimonialSlider() {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % testimonials.length);
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const prevSlide = () =>
-    setIndex(index === 0 ? testimonials.length - 1 : index - 1);
-  const nextSlide = () =>
-    setIndex((index + 1) % testimonials.length);
-
-  const current = testimonials[index];
-
   return (
-    <section className="relative w-full py-10 bg-gradient-to-b from-[#FAF7F0] via-[#F7DF86]/40 to-white overflow-hidden">
+    <section className={`${inter.className} w-full bg-[#e9e9e9] py-[40px] px-[20px] relative`}>
       
-      {/* Heading */}
-      <div className="max-w-6xl mx-auto text-center px-4">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
-          What Our Clients Say
-        </h2>
-        <p className="text-black max-w-2xl mx-auto mb-8">
-          Trusted by manufacturers across India for quality, consistency, and reliability.
-        </p>
-      </div>
+      <h2 className={`${playfair.className} text-center text-[34px] md:text-[64px] text-[#222] mb-[40px]`}>
+        What they Say About Us
+      </h2>
 
-      {/* Slider Card */}
-      <div className="relative max-w-4xl mx-auto px-4">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -30 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative bg-white/80 backdrop-blur-xl border border-white/60 shadow-2xl rounded-3xl px-6 sm:px-10 py-5 text-center"
-          >
-            {/* Quote Icon */}
-            <div className="text-6xl text-[#F7C600]/40 font-serif ">“</div>
+      <div className="flex flex-col lg:flex-row gap-[25px] items-stretch max-w-7xl mx-auto">
 
-            <p className="text-black italic text-sm sm:text-lg leading-relaxed max-w-3xl mx-auto">
-              {current.text}
-            </p>
-
-            <div className="mt-8">
-              <h4 className="text-sm sm:text-lg font-semibold font-serif text-gray-900">
-                {current.name}
-              </h4>
-            </div>
-          </motion.div>
-        </AnimatePresence>
-
-        {/* Controls */}
-        <div className="hidden md:flex justify-between items-center absolute inset-y-0 left-0 right-0 px-4">
-          <button
-            onClick={prevSlide}
-            className="p-3 rounded-full bg-white shadow-md hover:shadow-xl transition"
-          >
-            <ChevronLeft className="w-6 h-6 text-gray-700" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="p-3 rounded-full bg-white shadow-md hover:shadow-xl transition"
-          >
-            <ChevronRight className="w-6 h-6 text-gray-700" />
-          </button>
+        {/* Rating Card */}
+        <div className="lg:w-[320px] bg-white p-[10px_20px] text-center rounded-[4px]">
+          <h1 className="text-[80px] md:text-[110px] font-semibold leading-none">4.9</h1>
+          <div className="text-[#ff4d4d] text-[24px] my-[10px]">★★★★★</div>
+          <p className="text-[#555] text-xl">(300+ reviews)</p>
+          <h3 className="mt-[20px] font-medium leading-snug">
+            Loved by Our Customers
+          </h3>
         </div>
 
-        {/* Dots */}
-        <div className="flex justify-center mt-5 gap-2">
-          {testimonials.map((_, i) => (
-            <span
-              key={i}
-              className={`h-2.5 w-2.5 rounded-full transition-all ${
-                i === index
-                  ? "bg-[#F7C600] w-6"
-                  : "bg-gray-300"
-              }`}
-            />
-          ))}
+        {/* Swiper Slider */}
+        <div className="flex-1 relative overflow-hidden">
+
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{ delay: 3000 }}
+            navigation={{
+              nextEl: ".next-btn",
+              prevEl: ".prev-btn",
+            }}
+            breakpoints={{
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 2 },
+            }}
+          >
+
+            {testimonials.map((item, i) => (
+              <SwiperSlide key={i}>
+                <div className="bg-white rounded-[6px] p-[35px] h-auto md:h-70">
+                  <p className="font-semibold text-2xl mb-[5px]">{item.name}</p>
+                  <p className="text-[#ff9900] text-[40px] leading-none">“</p>
+                  <p className="mt-[10px] text-[#333] leading-[1.5]">
+                    {item.review}
+                  </p>
+                </div>
+              </SwiperSlide>
+            ))}
+
+          </Swiper>
+
+          {/* Navigation Buttons */}
+          <div className="prev-btn absolute left-[-15px] top-1/2 -translate-y-1/2 z-10 cursor-pointer">
+            <ChevronLeft className="text-[#ff6a00]" />
+          </div>
+
+          <div className="next-btn absolute right-[-15px] top-1/2 -translate-y-1/2 z-10 cursor-pointer">
+            <ChevronRight className="text-[#ff6a00]" />
+          </div>
+
         </div>
       </div>
+
     </section>
   );
 }

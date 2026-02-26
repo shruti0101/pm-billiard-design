@@ -199,26 +199,22 @@ Contact: ${phone}`;
               <div className="flex items-start gap-4">
                 <MapPin className="text-[#EDBC41] w-6 h-6" />
                 <p className="text-white/90">
-                  PM Billiards Showroom,  
-                  <br />
-                  Ranhola Vihar, Najafgarh Road  
-                  <br />
-                  New Delhi, 110041
+                16/3,Basement, Block 16, East Patel Nagar, Patel Nagar, <br /> New Delhi, 110008
                 </p>
               </div>
 
               <div className="flex items-start gap-4">
                 <Phone className="text-[#EDBC41] w-6 h-6" />
                 <p className="text-white/90">
-                  <a href="tel:9999402424">9999402424</a>,{" "}
-                  <a href="tel:8595063087">8595063087</a>
+                  <a href="tel:9999402424">9812232723</a>,{" "}
+                  <a href="tel:8595063087">8826263223</a>
                 </p>
               </div>
 
               <div className="flex items-start gap-4">
                 <Mail className="text-[#EDBC41] w-6 h-6" />
                 <p className="text-white/90">
-                  info@pmbilliards.com
+                pmbilliards@gmail.com
                 </p>
               </div>
             </div>
@@ -227,11 +223,7 @@ Contact: ${phone}`;
 
         {/* GOOGLE MAP */}
         <div className="w-full h-[450px] mt-16">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.674029824373!2d77.0564707!3d28.6616964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01c4c2d1a55f%3A0x3f38e96f6a92c4b1!2sRanhola%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000"
-            className="w-full h-full border-0"
-            loading="lazy"
-          />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.51500866488!2d77.16871070901136!3d28.64720967555514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04dcc1555555%3A0x89f48f2d3846a42c!2sPM%20BILLIARDS!5e1!3m2!1sen!2sin!4v1772109813343!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="h-full w-full"></iframe>
         </div>
       </section>
     </>

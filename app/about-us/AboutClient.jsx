@@ -167,7 +167,7 @@ const AboutPage = () => {
       </section>
 
       {/* ===== OUR VISION ===== */}
-      <section className="relative bg-[#F6FBF9]  sm:py-16 lg:py-20 px-4 sm:px-6 overflow-hidden">
+      <section className="relative bg-[#F6FBF9]  py-10 lg:py-20 px-4 sm:px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
           <div className="relative w-full h-[240px] sm:h-[320px] md:h-[420px]">
             <Image
@@ -204,7 +204,7 @@ const AboutPage = () => {
       </section>
 
       {/* ===== OUR MISSION ===== */}
-      <section className="relative bg-[#F6FBF9] py-12 sm:py-14 lg:py-16 px-4 sm:px-6 overflow-hidden">
+      <section className="relative bg-[#F6FBF9] mb-5 sm:py-14 lg:py-16 px-4 sm:px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
           <div>
             <h2 className="text-3xl md:text-4xl font-semibold text-[#EDBC41] mb-4">

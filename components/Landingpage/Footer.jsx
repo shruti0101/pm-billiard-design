@@ -171,24 +171,15 @@ style={{
             <div className="flex items-start gap-3 mb-4">
               <MapPin className="text-[#EDBC41] w-5 h-5" />
               <p className="text-sm text-white/95">
-                PM Billiards Showroom  
-                <br />
-                Ranhola Vihar, Najafgarh Road  
-                <br />
-                New Delhi, 110041
+              16/3,Basement, Block 16, East Patel Nagar, Patel Nagar, <br /> New Delhi,  110008
               </p>
             </div>
 
             <div className="space-y-2 text-sm">
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#EDBC41]" />
-                <a href="tel:9999402424" className="text-white hover:text-[#EDBC41]">
-                  9999402424
-                </a>
-                ,{" "}
-                <a href="tel:8595063087" className="text-white hover:text-[#EDBC41]">
-                  8595063087
-                </a>
+                 <a href="tel:9999402424">9812232723</a>,{" "}
+                  <a href="tel:8595063087">8826263223</a>
               </p>
 
               <p className="flex items-center gap-2">
@@ -197,7 +188,7 @@ style={{
                   href="mailto:info@pmbilliards.com"
                   className="text-white hover:text-[#EDBC41]"
                 >
-                  info@pmbilliards.com
+                  pmbilliards@gmail.com
                 </a>
               </p>
             </div>
@@ -205,7 +196,7 @@ style={{
             {/* SOCIAL ICONS */}
             <div className="flex gap-4 mt-5">
               <a
-                href="#"
+                href="https://www.instagram.com/pmbilliards_?igsh=OGlseTM3bGR4a3Z4"
                 className="text-[#EDBC41] hover:text-white transition"
                 aria-label="Instagram"
               >
@@ -213,28 +204,16 @@ style={{
               </a>
 
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61575620020673"
                 className="text-[#EDBC41] hover:text-white transition"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
 
-              <a
-                href="#"
-                className="text-[#EDBC41] hover:text-white transition"
-                aria-label="YouTube"
-              >
-                <Youtube className="w-5 h-5" />
-              </a>
+           
 
-              <a
-                href="#"
-                className="text-[#EDBC41] hover:text-white transition"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
+           
             </div>
           </div>
         </div>

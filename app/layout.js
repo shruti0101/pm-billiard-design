@@ -4,7 +4,9 @@ import LayoutWrapper from "@/components/LayoutWrapper";
 import Script from "next/script";
 // import Whatsapp from "@/components/Whatsapp";
 
-
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 const fraunces = Fraunces({
   subsets: ["latin"],
   weight: ["400"],

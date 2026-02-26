@@ -21,7 +21,7 @@ export default function Hero() {
     <section
       className="
       relative w-full overflow-hidden bg-black
-      h-[190px] sm:h-[370px] md:h-[80vh] xl:h-[110vh]
+      h-[390px] md:h-[80vh] xl:h-[110vh]
       mt-20 md:mt-0
       "
     >
@@ -72,7 +72,7 @@ export default function Hero() {
             width={2000}
             height={800}
             priority
-            className="object-cover"
+            className="object-cover h-100 md:h-auto"
           />
         </motion.div>
       </AnimatePresence>

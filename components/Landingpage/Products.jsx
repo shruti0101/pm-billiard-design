@@ -97,7 +97,7 @@ export default function PremiumProductSlider() {
                 <img
                   src={p.img}
                   alt={p.name}
-                  className="w-full h-100 object-contain rounded-2xl"
+                  className="w-full h-80 object-contain rounded-2xl"
                 />
               </div>
 

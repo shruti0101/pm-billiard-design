@@ -18,7 +18,7 @@ export default function VideoCTA() {
   }, []);
 
   return (
-    <section className="bg-cover bg-center relative w-full h-[60vh] md:h-[80vh] overflow-hidden flex items-center justify-center">
+    <section className="hidden md:flex bg-cover bg-center relative w-full h-[60vh] md:h-[80vh] overflow-hidden  items-center justify-center">
 
       {/* ONLY RENDER BALLPIT ON DESKTOP */}
       {isDesktop && (
@@ -42,13 +42,13 @@ export default function VideoCTA() {
       <div className="hidden md:block absolute inset-0 bg-black/30 pointer-events-none" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
-        <h2 className="text-white text-4xl md:text-7xl font-semibold leading-[1.1] tracking-tight">
+        <h2 className="text-black text-4xl md:text-7xl font-semibold leading-[1.1] tracking-tight">
           Crafted for Champions.
           <br className="hidden md:block" />
           Built for Legacy.
         </h2>
 
-        <p className="text-white mt-6 text-base md:text-xl max-w-2xl mx-auto">
+        <p className="text-black mt-6 text-base md:text-xl max-w-2xl mx-auto">
           Discover world-class billiard and snooker tables engineered with precision,
           refined materials, and timeless design — made for professionals, clubs, and luxury spaces.
         </p>

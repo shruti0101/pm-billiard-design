@@ -24,12 +24,12 @@ const Whychoose = () => {
   return (
     <div>
 
-<section className="w-full bg-center bg-cover py-16 bg-white">
-  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-18 items-center">
+<section className="w-full bg-center bg-cover py-5 md:py-16 bg-white">
+  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-18 items-center">
 
     {/* LEFT — TEXT CONTENT */}
     <div className="space-y-6">
-      <h2 className="text-3xl lg:text-4xl font-extrabold text-black leading-tight">
+      <h2 className="text-3xl lg:text-4xl font-serif font-extrabold text-black leading-tight">
         Why PM Billiards is the Preferred Choice 🏅
       </h2>
 
@@ -108,15 +108,15 @@ const Whychoose = () => {
                 <Image
                   src={src}
                   alt="PM Billiards table"
-                  width={1200}
-                  height={1200}
+                  width={800}
+                  height={800}
                   className=" object-cover rounded-xl"
                 />
               </SwiperSlide>
             ))}
           </Swiper>
 
-          <p className="font-semibold text-white mt-7 text-2xl text-center">
+          <p className="font-semibold text-black mt-7 text-xl md:text-2xl text-center">
             Trusted by clubs, academies, gaming centers, and professional players.
           </p>
         </div>

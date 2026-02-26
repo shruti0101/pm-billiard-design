@@ -26,7 +26,7 @@ export default function CategoryPage({ params }) {
           <div className="mx-auto mb-4 h-[2px] w-20 bg-[#EDBC41] rounded-full" />
 
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-white">
-         Our Categories
+      {category.name}
           </h2>
 
           <p className="mt-4 text-sm sm:text-base md:text-lg text-white max-w-3xl mx-auto leading-relaxed">

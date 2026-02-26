@@ -191,41 +191,16 @@ const navTextColor = isProductPage ? "text-black" : "text-white";
 
                 {categories.map((cat) => (
                   <div key={cat.id} className="border-b py-2">
-                    <button
-                      onClick={() =>
-                        setActiveMobileCat(
-                          activeMobileCat === cat.id ? null : cat.id,
-                        )
-                      }
-                      className="flex justify-between items-center w-full text-left font-semibold"
-                    >
-                      {cat.name}
-                      <ChevronDown
-                        size={18}
-                        className={`transition ${
-                          activeMobileCat === cat.id ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-
-                    <div
-                      className={`grid transition-all duration-500 overflow-hidden ${
-                        activeMobileCat === cat.id
-                          ? "max-h-[500px] mt-3"
-                          : "max-h-0"
-                      }`}
-                    >
-                      {cat.products.map((prod) => (
-                        <Link
-                          key={prod.id}
-                          href={`/products/${prod.id}`}
+                   <Link
+                          key={cat.id}
+                          href={`/categories/${cat.id}`}
+                       
                           onClick={closeMenu}
                           className="py-2 pl-3 text-sm text-black hover:text-[#008065]"
                         >
-                          {prod.name}
+                          {cat.name}
                         </Link>
-                      ))}
-                    </div>
+
                   </div>
                 ))}
               </div>

@@ -11,7 +11,7 @@ import Letter from "@/components/Landingpage/Letter";
 import PremiumTablesSection from "@/components/Landingpage/Premium";
 
 import Soccer from "@/components/Landingpage/Soccer";
-
+import Clientele from "@/components/Landingpage/Clientele";
 import Faq from "@/components/Landingpage/Faq";
 import BestSeller from "@/components/Landingpage/Bestseller";
 
@@ -26,6 +26,7 @@ export default function Home() {
           <Letter></Letter>
       <Products></Products>
       <Soccer></Soccer>
+      <Clientele></Clientele>
 
       <Whychoose></Whychoose>
       <Cta></Cta>

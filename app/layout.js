@@ -2,7 +2,7 @@ import { Fraunces } from "next/font/google";
 import "./globals.css";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import Script from "next/script";
-// import Whatsapp from "@/components/Whatsapp";
+import Whatsapp from "@/components/Whatsapp";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
 
       <body className="antialiased">
      
-        {/* <Whatsapp /> */}
+        <Whatsapp />
         <main>
           <LayoutWrapper>{children}</LayoutWrapper>
         </main>

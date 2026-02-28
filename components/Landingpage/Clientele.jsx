@@ -4,46 +4,42 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
+import "swiper/css/free-mode";   // ✅ add this
+import "swiper/css/autoplay";    // ✅ add this
 
-const clientele = [
-  { name: "ABC Corporate", logo: "/client/1.webp" },
-  { name: "TechNova Solutions", logo: "/client/2.webp" },
-  { name: "Workspace Hub", logo: "/client/3.webp" },
-  { name: "EduSmart Group", logo: "/client/4.webp" },
-  { name: "HealthPlus Clinics", logo: "/client/5.webp" },
-  // { name: "GovBuild PSU", logo: "/clientele/brand-34.webp" },
-  { name: "GovBuild PSU", logo: "/client/6.webp" },
-  { name: "GovBuild PSU", logo: "/client/7.webp" },
-  { name: "GovBuild PSU", logo: "/client/8.webp" },
-  { name: "GovBuild PSU", logo:"/client/9.webp" },
-  { name: "GovBuild PSU", logo:"/client/15.webp" },
-  { name: "GovBuild PSU", logo: "/client/11.webp" },
-  { name: "GovBuild PSU", logo: "/client/12.webp" },
-  { name: "GovBuild PSU", logo: "/client/13.webp" },
-  { name: "GovBuild PSU", logo: "/client/14.webp" },
-    { name: "GovBuild PSU", logo: "/client/16.webp" },
-      { name: "GovBuild PSU", logo: "/client/17.webp" },
-          { name: "GovBuild PSU", logo: "/client/18.webp" },
-              { name: "GovBuild PSU", logo: "/client/19.webp" },
+const clientsele = [
+  { logo: "/clients/1.png" },
+  { logo: "/clients/2.png" },
+  { logo: "/clients/3.png" },
+  { logo: "/clients/4.png" },
+  { logo: "/clients/5.png" },
+  { logo: "/clients/6.png" },
+  { logo: "/clients/7.png" },
+  { logo: "/clients/8.png" },
+  { logo: "/clients/9.png" },
+  { logo: "/clients/15.png" },
+  { logo: "/clients/11.png" },
+  { logo: "/clients/12.png" },
+  { logo: "/clients/13.png" },
+  { logo: "/clients/14.png" },
+  { logo: "/clients/16.png" },
 ];
 
-export default function OurClientele() {
+export default function Ourclientsele() {
   return (
-    <section className="py-10 bg-gray-50 overflow-hidden">
+    <section className="py-10 bg-yellow-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-
-        {/* Heading */}
-        <div className="max-w-3xl mb-8">
+        <div className="max-w-4xl mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Our <span className="text-amber-500">Clientele</span>
+            Our <span className="text-amber-500">Clients</span>
           </h2>
-          <p className="mt-2 text-black leading-relaxed">
-            Trusted by leading brands and institutions for premium,
-            high-performance office furniture solutions.
-          </p>
+    <p className="mt-2 text-black leading-relaxed">
+  Trusted by schools, colleges, and educational institutions for durable,
+  ergonomic, and high-quality school tables designed to enhance comfort,
+  learning efficiency, and long-lasting classroom performance.
+</p>
         </div>
 
-        {/* Continuous Slider */}
         <Swiper
           modules={[Autoplay, FreeMode]}
           loop
@@ -59,25 +55,22 @@ export default function OurClientele() {
             640: { slidesPerView: 3.5 },
             1024: { slidesPerView: 6 },
           }}
-          className="clientele-swiper"
         >
-          {clientele.map((client, i) => (
+          {clientsele.map((clients, i) => (
             <SwiperSlide key={i}>
-              <div className="h-28 flex items-center justify-center rounded-xl bg-white/70 backdrop-blur border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:bg-white">
+              <div className="h-38 flex items-center justify-center rounded-xl bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all">
                 <Image
-                  src={client.logo}
-                  alt={client.name}
+                  src={clients.logo}
+                  alt="Client Logo"
                   width={150}
                   height={80}
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-
-    
     </section>
   );
 }

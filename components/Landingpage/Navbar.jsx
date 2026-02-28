@@ -49,6 +49,8 @@ const navTextColor = isProductPage ? "text-black" : "text-white";
               <Link href="/about-us" className="hover:text-[#F6BB31]">
                 About Us
               </Link>
+
+                <Link href="/products"> Products </Link>
               <Link href="/blogs" className="hover:text-[#F6BB31]">
                 Blogs
               </Link>

@@ -33,10 +33,10 @@ export default function Ourclientsele() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Our <span className="text-amber-500">Clients</span>
           </h2>
-    <p className="mt-2 text-black leading-relaxed">
-  Trusted by schools, colleges, and educational institutions for durable,
-  ergonomic, and high-quality school tables designed to enhance comfort,
-  learning efficiency, and long-lasting classroom performance.
+<p className="mt-2 text-black leading-relaxed">
+  Trusted by clubs, academies, and professional players for manufacturing
+  premium-quality snooker tables crafted with precision, durability,
+  and superior playing performance.
 </p>
         </div>
 

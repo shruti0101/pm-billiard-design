@@ -31,10 +31,10 @@ const Page = () => {
     <div className="bg-[#F9FAFB]">
       {/* ================= HERO ================= */}
       <div
-        className="relative h-[45vh] md:h-[65vh] flex items-center justify-center text-center"
+        className="relative h-[45vh] md:h-[95vh] flex items-center justify-center text-center"
         style={{
           backgroundImage:
-            "url('/footerbg.webp')",
+            "url('/try/try11.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -52,8 +52,7 @@ const Page = () => {
             All Products
           </h1>
           <p className="mt-4 text-gray-200 text-base md:text-lg">
-            Explore our complete range of premium modular office furniture
-            solutions.
+            Explore our complete range of premium Snooker Tables.
           </p>
         </div>
       </div>
@@ -74,7 +73,7 @@ const Page = () => {
                 </div>
 
                 {/* Image */}
-                <div className="h-[220px] flex items-center justify-center bg-white">
+                <div className="h-[260px] flex items-center justify-center bg-white">
                   <Image
                     src={product.image[0]?.src || "/placeholder.webp"}
                     alt={product.image[0]?.alt || product.name}

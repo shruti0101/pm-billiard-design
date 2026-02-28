@@ -4,10 +4,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
-import "swiper/css/free-mode";   // ✅ add this
-import "swiper/css/autoplay";    // ✅ add this
+import "swiper/css/free-mode";  
+import "swiper/css/autoplay";    
 
 const clientsele = [
+   { logo: "/clients/15.png" },
+    { logo: "/clients/16.png" },
+   
   { logo: "/clients/1.png" },
   { logo: "/clients/2.png" },
   { logo: "/clients/3.png" },
@@ -17,12 +20,12 @@ const clientsele = [
   { logo: "/clients/7.png" },
   { logo: "/clients/8.png" },
   { logo: "/clients/9.png" },
-  { logo: "/clients/15.png" },
+
   { logo: "/clients/11.png" },
   { logo: "/clients/12.png" },
   { logo: "/clients/13.png" },
   { logo: "/clients/14.png" },
-  { logo: "/clients/16.png" },
+
 ];
 
 export default function Ourclientsele() {

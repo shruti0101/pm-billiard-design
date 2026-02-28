@@ -10,7 +10,8 @@ import "swiper/css/pagination";
 const Whychoose = () => {
 
  const images = [
- 
+ "/clients/15.png",
+    
     "/try/office2.webp",
    "/try/office3.webp",
     "/try/office4.webp",

@@ -139,8 +139,10 @@ const navTextColor = isProductPage ? "text-black" : "text-white";
             <div className="hidden lg:flex gap-12 text-white text-lg font-semibold">
               <Link href="/">Home</Link>
               <Link href="/about-us">About Us</Link>
+              <Link href="/products">Our Products </Link>
               <Link href="/blogs">Blogs</Link>
               <Link href="/contact-us">Contact Us</Link>
+                  
             </div>
 
             <button
@@ -151,7 +153,10 @@ const navTextColor = isProductPage ? "text-black" : "text-white";
             </button>
           </div>
         </header>
+
+        
       )}
+
 
       {/* MOBILE MENU GLOBAL PORTAL */}
       {mounted &&

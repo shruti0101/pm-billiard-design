@@ -1,6 +1,6 @@
 import React from "react";
 import ElectricBorder from "@/components/ElectricBorder";
-
+import  Link from "next/link"
 const About = () => {
   return (
     <div>
@@ -50,13 +50,13 @@ const About = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-12">
-                <button className="inline-flex items-center gap-2 bg-[#2f8f6b] hover:bg-[#55b338] transition px-6 py-3 rounded-full text-white font-medium">
+                <Link href="/about-us" className="inline-flex items-center gap-2 bg-[#2f8f6b] hover:bg-[#55b338] transition px-6 py-3 rounded-full text-white font-medium">
                   Explore our journey →
-                </button>
+                </Link>
 
-                <button className="inline-flex items-center gap-2 border border-[#E0AE2E] hover:border-[#E0AE2E] transition px-6 py-3 rounded-full text-white">
+                <Link href="/contact-us" className="inline-flex items-center gap-2 border border-[#E0AE2E] hover:border-[#E0AE2E] transition px-6 py-3 rounded-full text-white">
                   Contact us
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -91,13 +91,11 @@ const About = () => {
                     <div className="h-px bg-white/10 mb-5" />
 
                     <div className="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
-                      <p className="text-base sm:text-lg font-medium text-white">
-                        From <span className="text-[#f5c243]">₹2,90,000</span>
-                      </p>
+                    
 
-                      <button className="bg-[#f5c243] text-black px-6 py-2 rounded-full text-sm font-medium hover:bg-[#e0ae2e] transition">
+                      <Link href="/categories/snooker-table" className="bg-[#f5c243] text-black px-6 py-2 rounded-full text-sm font-medium hover:bg-[#e0ae2e] transition">
                         Explore Tables
-                      </button>
+                      </Link>
                     </div>
                   </div>
 

@@ -14,9 +14,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata = {
-  title: "Office Workstation Manufacturer | Modular Office Furniture",
+  title: "pm billiards",
   description:
-    "Trusted office workstation manufacturer offering modular, ergonomic, and custom workstations for modern corporate offices. Quality assured.",
+    "Trusted snooker table  manufacturer ",
   icons: {
     icon: "/logo.webp",
   },

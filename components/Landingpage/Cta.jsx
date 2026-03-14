@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import Ballpit from "../Ballpit";
 
@@ -54,13 +54,20 @@ export default function VideoCTA() {
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-5 justify-center">
+
+          <Link href="/categories/snooker-table" >
+          
           <button className="bg-[#256F55] text-white px-9 py-3 rounded-full font-semibold hover:scale-105 transition">
             Explore Tables
           </button>
+          </Link>
+<Link href="/contact-us">
 
-          <button className="text-[#256F55] border-2 text-lg border-black p-2 rounded-full hover:text-white transition font-medium">
-            View Collections →
+          <button className="text-white border-2 text-lg border-black p-2 rounded-full hover:text-white transition font-medium">
+          Get In Touch →
           </button>
+</Link>
+
         </div>
       </div>
     </section>

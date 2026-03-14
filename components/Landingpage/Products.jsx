@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -12,30 +12,35 @@ const products = [
     name: "Snooker Table",
     img: "/product/snookertable/1.webp",
     tag: "Best Seller",
+    link:"products/leadsuper-star-snooker-table"
   },
   {
     id: 2,
     name: "Pool Table",
     img: "/product/snookertable/p5.webp",
     tag: "Best Seller",
+    link:"products/mini-snooker-table"
   },
   {
     id: 3,
     name: "Soccer Table",
     img: "/product/soccertable/2.webp",
     tag: "New",
+    link:"products/pm-billiards-foosball-table"
   },
   {
     id: 4,
     name: "Snooker Cue",
     img: "/product/billiardstick/3.webp",
     tag: "New",
+    link:"products/blp-snooker-cue-9mm"
   },
   {
     id: 5,
     name: "Cue Case",
     img: "/product/cuecase/2.webp",
     tag: "Editor’s Pick",
+    link:"products/omin-cue-case"
   },
 ];
 
@@ -105,9 +110,12 @@ export default function PremiumProductSlider() {
                 {p.name}
               </h3>
 
+<Link href={p.link}>
+
               <button className="mt-4 w-full bg-[#2F8F6B] text-white py-2.5 rounded-xl text-sm font-medium hover:bg-[#256f55] transition">
                 Explore Product
               </button>
+</Link>
 
             </div>
           </SwiperSlide>

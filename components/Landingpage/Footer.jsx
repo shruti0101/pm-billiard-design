@@ -100,20 +100,16 @@ style={{
                 </Link>
               </li>
               <li>
-                <Link href="/snooker-tables" className="text-white hover:text-[#EDBC41]">
-                  Snooker Tables
+                <Link href="/products" className="text-white hover:text-[#EDBC41]">
+                Products
                 </Link>
               </li>
               <li>
-                <Link href="/pool-tables" className="text-white hover:text-[#EDBC41]">
-                  Pool Tables
+                <Link href="/blogs" className="text-white hover:text-[#EDBC41]">
+                 Blogs
                 </Link>
               </li>
-              <li>
-                <Link href="/accessories" className="text-white hover:text-[#EDBC41]">
-                  Accessories
-                </Link>
-              </li>
+           
               <li>
                 <Link href="/contact-us" className="text-white hover:text-[#EDBC41]">
                   Contact Us
@@ -130,32 +126,32 @@ style={{
 
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/snooker-tables" className="text-white hover:text-[#EDBC41]">
+                <Link href="/categories/snooker-table" className="text-white hover:text-[#EDBC41]">
                   Professional Snooker Tables
                 </Link>
               </li>
               <li>
-                <Link href="/pool-tables" className="text-white hover:text-[#EDBC41]">
+                <Link href="/categories/snooker-table" className="text-white hover:text-[#EDBC41]">
                   Tournament Pool Tables
                 </Link>
               </li>
               <li>
-                <Link href="/billiard-tables" className="text-white hover:text-[#EDBC41]">
+                <Link href="/categories/snooker-table" className="text-white hover:text-[#EDBC41]">
                   Luxury Billiard Tables
                 </Link>
               </li>
               <li>
-                <Link href="/cues" className="text-white hover:text-[#EDBC41]">
+                <Link href="/categories/snooker-cues" className="text-white hover:text-[#EDBC41]">
                   Premium Cues
                 </Link>
               </li>
               <li>
-                <Link href="/cloth" className="text-white hover:text-[#EDBC41]">
+                <Link href="/categories/snooker-table-cloth" className="text-white hover:text-[#EDBC41]">
                   Snooker Cloth
                 </Link>
               </li>
               <li>
-                <Link href="/cue-cases" className="text-white hover:text-[#EDBC41]">
+                <Link href="/categories/cue-case" className="text-white hover:text-[#EDBC41]">
                   Cue Cases
                 </Link>
               </li>
@@ -171,7 +167,7 @@ style={{
             <div className="flex items-start gap-3 mb-4">
               <MapPin className="text-[#EDBC41] w-5 h-5" />
               <p className="text-sm text-white/95">
-              16/3,Basement, Block 16, East Patel Nagar, Patel Nagar, <br /> New Delhi,  110008
+              16/3,Basement, Block 16, East Patel Nagar,   New Delhi,  110008
               </p>
             </div>
 

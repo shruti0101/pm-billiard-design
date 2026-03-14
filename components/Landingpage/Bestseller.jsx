@@ -4,15 +4,45 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
+import Link from "next/link";
 
 const bestSellers = [
-  { id: 1, name: "Professional Snooker Accessory", img: "/try/acc.png" },
-  { id: 2, name: "Premium Pool Table", img: "/try/office2.webp" },
-  { id: 3, name: "Luxury Billiards Table", img: "/try/office8.webp" },
-    { id: 6, name: "Snooker Balls Set", img: "/try/acc2.png" },
-  { id: 4, name: "Tournament Snooker Table", img: "/try/try7.jpg" },
-  { id: 5, name: "Classic Snooker Table", img: "/try/unnamed2.png" },
-
+  {
+    id: 1,
+    name: "Professional Snooker Accessory",
+    img: "/try/acc.png",
+    link: "/categories/billiards-accessories",
+  },
+  {
+    id: 2,
+    name: "Premium Pool Table",
+    img: "/try/office2.webp",
+    link: "/categories/snooker-table",
+  },
+  {
+    id: 3,
+    name: "Luxury Billiards Table",
+    img: "/try/office8.webp",
+    link: "/categories/snooker-table",
+  },
+  {
+    id: 6,
+    name: "Snooker Balls Set",
+    img: "/try/acc2.png",
+    link: "/categories/billiard-balls",
+  },
+  {
+    id: 4,
+    name: "Tournament Snooker Table",
+    img: "/try/try7.jpg",
+    link: "/categories/snooker-table",
+  },
+  {
+    id: 5,
+    name: "Classic Snooker Table",
+    img: "/try/unnamed2.png",
+    link: "/categories/snooker-table",
+  },
 ];
 
 export default function BestSellerSection() {
@@ -64,7 +94,8 @@ export default function BestSellerSection() {
 
 function PremiumShowcase({ item }) {
   return (
-    <div className="relative group h-[420px] rounded-3xl overflow-hidden">
+    <Link href={item.link}>
+      <div  className="relative group h-[420px] rounded-3xl overflow-hidden">
 
       {/* IMAGE */}
       <Image
@@ -97,5 +128,6 @@ function PremiumShowcase({ item }) {
       </span>
 
     </div>
-  );
+    </Link>
+ );
 }

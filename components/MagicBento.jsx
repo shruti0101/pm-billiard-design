@@ -698,11 +698,7 @@ const MagicBento = ({
                     </p>
 
 
-<div className='flex items-start'>
-    <button className="mt-3 px-4 py-1 cursor-pointer items-center text-sm font-bold rounded-full border-2 border-[#B48623] text-[#B48623] hover:bg-[#B48623] hover:text-black transition">
-  Explore
-</button>
-</div>
+
                 
 
                   </div>

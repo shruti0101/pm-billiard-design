@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
@@ -9,17 +9,17 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const categories = [
-  { title: "Snooker Ball", imagebg: "/try/1-1.avif", icon: "/try/1.png" },
-  { title: "Snooker Table", imagebg: "/try/2-2.jpg", icon: "/try/2.webp" },
-  { title: "Snooker Cue", imagebg: "/try/4-4.jpg", icon: "/try/3.png" },
+  { title: "Snooker Ball", imagebg: "/try/1-1.avif", icon: "/try/1.png" ,link:"/categories/billiard-balls" },
+  { title: "Snooker Table", imagebg: "/try/2-2.jpg", icon: "/try/2.webp", link:"/categories/snooker-table" },
+  { title: "Snooker Cue", imagebg: "/try/4-4.jpg", icon: "/try/3.png", link:"/categories/snooker-cues"},
   {
     title: "Accessories",
     imagebg: "/try/2-2.jpg",
-    icon: "/try/accessories.png",
+    icon: "/try/accessories.png",link:"/categories/billiards-accessories"
   },
-  { title: "Table Cloth", imagebg: "/try/4-4.jpg", icon: "/try/5.png" },
-  { title: "Cue Cases", imagebg: "/try/2-2.jpg", icon: "/try/6.png" },
-  { title: "Foosball Table", imagebg: "/try/2-2.jpg", icon: "/try/soccer.png" },
+  { title: "Table Cloth", imagebg: "/try/4-4.jpg", icon: "/try/5.png",link:"/categories/snooker-table-cloth" },
+  { title: "Cue Cases", imagebg: "/try/2-2.jpg", icon: "/try/6.png",link:"/categories/cue-case" },
+  { title: "Foosball Table", imagebg: "/try/2-2.jpg", icon: "/try/soccer.png",link:"/categories/soccer-table" },
 ];
 
 export default function CategorySection() {
@@ -49,7 +49,7 @@ export default function CategorySection() {
         >
           {categories.map((cat, i) => (
             <SwiperSlide key={i}>
-              <div
+              <Link href={cat.link}
                 className="relative h-[220px] border-2 border-yellow-500 group overflow-hidden perspective-[1000px]"
                 style={{
                   backgroundImage: `url(${cat.imagebg})`,
@@ -72,7 +72,7 @@ export default function CategorySection() {
                     {cat.title}
                   </p>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -81,7 +81,7 @@ export default function CategorySection() {
       {/* ================= DESKTOP STRIP ================= */}
       <div className="hidden md:flex w-full h-[320px] overflow-hidden">
         {categories.map((cat, i) => (
-          <div
+          <Link href={cat.link}
             key={i}
             className="relative flex-1 border-2 border-yellow-500 group overflow-hidden perspective-[1000px]"
             style={{
@@ -106,7 +106,7 @@ export default function CategorySection() {
                 {cat.title}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

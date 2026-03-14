@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Soccer = () => {
   const iconItems = [
@@ -106,13 +107,13 @@ const Soccer = () => {
 
             {/* BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="border border-white px-6 py-3 text-sm font-semibold hover:bg-white hover:text-[#008065] transition">
+              <Link href="/categories/snooker-table" className="border border-white px-6 py-3 text-sm font-semibold hover:bg-white hover:text-[#008065] transition">
                 EXPLORE TABLES
-              </button>
+              </Link>
 
-              <button className="border text-black border-white px-6 py-3 text-sm font-semibold bg-white hover:text-[#008065] transition">
+              <Link href="/contact-us" className="border text-black border-white px-6 py-3 text-sm font-semibold bg-white hover:text-[#008065] transition">
                 CONTACT US
-              </button>
+              </Link>
             </div>
           </div>
         </div>

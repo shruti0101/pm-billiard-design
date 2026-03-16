@@ -3,20 +3,21 @@
 import Image from "next/image";
 
 const clientsele = [
-  { name: "Royal Snooker Club", logo: "/clients/15.png" },
-  { name: "Elite Billiards", logo: "/clients/16.png" },
-  { name: "Cue Masters", logo: "/clients/1.png" },
-  { name: "Pro Table Arena", logo: "/clients/2.png" },
-  { name: "Champion Cue Club", logo: "/clients/3.png" },
-  { name: "Ace Snooker Lounge", logo: "/clients/4.png" },
-  { name: "Premium Cue House", logo: "/clients/5.png" },
-  { name: "Grand Billiards", logo: "/clients/6.png" },
-  { name: "Snooker Palace", logo: "/clients/7.png" },
-  { name: "Cue Sports Hub", logo: "/clients/8.png" },
-  { name: "Victory Tables", logo: "/clients/9.png" },
-  { name: "Legend Snooker Club", logo: "/clients/11.png" },
-  { name: "Cue Craft Arena", logo: "/clients/12.png" },
-  { name: "Supreme Billiards", logo: "/clients/13.png" },
+  { name: "YUSUF PATHAN ", logo: "/clients/15.png" },
+  { name: "NIKHIL MEHRA", logo: "/clients/16.png" },
+  { name: "LEMON TREE", logo: "/clients/1.png" },
+  { name: "RAJHANS GROUP", logo: "/clients/2.png" },
+  { name: "Civil Services Officers Institute  ", logo: "/clients/3.png" },
+ 
+  { name: "IIFT", logo: "/clients/5.png" },
+  { name: "Indian Oil", logo: "/clients/6.png" },
+  { name: "DLF Magnolias ", logo: "/clients/7.png" },
+  { name: "IIT ROORKEE", logo: "/clients/8.png" },
+  { name: "House Of Armuse", logo: "/clients/9.png" },
+  { name: "Royal Enfield Goa", logo: "/clients/11.png" },
+  { name: "Vision Group", logo: "/clients/12.png" },
+  { name: "Five Elements", logo: "/clients/13.png" },
+   { name: "Indian Tourism Devlopment Corporation Limited ", logo: "/clients/4.png" },
 
 ];
 
@@ -55,7 +56,7 @@ export default function Ourclientsele() {
               </div>
 
               {/* Name Below Card */}
-              <p className="mt-6 text-md font-medium text-gray-700">
+              <p className="mt-6 uppercase text-md font-medium text-gray-700">
                 {client.name}
               </p>
 

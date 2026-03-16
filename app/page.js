@@ -4,7 +4,7 @@ import Whychoose from "@/components/Landingpage/Whychoose";
 import AboutUs from "@/components/Landingpage/About";
 import Products from "@/components/Landingpage/Products";
 import ProductCategorySection from "@/components/Landingpage/Categories";
-import Cta from "@/components/Landingpage/Cta";
+
 import Popup from "@/components/Popup"
 import TestimonialsSection from "@/components/Landingpage/Testmonial";
 import Letter from "@/components/Landingpage/Letter";
@@ -29,7 +29,7 @@ export default function Home() {
       <Clientele></Clientele>
 
       <Whychoose></Whychoose>
-      <Cta></Cta>
+  
 
   
       <PremiumTablesSection></PremiumTablesSection>

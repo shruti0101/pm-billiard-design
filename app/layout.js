@@ -14,9 +14,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata = {
-  title: "pm billiards",
+  title: "PM Billiards – Snooker Tables, Pool Tables & Billiards Tables in India",
   description:
-    "Trusted snooker table  manufacturer ",
+    "PM Billiards is a leading supplier of snooker tables, pool tables, billiard Tables, cue sticks, chalk, and accessories in India. Quality billiards equipment at competitive prices.",
   icons: {
     icon: "/logo.webp",
   },

@@ -1,8 +1,8 @@
 import ProductClient from "./ProductClient";
 
 export const metadata = {
-  title: "Bulk Titanium Dioxide Powder (TiO2) Wholesaler",
-  description: "High-purity Titanium Dioxide (TiO2) for Paints, Plastics, & Coatings. Bulk Wholesaler of Anatase & Rutile grades with CoA/SDS. Request a Quote for your next order.",
+  title: "Billiards Products Snooker Tables Accessories  | PM Billiards",
+  description: "Explore premium billiards products including pool balls, cue sticks, snooker tables, cue tips, chalk, and pool accessories from PM Billiards.",
 };
 
 export default function AboutUsPage() {

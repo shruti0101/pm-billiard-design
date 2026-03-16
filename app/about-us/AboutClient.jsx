@@ -88,22 +88,17 @@ const AboutPage = () => {
               <div className="grid grid-cols-3 mt-6 text-center md:text-left gap-4">
                 <div>
                   <h3 className="text-2xl font-semibold text-[#EDBC41]">
-                    1,200+
+                    500+
                   </h3>
                   <p className="text-black text-sm">Tables Delivered</p>
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-semibold text-[#EDBC41]">20+</h3>
+                  <h3 className="text-2xl font-semibold text-[#EDBC41]">10+</h3>
                   <p className="text-black text-sm">Years of Expertise</p>
                 </div>
 
-                <div>
-                  <h3 className="text-2xl font-semibold text-[#EDBC41]">
-                    900+
-                  </h3>
-                  <p className="text-black text-sm">Satisfied Clients Rate</p>
-                </div>
+               
               </div>
             </div>
 
@@ -131,7 +126,7 @@ const AboutPage = () => {
           <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-2xl md:text-4xl font-semibold text-white">
               Why Choose <span className="text-yellow-500">PM Billiards</span>{" "}
-              as a Pool Table
+              as a Pool Table Manufacturer 
             </h2>
             <p className="my-2 text-white text-sm leading-relaxed">
               At PM Billiards, we pride ourselves on blending expert

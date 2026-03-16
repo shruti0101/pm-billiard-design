@@ -18,7 +18,7 @@ export default function VideoCTA() {
   }, []);
 
   return (
-    <section className="hidden md:flex bg-cover bg-center relative w-full h-[60vh] md:h-[80vh] overflow-hidden  items-center justify-center">
+    <section className="hidden xl:flex bg-cover bg-center relative w-full h-[60vh] md:h-[80vh] overflow-hidden  items-center justify-center">
 
       {/* ONLY RENDER BALLPIT ON DESKTOP */}
       {isDesktop && (

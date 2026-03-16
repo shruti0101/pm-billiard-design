@@ -77,7 +77,7 @@ const testimonials = [
     <section className={`${inter.className} w-full bg-[#e9e9e9] py-[40px] px-[20px] relative`}>
       
       <h2 className={`${playfair.className} text-center text-[34px] md:text-[64px] text-[#222] mb-[40px]`}>
-        What they Say About Us
+      Customer Reviews
       </h2>
 
       <div className="flex flex-col lg:flex-row gap-[25px] items-stretch max-w-7xl mx-auto">

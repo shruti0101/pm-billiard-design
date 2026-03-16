@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import axios from "axios";
-
+import { categories } from "@/Data";
 export default function ContactForm() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -47,8 +47,8 @@ useEffect(() => {
 
     try {
       const formData = {
-        platform: "dkmodular Popup Form",
-        platformEmail: "dkmodularcontractor@gmail.com",
+        platform: "pmbilliard Popup Form",
+        platformEmail: "pmbilliards@gmail.com",
         name,
         phone,
         email,
@@ -73,7 +73,7 @@ Message: ${message}
 
 Contact: ${phone}`;
 
-        const waUrl = `https://wa.me/+918527557778?text=${encodeURIComponent(
+        const waUrl = `https://wa.me/+918745076259?text=${encodeURIComponent(
           whatsappText
         )}`;
 
@@ -127,34 +127,35 @@ Contact: ${phone}`;
           </h2>
           <div className="w-20 h-[3px] bg-[#F7C600] mx-auto mb-6 rounded-full"></div>
 
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            <div className="flex flex-col sm:flex-row gap-3">
+          <form className="space-y-3" onSubmit={handleSubmit}>
+            <div className="flex flex-col gap-3">
               <input
                 type="text"
                 placeholder="Your Name"
-                className="flex-1 p-3 rounded-lg text-black text-sm border border-gray-300 focus:ring-2 focus:ring-yellow-400 focus:outline-none bg-white/90 shadow-sm transition"
+                className=" p-3 rounded-lg text-black text-sm border border-gray-300 focus:ring-2 focus:ring-yellow-400 focus:outline-none bg-white/90 shadow-sm transition"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 disabled={loading}
               />
-              <select
-                className=" p-3 rounded-lg text-black text-sm border border-gray-300 focus:ring-2 focus:ring-yellow-400 focus:outline-none bg-white/90 shadow-sm transition"
-                required
-                value={product}
-                onChange={(e) => setProduct(e.target.value)}
-                disabled={loading}
-              >
-                <option disabled value="">Select Product</option>
-                <option value="Modular Office Workstation">Modular Office Workstation</option>
-                <option value="Office Workstation">Office Workstation</option>
-                <option value="Meeting And Conference Room Table">Conference Room Table</option>
-                <option value="Computer Table">Computer Table</option>
-                <option value="Office Chair">Office Chair</option>
-                
-                <option value="Wooden Storage Unit">Wooden Storage Unit</option>
-        
-              </select>
+                   <select
+            name="products"
+            required
+            defaultValue=""
+            className="p-3 rounded-lg bg-white border border-[#EDBC41]/30 text-black"
+          >
+            <option value="" disabled>
+              Select Product
+            </option>
+          
+            {categories.map((cat) =>
+              cat.products?.map((prod) => (
+                <option key={prod.id} value={prod.name}>
+                  {prod.name}
+                </option>
+              ))
+            )}
+          </select>
             </div>
 
             <input

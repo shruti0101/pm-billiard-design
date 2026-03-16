@@ -5,7 +5,7 @@ import AboutUs from "@/components/Landingpage/About";
 import Products from "@/components/Landingpage/Products";
 import ProductCategorySection from "@/components/Landingpage/Categories";
 import Cta from "@/components/Landingpage/Cta";
-// import Popup from "@/components/Popup"
+import Popup from "@/components/Popup"
 import TestimonialsSection from "@/components/Landingpage/Testmonial";
 import Letter from "@/components/Landingpage/Letter";
 import PremiumTablesSection from "@/components/Landingpage/Premium";
@@ -18,7 +18,7 @@ import BestSeller from "@/components/Landingpage/Bestseller";
 export default function Home() {
   return (
     <>
-      {/* <Popup></Popup> */}
+      <Popup></Popup>
       <Hero></Hero>
       <ProductCategorySection></ProductCategorySection>
 <BestSeller></BestSeller>

@@ -175,7 +175,7 @@ style={{
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#EDBC41]" />
                  <a href="tel:9999402424">9812232723</a>,{" "}
-                  <a href="tel:8595063087">8826263223</a>
+                  <a href="tel:8595063087">8745076259</a>
               </p>
 
               <p className="flex items-center gap-2">

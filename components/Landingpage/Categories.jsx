@@ -27,7 +27,7 @@ export default function CategorySection() {
     <section className="w-full">
       <div className="text-center my-5 md:my-10 px-6">
         <h2 className="text-black text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight">
-          Explore Our Collection 🎱🎯
+          Explore Our Collection 
         </h2>
 
         <p className="text-black mt-4 max-w-2xl mx-auto text-sm sm:text-base md:text-lg">
@@ -37,46 +37,50 @@ export default function CategorySection() {
       </div>
 
       {/* ================= MOBILE SLIDER ================= */}
-      <div className="block md:hidden">
-        <Swiper spaceBetween={5} slidesPerView={2}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{ clickable: true }}
-        modules={[Autoplay,Pagination]}
-        className="mySwiper"
+    {/* ================= MOBILE SLIDER ================= */}
+<div className="block md:hidden px-3">
+  <Swiper
+    spaceBetween={12}
+    slidesPerView={2}
+    autoplay={{
+      delay: 2500,
+      disableOnInteraction: false,
+    }}
+    pagination={{ clickable: true }}
+    modules={[Autoplay, Pagination]}
+    className="mySwiper"
+  >
+    {categories.map((cat, i) => (
+      <SwiperSlide key={i} className="!h-auto">
+        <Link
+          href={cat.link}
+          className="relative block w-full h-[200px] rounded-lg border-2 border-yellow-500 overflow-hidden"
+          style={{
+            backgroundImage: `url(${cat.imagebg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          {categories.map((cat, i) => (
-            <SwiperSlide key={i}>
-              <Link href={cat.link}
-                className="relative h-[220px] border-2 border-yellow-500 group overflow-hidden perspective-[1000px]"
-                style={{
-                  backgroundImage: `url(${cat.imagebg})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              >
-                <div className="absolute inset-0 bg-black/45 group-hover:bg-black/35 transition duration-300" />
+          <div className="absolute inset-0 bg-black/45" />
 
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <img
-                    src={cat.icon}
-                    alt={cat.title}
-                    className="w-28 h-28 object-contain drop-shadow-lg transition-all duration-500 ease-out group-hover:scale-125 group-hover:-translate-y-2"
-                  />
-                </div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <img
+              src={cat.icon}
+              alt={cat.title}
+              className="w-25 h-25 object-cover drop-shadow-lg"
+            />
+          </div>
 
-                <div className="absolute bottom-4 left-0 right-0 text-center">
-                  <p className="text-white font-bold text-sm uppercase transition-all duration-300 group-hover:tracking-[0.2em]">
-                    {cat.title}
-                  </p>
-                </div>
-              </Link>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+          <div className="absolute bottom-3 left-0 right-0 text-center">
+            <p className="text-white font-bold text-xs uppercase tracking-wide">
+              {cat.title}
+            </p>
+          </div>
+        </Link>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
 
       {/* ================= DESKTOP STRIP ================= */}
       <div className="hidden md:flex w-full h-[320px] overflow-hidden">

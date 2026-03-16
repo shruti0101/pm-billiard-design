@@ -2,6 +2,7 @@
 import React, { useState, useRef } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
 import axios from "axios";
+import { categories } from "@/Data";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -22,7 +23,7 @@ const Contact = () => {
     try {
       const payload = {
         platform: "PM Billiards Snooker Tables Contact Form",
-        platformEmail: "info@pmbilliards.com",
+        platformEmail: "pmbilliards@gmail.com",
         name,
         phone,
         email,
@@ -47,7 +48,7 @@ Message: ${message}
 
 Contact: ${phone}`;
 
-        const waUrl = `https://wa.me/+919999402424?text=${encodeURIComponent(
+        const waUrl = `https://wa.me/+918745076259?text=${encodeURIComponent(
           whatsappText
         )}`;
 
@@ -116,25 +117,24 @@ Contact: ${phone}`;
                     className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
                   />
 
-                  <select
-                    name="products"
-                    required
-                    className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
-                  >
-                    <option disabled>Select Product</option>
-                    <option value="Professional Snooker Table">
-                      Professional Snooker Table
-                    </option>
-                    <option value="Tournament Pool Table">
-                      Tournament Pool Table
-                    </option>
-                    <option value="Luxury Billiard Table">
-                      Luxury Billiard Table
-                    </option>
-                    <option value="Snooker Cues">
-                      Snooker Cues
-                    </option>
-                  </select>
+               <select
+  name="products"
+  required
+  defaultValue=""
+  className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
+>
+  <option value="" disabled>
+    Select Product
+  </option>
+
+  {categories.map((cat) =>
+    cat.products?.map((prod) => (
+      <option key={prod.id} value={prod.name}>
+        {prod.name}
+      </option>
+    ))
+  )}
+</select>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -150,6 +150,9 @@ Contact: ${phone}`;
                     type="text"
                     name="phone"
                     required
+                    maxLength={10}
+                    minLength={10}
+               
                     placeholder="Phone Number"
                     className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
                   />
@@ -207,7 +210,7 @@ Contact: ${phone}`;
                 <Phone className="text-[#EDBC41] w-6 h-6" />
                 <p className="text-white/90">
                   <a href="tel:9999402424">9812232723</a>,{" "}
-                  <a href="tel:8595063087">8826263223</a>
+                  <a href="tel:8595063087">8745076259</a>
                 </p>
               </div>
 

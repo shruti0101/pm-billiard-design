@@ -1,8 +1,8 @@
 import ContactClient from "./ContactClient";
 
 export const metadata = {
-  title: "Contact DK Modular Contractor – Office Furniture Manufacturer",
-  description: "Get in touch with DK Modular Contractor, a trusted office furniture and modular workstation manufacturer in India. Contact our team for custom furniture solutions, quotes, and support.",
+  title: "Contact PM Billiards | Snooker & Pool Table Accessories Supplier in Delhi",
+  description: "Contact PM Billiards in New Delhi for premium snooker tables, pool tables, billiard cues, chalk, and accessories. Get product details, pricing, and expert support.",
 };
 
 export default function AboutUsPage() {

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { ArrowUpRight, Shield, Droplet, Dumbbell, Recycle } from "lucide-react";
 import { motion } from "framer-motion";
-import ElectricBorder from "@/components/ElectricBorder";
+
 
 export default function ProductPage({ params }) {
   const { productId } = React.use(params);
@@ -129,34 +129,32 @@ ${selectedColor?.name === color.name ? "text-yellow-500" : "text-gray-400 group-
             )}
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10 md:mt-14">
-              <ElectricBorder>
-                <motion.button
-                  whileHover={{ scale: 1.06, y: -3 }}
-                  whileTap={{ scale: 0.96 }}
-                  className="
-relative overflow-hidden
-px-8 py-3
-rounded-full
-text-[#1a1a1a]
-font-semibold
-tracking-wide
-bg-white
-border border-gray-200
-shadow-[0_0_25px_rgba(0,0,0,0.08)]
-hover:shadow-[0_0_35px_rgba(255,215,0,0.35)]
-transition-all duration-500
-w-full sm:w-auto
-group
-"
-                >
-                  <span className="relative z-10">Enquire Now</span>
-                </motion.button>
-              </ElectricBorder>
+        
+<a href="tel:+918745076259
 
+">
+<motion.button
+  whileHover={{ scale: 1.06, y: -3 }}
+  whileTap={{ scale: 0.96 }}
+  className="relative px-7 py-3 font-semibold text-white rounded-full 
+  bg-black
+  shadow-lg shadow-yellow-500/30
+  overflow-hidden transition-all duration-300
+  hover:shadow-yellow-500/60 hover:brightness-110"
+>
+  {/* Shine animation */}
+  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent 
+  translate-x-[-120%] hover:translate-x-[120%] transition-transform duration-700"></span>
+
+  <span className="relative z-10 tracking-wide">Enquire Now</span>
+</motion.button>
+
+</a>
+       
               <motion.a
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.96 }}
-                href={`https://wa.me/+919999402424?text=Hello, I am interested in ${encodeURIComponent(product.name)}`}
+                href={`https://wa.me/+918745076259?text=Hello, I am interested in ${encodeURIComponent(product.name)}`}
                 target="_blank"
                 className="
 relative

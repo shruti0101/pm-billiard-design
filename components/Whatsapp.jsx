@@ -6,7 +6,7 @@ const Whatsapp = () => {
   return (
     <>
       <a
-        href="https://wa.me/+918826263223"
+        href="https://wa.me/+918745076259"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp "
@@ -16,7 +16,7 @@ const Whatsapp = () => {
       </a>
 
       <a
-        href="tel:+918826263223"
+        href="tel:+918745076259"
         aria-label="Call us"
         className="fixed bottom-21 right-4 z-50 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition animate-bounce"
       >

@@ -6,8 +6,8 @@ import { groq } from "next-sanity";
 
 // Fetch all blogs from Sanity
 async function getAllBlogs() {
-  const query = groq`*[_type=="blog"]{slug, date}`;
-  return client.fetch(query);
+  // const query = groq`*[_type=="blog"]{slug, date}`;
+  // return client.fetch(query);
 }
 
 export async function GET() {
@@ -17,14 +17,14 @@ export async function GET() {
   const allProducts = categories.flatMap((c) => c.products);
 
   // Fetch blogs
-  const blogs = await getAllBlogs();
+  // const blogs = await getAllBlogs();
 
   // Static pages (About, Contact, Blog Listing)
   const staticPages = [
     { loc: `${baseUrl}/about-us`, priority: 0.8, changefreq: "yearly" },
     { loc: `${baseUrl}/contact-us`, priority: 0.8, changefreq: "yearly" },
     { loc: `${baseUrl}/categories`, priority: 0.8, changefreq: "yearly" },
-    { loc: `${baseUrl}/blogs`, priority: 0.9, changefreq: "weekly" },
+    // { loc: `${baseUrl}/blogs`, priority: 0.9, changefreq: "weekly" },
   ]
     .map(
       (page) => `
@@ -77,20 +77,20 @@ export async function GET() {
     .join("");
 
   // Blogs (Individual Posts)
-  const blogUrls = blogs
-    .map(
-      (blog) => `
-      <url>
-        <loc>${baseUrl}/blog/${blog.slug.current}</loc>
-        <lastmod>${
-          blog.date ? new Date(blog.date).toISOString() : new Date().toISOString()
-        }</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-      </url>
-    `
-    )
-    .join("");
+  // const blogUrls = blogs
+  //   .map(
+  //     (blog) => `
+  //     <url>
+  //       <loc>${baseUrl}/blog/${blog.slug.current}</loc>
+  //       <lastmod>${
+  //         blog.date ? new Date(blog.date).toISOString() : new Date().toISOString()
+  //       }</lastmod>
+  //       <changefreq>weekly</changefreq>
+  //       <priority>0.6</priority>
+  //     </url>
+  //   `
+  //   )
+  //   .join("");
 
   // Combine all
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -99,7 +99,7 @@ export async function GET() {
     ${staticPages}
     ${categoryUrls}
     ${productUrls}
-    ${blogUrls}
+ 
   </urlset>`;
 
   return new Response(sitemap, {

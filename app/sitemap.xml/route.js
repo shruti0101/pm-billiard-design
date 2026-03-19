@@ -11,7 +11,7 @@ async function getAllBlogs() {
 }
 
 export async function GET() {
-  const baseUrl = "https://officeworkstationmanufacturer.com";
+  const baseUrl = "https://www.pmbilliards.in/";
 
   // Flatten all products
   const allProducts = categories.flatMap((c) => c.products);

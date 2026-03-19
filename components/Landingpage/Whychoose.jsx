@@ -17,7 +17,7 @@ const Whychoose = () => {
     "/try/office4.webp",
            "/try/office6.webp",
                 "/try/office9.webp",
-                "/pm Billards Product/3.webp",
+                "/pm Billards Product/luxuryTable.webp",
                   "/try/office11.webp",
                    "/try/office9.webp",
   ];

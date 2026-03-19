@@ -27,7 +27,7 @@ const cardData = [
   color: '#060010',
   title: 'Billiard Tables',
   description:
-    'Classic billiard tables that blend timeless craftsmanship with modern engineering excellence. Built using precision-cut slate, solid hardwood frames, and smooth professional-grade surfaces to deliver consistent ball control, long-lasting durability, and an authentic playing experience. ',
+    "Classic billiard tables crafted with precision slate, solid hardwood, and professional-grade surfaces for durability and a smooth, authentic playing experience.",
   label: 'Signature Collection'
 },
 
@@ -35,7 +35,7 @@ const cardData = [
   color: '#060010',
   title: 'Custom Tables',
   description:
-    'Tailor-made tables designed to your space, style, and professional playing requirements. Crafted with personalized dimensions, materials, and finishes to perfectly complement your interior and elevate the playing experience.',
+   "Tailor-made tables crafted to match your space, style, and playing needs with personalized design, materials, and finishes.",
   label: 'Bespoke Build'
 },
 
@@ -639,7 +639,7 @@ const MagicBento = ({
           glowColor={glowColor} />
       )}
       <BentoCardGrid gridRef={gridRef}>
-<div className="w-full text-center py-10">
+<div className="w-full text-center py-6 md:py-10">
   <p className="uppercase tracking-[0.3em] text-sm text-yellow-500 mb-2">
     Precision • Legacy • Mastery
   </p>
@@ -653,9 +653,7 @@ const MagicBento = ({
   </p>
 </div>
 
-
-
-        <div className="card-responsive grid  gap-8">
+        <div className="card-responsive grid gap-4 w-full! md:gap-8">
           {cardData.map((card, index) => {
             const baseClassName = `card flex flex-col justify-center relative  min-h-[280px] w-full  p-5 rounded-[20px] border border-solid font-light overflow-hidden transition-colors duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${
               enableBorderGlow ? 'card--border-glow' : ''

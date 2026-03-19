@@ -23,8 +23,8 @@ const clientsele = [
 
 export default function Ourclientsele() {
   return (
-    <section className="py-14 bg-yellow-50">
-      <div className="w-full mx-auto px-10">
+    <section className="sm:py-14 py-8 bg-yellow-50">
+      <div className="w-full mx-auto sm:px-10 px-5">
 
         {/* Heading */}
         <div className="max-w-3xl mb-12">
@@ -40,7 +40,7 @@ export default function Ourclientsele() {
         </div>
 
         {/* Clients Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 sm:gap-10 gap-8">
           {clientsele.map((client, i) => (
             <div key={i} className="flex flex-col items-center text-center group">
 

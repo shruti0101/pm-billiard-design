@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-const desktopImages = [ "/hero2.webp","/hero1.png"];
+const desktopImages = [ "/pm Billards Product/tableBanner.webp","/hero1.png"];
 
 export default function Hero() {
 

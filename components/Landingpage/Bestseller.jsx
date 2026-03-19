@@ -22,7 +22,7 @@ const bestSellers = [
   {
     id: 3,
     name: "Luxury Billiards Table",
-    img: "/try/office8.webp",
+    img: "/pm Billards Product/3.webp",
     link: "/categories/snooker-table",
   },
   {

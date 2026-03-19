@@ -9,7 +9,7 @@ const AboutPage = () => {
       {/* ===== HERO BANNER ===== */}
       <div
         className="relative min-h-[60vh] sm:min-h-[70vh] md:h-[100vh] flex items-center justify-center text-center bg-cover overflow-hidden"
-        style={{ backgroundImage: "url('/try/try11.webp')" }}
+        style={{ backgroundImage: "url('/pm Billards Product/banner.webp')" }}
       >
         <div className="absolute inset-0 bg-black/40" />
 
@@ -219,7 +219,7 @@ const AboutPage = () => {
 
           <div className="relative w-full h-[240px] sm:h-[320px] md:h-[420px]">
             <Image
-              src="/try/try11.webp"
+              src="/pm Billards Product/3.webp"
               alt="Luxury Snooker Lounge"
               fill
               className="object-cover rounded-lg"

@@ -17,7 +17,7 @@ const Whychoose = () => {
     "/try/office4.webp",
            "/try/office6.webp",
                 "/try/office9.webp",
-                 "/try/office8.webp",
+                "/pm Billards Product/3.webp",
                   "/try/office11.webp",
                    "/try/office9.webp",
   ];
@@ -26,15 +26,15 @@ const Whychoose = () => {
     <div>
 
 <section className="w-full bg-center bg-cover py-5 md:py-16 bg-white">
-  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-18 items-center">
+  <div className="max-w-7xl mx-auto px-2 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-18 items-center">
 
     {/* LEFT — TEXT CONTENT */}
     <div className="space-y-6">
-      <h2 className="text-3xl lg:text-4xl font-serif font-extrabold text-black leading-tight">
-        Why PM Billiards is the Preferred Choice 🏅
+      <h2 className="text-3xl lg:text-4xl font-extrabold text-black leading-tight px-2">
+        Why PM Billiards is the Preferred Choice
       </h2>
 
-      <p className="text-black">
+      <p className="text-black px-2">
         At PM Billiards, we are committed to delivering premium Pool Tables,
         Snooker Tables, and Billiard Tables that meet the highest standards of
         quality, performance, and design. With expert craftsmanship, superior
@@ -42,7 +42,7 @@ const Whychoose = () => {
         for homes, clubs, and professional gaming spaces.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div className="grid grid-cols-2 md:gap-6 gap-2 mt-6">
 
         <div className="bg-yellow-100 p-5 rounded-2xl shadow-sm">
           <h3 className="font-semibold text-lg text-black">
@@ -117,7 +117,7 @@ const Whychoose = () => {
             ))}
           </Swiper>
 
-          <p className="font-semibold text-black mt-7 text-xl md:text-2xl text-center">
+          <p className="font-semibold text-black mt-5 text-xl md:text-2xl text-center">
             Trusted by clubs, academies, gaming centers, and professional players.
           </p>
         </div>

@@ -1133,7 +1133,7 @@ export const categories = [
 
         image: [
           {
-            src: "/product/snookertable/POOL + TT AMERICAN STYLE.webp",
+            src: "/product/snookertable/POOLandTT AMERICAN STYLE.webp",
             alt: "Pool + TT American Style Tables",
           },
         ],

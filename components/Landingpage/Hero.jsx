@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-const desktopImages = [ "/pm Billards Product/tableBanner.webp","/hero1.png"];
+const desktopImages = [ "/bannerHome (1).webp","/hero1.png"];
 
 export default function Hero() {
 
@@ -21,7 +21,7 @@ export default function Hero() {
     <section
       className="
       relative w-full overflow-hidden bg-black
-      h-[390px] md:h-[80vh] xl:h-[110vh]
+      h-[390px] md:h-[80vh] xl:h-[95vh]
       mt-20 md:mt-0
       "
     >

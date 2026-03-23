@@ -106,7 +106,7 @@ const Whychoose = () => {
             >
               {images.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <div className="w-full h-[500px] md:h-[400px] relative">
+                  <div className="w-full h-[500px] md:h-[600px] relative">
                     <Image
                       src={src}
                       alt="PM Billiards table"

@@ -2,15 +2,14 @@ import { categories } from "@/Data";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
+import { redirect } from "next/navigation";
 
 export default function CategoryPage({ params }) {
   const { categoryId } = params;
   const category = categories.find((c) => c.id === categoryId);
 
   if (!category) {
-    return (
-      <h2 className="text-center text-red-500 mt-10">Category not found</h2>
-    );
+    redirect('/');
   }
 
   return (

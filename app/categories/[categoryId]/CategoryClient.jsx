@@ -15,9 +15,8 @@ export default function CategoryPage({ params }) {
   return (
     <>
       {/* ===== HERO BANNER ===== */}
-      <div
-        className="relative h-[45vh] md:h-[90vh] flex items-center justify-center text-center bg-cover  overflow-hidden"
-        style={{ backgroundImage: "url('/try/try11.webp')" }}
+      <div className="relative h-[45vh] md:h-[90vh] flex items-center justify-center text-center bg-cover overflow-hidden"
+        style={{ backgroundImage: "url('/pm Billards Product/luxuryTable.webp')" }}
       >
         <div className="absolute inset-0 bg-black/40" />
 
@@ -25,7 +24,7 @@ export default function CategoryPage({ params }) {
           <div className="mx-auto mb-4 h-[2px] w-20 bg-[#EDBC41] rounded-full" />
 
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-white">
-      {category.name}
+            {category.name}
           </h2>
 
           <p className="mt-4 text-sm sm:text-base md:text-lg text-white max-w-3xl mx-auto leading-relaxed">
@@ -34,7 +33,7 @@ export default function CategoryPage({ params }) {
           </p>
         </div>
       </div>
-    
+
 
       {/* 🔹 PRODUCT GRID (LIKE IMAGE SHARED) */}
       <section className="bg-white py-14">
@@ -48,7 +47,7 @@ export default function CategoryPage({ params }) {
               >
                 {/* Card */}
                 <div className=" transition overflow-hidden">
-                  
+
                   {/* Image */}
                   <div className="relative h-[320px] w-full overflow-hidden">
                     <Image

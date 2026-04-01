@@ -81,8 +81,8 @@ const blog = {
 
 
 export default defineConfig({
-  name: "dkmodular",
-  title: "dkmodular studio",
+  name: "pmbiliard",
+  title: "pmbiliard studio",
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
   apiVersion: "2024-06-01",

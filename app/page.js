@@ -14,6 +14,7 @@ import Soccer from "@/components/Landingpage/Soccer";
 import Clientele from "@/components/Landingpage/Clientele";
 import Faq from "@/components/Landingpage/Faq";
 import BestSeller from "@/components/Landingpage/Bestseller";
+import Location from "@/components/Location";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
       <PremiumTablesSection></PremiumTablesSection>
 <TestimonialsSection></TestimonialsSection>
       <Faq></Faq>
-      
+      <Location></Location>
     </>
   );
 }

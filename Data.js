@@ -4,7 +4,8 @@ export const categories = [
   {
     id: "snooker-table",
     name: "Snooker Table",
-    metaTitle: "Snooker Table Manufacturer & Supplier in India | Premium Billiard Tables",
+    metaTitle:
+      "Snooker Table Manufacturer & Supplier in India | Premium Billiard Tables",
     metaDescription:
       "Looking for top-quality snooker tables in India? We are a trusted manufacturer and supplier of professional and home snooker tables, offering durable, premium designs with PAN-India delivery.",
 
@@ -13,7 +14,8 @@ export const categories = [
       {
         id: "leadsuper-star-snooker-table",
         name: "Leadsuper Star Snooker Table By Pm Billiards",
-        metaTitle: "Leadsuper Star Snooker Table by PM Billiards | Premium Tournament Table India",
+        metaTitle:
+          "Leadsuper Star Snooker Table by PM Billiards | Premium Tournament Table India",
         metaDescription:
           "Leadsuper Star Snooker Table by PM Billiards crafted with premium slate bed, superior cloth, and strong frame stability. Designed for clubs, tournaments, resorts, and luxury spaces. Professional-grade performance across India.",
 
@@ -27,7 +29,7 @@ export const categories = [
           { name: "Blue", class: "bg-blue-600 border-blue-800" },
 
           { name: "Yellow", class: "bg-yellow-400 border-yellow-600" },
-          { name: "Purple", class: "bg-purple-600 border-purple-800" }
+          { name: "Purple", class: "bg-purple-600 border-purple-800" },
         ],
 
         description: [
@@ -93,7 +95,10 @@ export const categories = [
         ],
 
         specs: [
-          { label: "Product Name", value: "Leadsuper Star Snooker Table By Pm Billiards" },
+          {
+            label: "Product Name",
+            value: "Leadsuper Star Snooker Table By Pm Billiards",
+          },
           { label: "Material", value: "Solid Wood" },
           { label: "Size", value: "6x12" },
           { label: "Type", value: "Snooker Table" },
@@ -116,7 +121,8 @@ export const categories = [
       {
         id: "mini-snooker-table",
         name: "Mini Snooker Table",
-        metaTitle: "Mini Snooker Table Manufacturer & Supplier in India | Compact Snooker Tables",
+        metaTitle:
+          "Mini Snooker Table Manufacturer & Supplier in India | Compact Snooker Tables",
         metaDescription:
           "Buy premium Mini Snooker Table designed for homes, kids, and recreational spaces. Compact size, smooth surface, and durable construction. Ideal for indoor entertainment. Bulk supply available across India.",
 
@@ -130,7 +136,7 @@ export const categories = [
           { name: "Blue", class: "bg-blue-600 border-blue-800" },
 
           { name: "Yellow", class: "bg-yellow-400 border-yellow-600" },
-          { name: "Purple", class: "bg-purple-600 border-purple-800" }
+          { name: "Purple", class: "bg-purple-600 border-purple-800" },
         ],
 
         description: [
@@ -201,7 +207,10 @@ export const categories = [
           { label: "Brand", value: "PM Billiards" },
           { label: "Size", value: "5*10 Feet" },
           { label: "Color", value: "Green" },
-          { label: "Usage/Application", value: "For Club Use Or Residential Use" },
+          {
+            label: "Usage/Application",
+            value: "For Club Use Or Residential Use",
+          },
           { label: "Number Of Legs", value: "6" },
           { label: "Shape", value: "Rectangle" },
         ],
@@ -218,7 +227,8 @@ export const categories = [
       {
         id: "snooker-table-6x12",
         name: "Snooker Table",
-        metaTitle: "Snooker Table Manufacturer & Supplier in India | Professional & Tournament Tables",
+        metaTitle:
+          "Snooker Table Manufacturer & Supplier in India | Professional & Tournament Tables",
         metaDescription:
           "Premium Snooker Table manufacturer and supplier in India offering tournament-grade tables with slate beds, high-quality cloth, and superior frame stability. Ideal for clubs, homes, resorts & professional arenas.",
 
@@ -232,7 +242,7 @@ export const categories = [
           { name: "Blue", class: "bg-blue-600 border-blue-800" },
 
           { name: "Yellow", class: "bg-yellow-400 border-yellow-600" },
-          { name: "Purple", class: "bg-purple-600 border-purple-800" }
+          { name: "Purple", class: "bg-purple-600 border-purple-800" },
         ],
 
         description: [
@@ -319,7 +329,8 @@ export const categories = [
       {
         id: "wiraka-snooker-tables",
         name: "Wiraka Snooker Tables",
-        metaTitle: "Wiraka Snooker Tables Manufacturer & Supplier in India | Premium Tournament Tables",
+        metaTitle:
+          "Wiraka Snooker Tables Manufacturer & Supplier in India | Premium Tournament Tables",
         metaDescription:
           "Explore premium Wiraka Snooker Tables designed for professional gameplay, clubs, and luxury spaces. Built with high-quality slate, superior cloth, and strong frame construction. Bulk supply available across India.",
 
@@ -333,7 +344,7 @@ export const categories = [
           { name: "Blue", class: "bg-blue-600 border-blue-800" },
 
           { name: "Yellow", class: "bg-yellow-400 border-yellow-600" },
-          { name: "Purple", class: "bg-purple-600 border-purple-800" }
+          { name: "Purple", class: "bg-purple-600 border-purple-800" },
         ],
 
         description: [
@@ -392,7 +403,20 @@ export const categories = [
           },
         ],
 
-        specs: [],
+        specs: [
+          { label: "Table Size", value: "12 ft x 6 ft" },
+          { label: "Model", value: "Wiraka" },
+          { label: "Material", value: "Solid Wood" },
+          { label: "Cushion Rubber", value: "Northern Rubber" },
+          { label: "Size", value: "12ft x 6.5ft" },
+          { label: "Brand", value: "PM Billiard" },
+          { label: "Color", value: "Green" },
+          { label: "Number Of Legs", value: "4" },
+          { label: "Shape", value: "Rectangular" },
+          { label: "Weight", value: "5 Kg" },
+          { label: "Country of Origin", value: "Made in India" },
+          { label: "Availability", value: "In Stock" },
+        ],
 
         image: [
           {
@@ -406,7 +430,8 @@ export const categories = [
       {
         id: "pool-table",
         name: "Pool Table",
-        metaTitle: "Pool Table Manufacturer & Supplier in India | Premium & Professional Tables",
+        metaTitle:
+          "Pool Table Manufacturer & Supplier in India | Premium & Professional Tables",
         metaDescription:
           "Leading Pool Table manufacturer and supplier in India offering premium-quality tables for homes, clubs, resorts, and tournaments. Durable construction, smooth gameplay, and elegant designs. Bulk orders available.",
 
@@ -420,7 +445,7 @@ export const categories = [
           { name: "Blue", class: "bg-blue-600 border-blue-800" },
 
           { name: "Yellow", class: "bg-yellow-400 border-yellow-600" },
-          { name: "Purple", class: "bg-purple-600 border-purple-800" }
+          { name: "Purple", class: "bg-purple-600 border-purple-800" },
         ],
 
         description: [
@@ -479,7 +504,16 @@ export const categories = [
           },
         ],
 
-        specs: [],
+        specs: [
+          { label: "Material", value: "Solid Wood" },
+          { label: "Model Name/Number", value: "PM Billiards Pool Table" },
+          { label: "Size", value: "8 x 4 Feet" },
+          { label: "Usage/Application", value: "Playing" },
+          { label: "Color Of Table Cover", value: "Blue, Green, Red" },
+          { label: "Weight", value: "600-800 Kg" },
+          { label: "Product Type", value: "Pool Table" },
+          { label: "Availability", value: "In Stock" },
+        ],
 
         image: [
           {
@@ -493,14 +527,13 @@ export const categories = [
       {
         id: "wooden-snooker-table",
         name: "Wooden Snooker Table",
-        metaTitle: "Wooden Snooker Table Manufacturer & Supplier in India | Premium Solid Wood Tables",
+        metaTitle:
+          "Wooden Snooker Table Manufacturer & Supplier in India | Premium Solid Wood Tables",
         metaDescription:
           "Premium Wooden Snooker Table crafted with solid wood frame, precision leveling, and high-quality slate bed. Ideal for clubs, homes, resorts, and professional arenas. Durable construction with elegant finish. Bulk supply available in India.",
 
         excerpt:
           "Wooden Snooker Table by PM Billiards – Premium solid wood construction delivering professional accuracy, stability, and elegant design for clubs and game rooms.",
-
-
 
         colors: [
           { name: "Black", class: "bg-black border-gray-800" },
@@ -509,7 +542,7 @@ export const categories = [
           { name: "Brown Wood Finish", class: "bg-amber-800 border-amber-900" },
 
           { name: "Yellow", class: "bg-yellow-400 border-yellow-600" },
-          { name: "Purple", class: "bg-purple-600 border-purple-800" }
+          { name: "Purple", class: "bg-purple-600 border-purple-800" },
         ],
 
         description: [
@@ -575,7 +608,10 @@ export const categories = [
           { label: "Brand", value: "PM Billiards" },
           { label: "Cloth Color", value: "Green" },
           { label: "Frame Finish", value: "Brown Wood Finish" },
-          { label: "Usage/Application", value: "For Club Use, Academy Use, Resort Use, Or Residential Use" },
+          {
+            label: "Usage/Application",
+            value: "For Club Use, Academy Use, Resort Use, Or Residential Use",
+          },
           { label: "Shape", value: "Rectangle" },
         ],
 
@@ -591,15 +627,13 @@ export const categories = [
       {
         id: "leadsuper-yacht-shape-pool-table",
         name: "Leadsuper Yacht Shape Pool Table",
-        metaTitle: "Leadsuper Yacht Shape Pool Table Manufacturer & Supplier in India",
+        metaTitle:
+          "Leadsuper Yacht Shape Pool Table Manufacturer & Supplier in India",
         metaDescription:
           "Premium Leadsuper Yacht Shape Pool Table with luxury design and superior gameplay performance. Perfect for villas, resorts, clubs, and high-end entertainment spaces. Durable construction with elegant finishing. Bulk orders available.",
 
         excerpt:
           "Experience luxury and professional gameplay with the Leadsuper Yacht Shape Pool Table, featuring a unique yacht-inspired design and premium construction.",
-
-
-
 
         colors: [
           { name: "Black", class: "bg-black border-gray-800" },
@@ -685,7 +719,8 @@ export const categories = [
       {
         id: "c-shape-american-pool-tables",
         name: "C Shape American Pool Tables",
-        metaTitle: "C Shape American Pool Tables Manufacturer in India | Luxury Pool Tables",
+        metaTitle:
+          "C Shape American Pool Tables Manufacturer in India | Luxury Pool Tables",
         metaDescription:
           "Buy C Shape American Pool Tables with yacht design, slate top, and premium accessories. Ideal for villas, clubs & resorts. Best pool table manufacturer in India.",
 
@@ -781,11 +816,12 @@ export const categories = [
         ],
       },
 
-      // 9 
+      // 9
       {
         id: "cross-shape-american-pool-tables",
         name: "Cross Shape American Pool Tables",
-        metaTitle: "Cross Shape American Pool Tables Manufacturer & Supplier in India",
+        metaTitle:
+          "Cross Shape American Pool Tables Manufacturer & Supplier in India",
         metaDescription:
           "Premium Cross Shape American Pool Tables with luxury design and superior gameplay performance. Perfect for villas, resorts, clubs, and high-end entertainment spaces. Durable construction with elegant finishing. Bulk orders available.",
 
@@ -874,7 +910,8 @@ export const categories = [
       {
         id: "u-shape-american-pool-tables",
         name: "U Shape American Pool Tables",
-        metaTitle: "U Shape American Pool Tables Manufacturer & Supplier in India",
+        metaTitle:
+          "U Shape American Pool Tables Manufacturer & Supplier in India",
         metaDescription:
           "Premium U Shape American Pool Tables with luxury design and superior gameplay performance. Perfect for villas, resorts, clubs, and high-end entertainment spaces. Durable construction with elegant finishing. Bulk orders available.",
 
@@ -964,7 +1001,8 @@ export const categories = [
       {
         id: "v-shape-american-pool-tables",
         name: "V Shape American Pool Tables",
-        metaTitle: "V Shape American Pool Tables Manufacturer & Supplier in India",
+        metaTitle:
+          "V Shape American Pool Tables Manufacturer & Supplier in India",
         metaDescription:
           "Premium V Shape American Pool Tables with luxury design and superior gameplay performance. Perfect for villas, resorts, clubs, and high-end entertainment spaces. Durable construction with elegant finishing. Bulk orders available.",
 
@@ -1054,7 +1092,8 @@ export const categories = [
       {
         id: "pool-and-tt-american-style-tables",
         name: "Pool + TT American Style Tables",
-        metaTitle: "Pool + TT American Style Tables Manufacturer & Supplier in India",
+        metaTitle:
+          "Pool + TT American Style Tables Manufacturer & Supplier in India",
         metaDescription:
           "Premium Pool + TT American Style Tables with luxury design and superior gameplay performance. Perfect for villas, resorts, clubs, and high-end entertainment spaces. Durable construction with elegant finishing. Bulk orders available.",
 
@@ -1143,7 +1182,8 @@ export const categories = [
       {
         id: "premium-american-pool-table",
         name: "Premium American Pool Table",
-        metaTitle: "Premium American Pool Table Manufacturer & Supplier in India",
+        metaTitle:
+          "Premium American Pool Table Manufacturer & Supplier in India",
         metaDescription:
           "Premium Premium American Pool Table with luxury design and superior gameplay performance. Perfect for villas, resorts, clubs, and high-end entertainment spaces. Durable construction with elegant finishing. Bulk orders available.",
 
@@ -1228,11 +1268,12 @@ export const categories = [
         ],
       },
 
-      // 14 INDIAN POOL TABLE 6 LEG BASIC 6x6 
+      // 14 INDIAN POOL TABLE 6 LEG BASIC 6x6
       {
         id: "indian-pool-table-6-leg-basic",
         name: "Indian Pool Table 6 Leg Basic 6x6",
-        metaTitle: "Indian Pool Table 6 Leg Basic 6x6 Manufacturer & Supplier in India",
+        metaTitle:
+          "Indian Pool Table 6 Leg Basic 6x6 Manufacturer & Supplier in India",
         metaDescription:
           "Premium Indian Pool Table 6 Leg Basic 6x6 with luxury design and superior gameplay performance. Perfect for villas, resorts, clubs, and high-end entertainment spaces. Durable construction with elegant finishing. Bulk orders available.",
 
@@ -1321,7 +1362,8 @@ export const categories = [
       {
         id: "indian-pool-table-6-leg",
         name: "Indian Pool Table 6 Leg 7x7",
-        metaTitle: "Indian Pool Table 6 Leg 7x7 Manufacturer & Supplier in India",
+        metaTitle:
+          "Indian Pool Table 6 Leg 7x7 Manufacturer & Supplier in India",
         metaDescription:
           "Premium Indian Pool Table 6 Leg 7x7 with luxury design and superior gameplay performance. Perfect for villas, resorts, clubs, and high-end entertainment spaces. Durable construction with elegant finishing. Bulk orders available.",
 
@@ -1410,7 +1452,8 @@ export const categories = [
       {
         id: "indian-pool-table-6-leg-premium",
         name: "Indian Pool Table 6 Leg 7x7 Premium",
-        metaTitle: "Indian Pool Table 6 Leg 7x7 Premium Manufacturer & Supplier in India",
+        metaTitle:
+          "Indian Pool Table 6 Leg 7x7 Premium Manufacturer & Supplier in India",
         metaDescription:
           "Premium Indian Pool Table 6 Leg 7x7 Premium with luxury design and superior gameplay performance. Perfect for villas, resorts, clubs, and high-end entertainment spaces. Durable construction with elegant finishing. Bulk orders available.",
 
@@ -1474,7 +1517,10 @@ export const categories = [
         ],
 
         specs: [
-          { label: "Product Name", value: "Indian Pool Table 6 Leg 7x7 Premium" },
+          {
+            label: "Product Name",
+            value: "Indian Pool Table 6 Leg 7x7 Premium",
+          },
           { label: "Material", value: "Wooden & Slates" },
           { label: "Type", value: "Pool Table" },
           { label: "Size", value: "4 Ft x 8 Ft" },
@@ -1499,7 +1545,8 @@ export const categories = [
       {
         id: "indian-pool-table-6-leg-8X8-premium",
         name: "Indian Pool Table 6 Leg 8x8 Premium",
-        metaTitle: "Indian Pool Table 6 Leg 8X8 Premium Manufacturer & Supplier in India",
+        metaTitle:
+          "Indian Pool Table 6 Leg 8X8 Premium Manufacturer & Supplier in India",
         metaDescription:
           "Premium Indian Pool Table 6 Leg 8X8 Premium with luxury design and superior gameplay performance. Perfect for villas, resorts, clubs, and high-end entertainment spaces. Durable construction with elegant finishing. Bulk orders available.",
 
@@ -1563,7 +1610,10 @@ export const categories = [
         ],
 
         specs: [
-          { label: "Product Name", value: "Indian Pool Table 6 Leg 8X8 Premium" },
+          {
+            label: "Product Name",
+            value: "Indian Pool Table 6 Leg 8X8 Premium",
+          },
           { label: "Material", value: "Wooden & Slates" },
           { label: "Type", value: "Pool Table" },
           { label: "Size", value: "4 Ft x 8 Ft" },
@@ -1679,18 +1729,19 @@ export const categories = [
   {
     id: "billiard-balls",
     name: "Billiard Balls",
-    metaTitle: "Professional Billiard Balls | High-Quality Snooker & Pool Balls",
+    metaTitle:
+      "Professional Billiard Balls | High-Quality Snooker & Pool Balls",
     metaDescription:
       "Shop high-quality billiard balls for pool and snooker. Durable, precision-made, and perfect for both professional and home use. PAN-India delivery available.",
 
     products: [
       // product 1
 
-
       {
         id: "aramith-pool-ball",
         name: "Aramith Pool Ball",
-        metaTitle: "Aramith Pool Ball Set Supplier in India | Premium Tournament Quality Balls",
+        metaTitle:
+          "Aramith Pool Ball Set Supplier in India | Premium Tournament Quality Balls",
         metaDescription:
           "Buy genuine Aramith Pool Ball sets made from high-quality phenolic resin for superior durability, balance, and consistent performance. Ideal for professional tournaments, clubs, and home tables. Bulk supply available in India.",
 
@@ -1698,7 +1749,11 @@ export const categories = [
           "Aramith Pool Ball Set – 16-piece professional phenolic compound balls engineered for precision, durability, and tournament-grade performance.",
 
         colors: [
-          { name: "Multi Color", class: "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900" },
+          {
+            name: "Multi Color",
+            class:
+              "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -1790,13 +1845,12 @@ export const categories = [
         ],
       },
 
-
-
       // product 2
       {
         id: "hong-tai-tournament-indian-pool-balls",
         name: "Hong Tai Tournament Indian Pool Balls",
-        metaTitle: "Hong Tai Tournament Indian Pool Balls Supplier in India | Professional Quality",
+        metaTitle:
+          "Hong Tai Tournament Indian Pool Balls Supplier in India | Professional Quality",
         metaDescription:
           "Premium Hong Tai Tournament Indian Pool Balls designed for professional gameplay, durability, and perfect balance. Ideal for clubs, tournaments, and competitive players. Bulk supply available across India.",
 
@@ -1804,7 +1858,11 @@ export const categories = [
           "Hong Tai Tournament Indian Pool Balls – 16-piece phenolic compound set engineered for Indian-style tables, offering precision, durability, and tournament-level performance.",
 
         colors: [
-          { name: "Mixed Color", class: "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900" },
+          {
+            name: "Mixed Color",
+            class:
+              "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -1875,7 +1933,10 @@ export const categories = [
         ],
 
         specs: [
-          { label: "Product Name", value: "Hong Tai Tournament Indian Pool Balls" },
+          {
+            label: "Product Name",
+            value: "Hong Tai Tournament Indian Pool Balls",
+          },
           { label: "Usage/Application", value: "Indian Pool Table" },
           { label: "Material", value: "Phenolic Compound" },
           { label: "Brand", value: "Hong Tai Yang" },
@@ -1897,7 +1958,8 @@ export const categories = [
       {
         id: "xinkang-tournament-american-pool-ball",
         name: "Xinkang Tournament American Pool Ball",
-        metaTitle: "Xinkang Tournament American Pool Ball Set Supplier in India",
+        metaTitle:
+          "Xinkang Tournament American Pool Ball Set Supplier in India",
         metaDescription:
           "Premium Xinkang Tournament American Pool Ball set designed for professional gameplay, consistent roll, and long-lasting durability. Ideal for clubs, tournaments, and commercial pool tables. Bulk supply available across India.",
 
@@ -1905,7 +1967,11 @@ export const categories = [
           "Xinkang Tournament American Pool Ball – 57 mm professional 16-ball phenolic compound set engineered for American pool tournaments, clubs, and premium game rooms.",
 
         colors: [
-          { name: "Mixed Color", class: "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900" },
+          {
+            name: "Mixed Color",
+            class:
+              "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -1976,7 +2042,10 @@ export const categories = [
         ],
 
         specs: [
-          { label: "Product Name", value: "Xinkang Tournament American Pool Ball" },
+          {
+            label: "Product Name",
+            value: "Xinkang Tournament American Pool Ball",
+          },
           { label: "Brand", value: "Xinkang" },
           { label: "Size", value: "57 mm / 2¼ inch" },
           { label: "Material", value: "Phenolic Compound" },
@@ -1995,12 +2064,12 @@ export const categories = [
         ],
       },
 
-
       //  product 4
       {
         id: "american-pool-ball-57mm-chinese",
         name: "American Pool Ball 57 Mm Chinese",
-        metaTitle: "American Pool Ball 57 MM Chinese Set Supplier in India | Professional Quality",
+        metaTitle:
+          "American Pool Ball 57 MM Chinese Set Supplier in India | Professional Quality",
         metaDescription:
           "High-quality American Pool Ball 57 MM Chinese set designed for smooth roll, perfect balance, and durability. Ideal for professional pool tables, clubs, and tournaments. Bulk supply available across India.",
 
@@ -2008,7 +2077,11 @@ export const categories = [
           "American Pool Ball 57 mm Chinese – Professional 16-ball phenolic compound set engineered for accurate and consistent American pool gameplay.",
 
         colors: [
-          { name: "Mixed Color", class: "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900" },
+          {
+            name: "Mixed Color",
+            class:
+              "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -2081,15 +2154,14 @@ export const categories = [
             alt: "American Pool Ball 57 Mm Chinese",
           },
         ],
-      }
-
-      ,
+      },
 
       // product 5
       {
         id: "samurai-pool-ball-52-5mm",
         name: "Samurai Pool Ball 52.5 Mm",
-        metaTitle: "Samurai Pool Ball 52.5 MM Set Supplier in India | Premium Quality Balls",
+        metaTitle:
+          "Samurai Pool Ball 52.5 MM Set Supplier in India | Premium Quality Balls",
         metaDescription:
           "Premium Samurai Pool Ball 52.5 MM set designed for smooth roll, accurate rebound, and long-lasting durability. Ideal for clubs, tournaments, and professional pool tables. Bulk supply available across India.",
 
@@ -2097,7 +2169,11 @@ export const categories = [
           "Samurai Pool Ball 52.5 mm – Premium 16-ball phenolic compound set designed for smooth and consistent Indian pool gameplay.",
 
         colors: [
-          { name: "Mixed Color", class: "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900" },
+          {
+            name: "Mixed Color",
+            class:
+              "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -2170,13 +2246,12 @@ export const categories = [
             alt: "Samurai Pool Ball 52.5 Mm",
           },
         ],
-      }
-
-      ,
+      },
       {
         id: "xinkang-tournament-snooker-balls",
         name: "Xinkang Tournament Snooker Balls",
-        metaTitle: "Xinkang Tournament Snooker Balls Supplier in India | Professional Grade Set",
+        metaTitle:
+          "Xinkang Tournament Snooker Balls Supplier in India | Professional Grade Set",
         metaDescription:
           "Premium Xinkang Tournament Snooker Balls designed for professional gameplay, accurate rebound, and long-lasting durability. Ideal for clubs, tournaments, and commercial snooker tables. Bulk supply available across India.",
 
@@ -2184,7 +2259,11 @@ export const categories = [
           "Xinkang Tournament Snooker Balls – Professional 22-ball phenolic compound set designed for full-size and mini snooker tables.",
 
         colors: [
-          { name: "Mixed Color", class: "bg-gradient-to-r from-red-600 via-yellow-400 to-green-600 border-gray-900" },
+          {
+            name: "Mixed Color",
+            class:
+              "bg-gradient-to-r from-red-600 via-yellow-400 to-green-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -2250,7 +2329,10 @@ export const categories = [
           { label: "Brand", value: "Xinkang" },
           { label: "Material", value: "Phenolic Compounds" },
           { label: "Color", value: "Mixed" },
-          { label: "Usage/Application", value: "Snooker and Mini Snooker Tables" },
+          {
+            label: "Usage/Application",
+            value: "Snooker and Mini Snooker Tables",
+          },
           { label: "Box Contains", value: "22 Balls" },
           { label: "Pack Of", value: "1 Box" },
         ],
@@ -2261,16 +2343,15 @@ export const categories = [
             alt: "Xinkang Tournament Snooker Balls",
           },
         ],
-      }
-      ,
-
+      },
 
       // 7
 
       {
         id: "xinkang-star-snooker-ball-set",
         name: "Xinkang Star Snooker Ball Set",
-        metaTitle: "Xinkang Star Snooker Ball Set Supplier in India | Professional Quality Balls",
+        metaTitle:
+          "Xinkang Star Snooker Ball Set Supplier in India | Professional Quality Balls",
         metaDescription:
           "Premium Xinkang Star Snooker Ball Set crafted for smooth roll, accurate rebound, and tournament-level performance. Ideal for clubs, professional players, and commercial snooker tables. Bulk supply available across India.",
 
@@ -2278,7 +2359,11 @@ export const categories = [
           "Xinkang Star Snooker Ball Set – 52.5mm professional 22-ball phenolic compound set for full-size snooker tables.",
 
         colors: [
-          { name: "Mixed Color", class: "bg-gradient-to-r from-red-600 via-yellow-400 to-green-600 border-gray-900" },
+          {
+            name: "Mixed Color",
+            class:
+              "bg-gradient-to-r from-red-600 via-yellow-400 to-green-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -2365,7 +2450,8 @@ export const categories = [
       {
         id: "aramith-snooker-ball-set-premier",
         name: "Aramith Snooker Ball Set Premier",
-        metaTitle: "Aramith Snooker Ball Set Premier Supplier in India | Tournament Grade Balls",
+        metaTitle:
+          "Aramith Snooker Ball Set Premier Supplier in India | Tournament Grade Balls",
         metaDescription:
           "Buy genuine Aramith Snooker Ball Set Premier made from premium phenolic resin for superior durability, consistent bounce, and professional tournament performance. Ideal for clubs and competitive players. PAN India supply available.",
 
@@ -2373,7 +2459,11 @@ export const categories = [
           "Aramith Snooker Ball Set Premier – Tournament-grade 22-piece phenolic compound set for professional snooker and billiard gameplay.",
 
         colors: [
-          { name: "Mixed Color", class: "bg-gradient-to-r from-red-600 via-yellow-400 to-green-600 border-gray-900" },
+          {
+            name: "Mixed Color",
+            class:
+              "bg-gradient-to-r from-red-600 via-yellow-400 to-green-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -2453,13 +2543,13 @@ export const categories = [
         ],
       },
 
-
       // 9
 
       {
         id: "aramith-premier-billiard-ball-set",
         name: "Aramith Premier Billiard Ball Set",
-        metaTitle: "Aramith Premier Billiard Ball Set Supplier in India | Professional Quality",
+        metaTitle:
+          "Aramith Premier Billiard Ball Set Supplier in India | Professional Quality",
         metaDescription:
           "Buy genuine Aramith Premier Billiard Ball Set made from high-grade phenolic resin for superior durability, balance, and consistent performance. Ideal for professional tournaments, clubs, and premium home tables. PAN India supply available.",
 
@@ -2467,7 +2557,11 @@ export const categories = [
           "Aramith Premier Billiard Ball Set – Premium 3-ball phenolic compound set for traditional professional billiards play.",
 
         colors: [
-          { name: "Mixed Color", class: "bg-gradient-to-r from-red-600 via-yellow-400 to-green-600 border-gray-900" },
+          {
+            name: "Mixed Color",
+            class:
+              "bg-gradient-to-r from-red-600 via-yellow-400 to-green-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -2547,26 +2641,20 @@ export const categories = [
         ],
       },
 
-
-
-
-
       // 10
-
 
       {
         id: "snooker-balls-set",
         name: "Snooker Balls Set",
-        metaTitle: "Snooker Balls Set Manufacturer & Supplier in India | Professional Quality",
+        metaTitle:
+          "Snooker Balls Set Manufacturer & Supplier in India | Professional Quality",
         metaDescription:
           "Premium Snooker Balls Set designed for smooth roll, accurate rebound, and long-lasting durability. Ideal for clubs, tournaments, and home snooker tables. Professional-grade sets available with PAN India delivery.",
 
         excerpt:
           "Snooker Balls Set – 22-ball mixed phenolic set designed for consistent snooker gameplay on professional tables.",
 
-        colors: [
-          { name: "Black Box", class: "bg-black border-gray-900" },
-        ],
+        colors: [{ name: "Black Box", class: "bg-black border-gray-900" }],
 
         description: [
           {
@@ -2645,22 +2733,20 @@ export const categories = [
         ],
       },
 
-
       // 11
 
       {
         id: "billiard-cue-ball",
         name: "Billiard Cue Ball",
-        metaTitle: "Billiard Cue Ball Supplier in India | Premium Quality White Cue Ball",
+        metaTitle:
+          "Billiard Cue Ball Supplier in India | Premium Quality White Cue Ball",
         metaDescription:
           "High-quality Billiard Cue Ball designed for smooth roll, accurate rebound, and long-lasting performance. Ideal for pool tables, snooker tables, clubs, and tournaments. Bulk supply available across India.",
 
         excerpt:
           "Billiard Cue Ball – Precision-balanced 52.5mm+ cue ball engineered for accurate control, smooth rolling, and professional gameplay performance.",
 
-        colors: [
-          { name: "White", class: "bg-white border-gray-400" },
-        ],
+        colors: [{ name: "White", class: "bg-white border-gray-400" }],
 
         description: [
           {
@@ -2734,15 +2820,15 @@ export const categories = [
             alt: "Billiard Cue Ball",
           },
         ],
-      }
-      ,
+      },
 
       // 12
 
       {
         id: "feiyang-indian-pool-ball-52-5mm",
         name: "Feiyang Indian Pool Ball 52.5 Mm",
-        metaTitle: "Feiyang Indian Pool Ball 52.5 MM Set Supplier in India | Professional Quality",
+        metaTitle:
+          "Feiyang Indian Pool Ball 52.5 MM Set Supplier in India | Professional Quality",
         metaDescription:
           "Premium Feiyang Indian Pool Ball 52.5 MM set designed for smooth roll, accurate rebound, and long-lasting durability. Ideal for clubs, tournaments, and professional Indian pool tables. PAN India bulk supply available.",
 
@@ -2750,7 +2836,11 @@ export const categories = [
           "Feiyang Indian Pool Ball 52.5mm – Professional 16-ball phenolic compound set designed for Indian-style pool tables.",
 
         colors: [
-          { name: "Mixed Color", class: "bg-gradient-to-r from-red-600 via-yellow-400 to-green-600 border-gray-900" },
+          {
+            name: "Mixed Color",
+            class:
+              "bg-gradient-to-r from-red-600 via-yellow-400 to-green-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -2827,17 +2917,15 @@ export const categories = [
             alt: "Feiyang Indian Pool Ball 52.5 Mm",
           },
         ],
-      }
-      ,
-
-
+      },
 
       // 14
 
       {
         id: "aramith-belgian-tournament-ball-set",
         name: "Aramith Belgian Tournament Ball Set",
-        metaTitle: "Aramith Belgian Tournament Ball Set Supplier in India | Professional Quality",
+        metaTitle:
+          "Aramith Belgian Tournament Ball Set Supplier in India | Professional Quality",
         metaDescription:
           "Buy genuine Aramith Belgian Tournament Ball Set crafted from premium phenolic resin for superior durability, perfect balance, and tournament-level performance. Ideal for professional players, clubs, and competitions. PAN India supply available.",
 
@@ -2845,7 +2933,11 @@ export const categories = [
           "Aramith Belgian Tournament Ball Set – Professional 3-ball phenolic compound set engineered for tournament-level billiards performance.",
 
         colors: [
-          { name: "Mixed Color", class: "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900" },
+          {
+            name: "Mixed Color",
+            class:
+              "bg-gradient-to-r from-red-600 via-yellow-400 to-blue-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -2906,7 +2998,10 @@ export const categories = [
         ],
 
         specs: [
-          { label: "Product Name", value: "Aramith Belgian Tournament Ball Set" },
+          {
+            label: "Product Name",
+            value: "Aramith Belgian Tournament Ball Set",
+          },
           { label: "Brand", value: "Aramith" },
           { label: "Size", value: "52.5 mm+" },
           { label: "Material", value: "Phenolic Compound" },
@@ -2923,14 +3018,13 @@ export const categories = [
             alt: "Aramith Belgian Tournament Ball Set",
           },
         ],
-      }
-      ,
-
+      },
 
       {
         id: "round-billiard-balls",
         name: "Round Billiard Balls",
-        metaTitle: "Round Billiard Balls Manufacturer & Supplier in India | Premium Quality Sets",
+        metaTitle:
+          "Round Billiard Balls Manufacturer & Supplier in India | Premium Quality Sets",
         metaDescription:
           "High-quality Round Billiard Balls designed for smooth roll, perfect balance, and long-lasting durability. Ideal for pool tables, snooker tables, clubs, and professional use. Bulk supply available across India.",
 
@@ -2995,7 +3089,15 @@ export const categories = [
           },
         ],
 
-        specs: [],
+        specs: [
+          { "label": "Brand", "value": "PM Billiards" },
+      { "label": "Color", "value": "Red, Blue, Yellow, Pink" },
+      { "label": "Material", "value": "Resin" },
+      { "label": "Shape Type", "value": "Round" },
+      { "label": "Sports", "value": "Billiard Snooker" },
+      { "label": "Box Contains", "value": "16 Balls" },
+      { "label": "Availability", "value": "In Stock" }
+        ],
 
         image: [
           {
@@ -3004,11 +3106,10 @@ export const categories = [
           },
         ],
       },
-
     ],
   },
 
-  // category 6 snooker cue 
+  // category 6 snooker cue
   {
     id: "snooker-cues",
     name: "Snooker Cues",
@@ -3022,7 +3123,8 @@ export const categories = [
       {
         id: "omin-enlighten-cue-stick",
         name: "Omin Enlighten Cue Stick",
-        metaTitle: "Omin Enlighten Cue Stick Supplier in India | Professional Pool & Snooker Cue",
+        metaTitle:
+          "Omin Enlighten Cue Stick Supplier in India | Professional Pool & Snooker Cue",
         metaDescription:
           "Premium Omin Enlighten Cue Stick crafted for precision control, smooth stroke, and superior balance. Ideal for professional players, clubs, and tournaments. Durable construction with elegant finish. PAN India supply available.",
 
@@ -3030,7 +3132,11 @@ export const categories = [
           "Omin Enlighten Cue Stick – 57 inch professional wooden cue designed for precision control and competitive billiards gameplay.",
 
         colors: [
-          { name: "Variable Color", class: "bg-gradient-to-r from-amber-700 via-brown-500 to-yellow-600 border-gray-900" },
+          {
+            name: "Variable Color",
+            class:
+              "bg-gradient-to-r from-amber-700 via-brown-500 to-yellow-600 border-gray-900",
+          },
         ],
 
         description: [
@@ -3107,24 +3213,21 @@ export const categories = [
             alt: "Omin Enlighten Cue Stick 57 Inch",
           },
         ],
-      }
-      ,
-
+      },
 
       // product 2
       {
         id: "leadsuper-3-4-with-extension",
         name: "Leadsuper 3/4 With Extension",
-        metaTitle: "Leadsuper 3/4 Cue with Extension Supplier in India | Professional Snooker Cue",
+        metaTitle:
+          "Leadsuper 3/4 Cue with Extension Supplier in India | Professional Snooker Cue",
         metaDescription:
           "Premium Leadsuper 3/4 Cue with Extension designed for precision control and extended reach. Perfectly balanced, durable, and ideal for professional players, clubs, and tournaments. PAN India supply available.",
 
         excerpt:
           "Leadsuper 3/4 With Extension – 57 inch professional wooden cue with detachable extension for enhanced reach and precision gameplay.",
 
-        colors: [
-          { name: "Brown", class: "bg-amber-800 border-gray-900" },
-        ],
+        colors: [{ name: "Brown", class: "bg-amber-800 border-gray-900" }],
 
         description: [
           {
@@ -3198,13 +3301,13 @@ export const categories = [
         ],
       },
 
-
       // product 3
 
       {
         id: "master-pro-butt-cue-3-4-9-5mm",
         name: "Master Pro Butt Cue 3/4 9.5 Mm",
-        metaTitle: "Master Pro Butt Cue 3/4 9.5 MM Supplier in India | Professional Snooker Cue",
+        metaTitle:
+          "Master Pro Butt Cue 3/4 9.5 MM Supplier in India | Professional Snooker Cue",
         metaDescription:
           "Premium Master Pro Butt Cue 3/4 9.5 MM designed for precise control, smooth stroke, and superior balance. Ideal for professional snooker players, clubs, and tournaments. Durable construction with PAN India supply available.",
 
@@ -3212,7 +3315,11 @@ export const categories = [
           "Master Pro Butt Cue 3/4 – 9.5mm professional wooden cue designed for precise control and smooth performance in snooker and pool.",
 
         colors: [
-          { name: "Brown & Black", class: "bg-gradient-to-r from-amber-800 to-gray-900 border-gray-900" },
+          {
+            name: "Brown & Black",
+            class:
+              "bg-gradient-to-r from-amber-800 to-gray-900 border-gray-900",
+          },
         ],
 
         description: [
@@ -3285,12 +3392,12 @@ export const categories = [
         ],
       },
 
-
       //  product 4
       {
         id: "omin-gunman-cue-stick",
         name: "Omin Gunman Cue Stick",
-        metaTitle: "Omin Gunman Cue Stick Supplier in India | Professional Pool & Snooker Cue",
+        metaTitle:
+          "Omin Gunman Cue Stick Supplier in India | Professional Pool & Snooker Cue",
         metaDescription:
           "Premium Omin Gunman Cue Stick designed for precision control, powerful shots, and smooth gameplay. Perfectly balanced and durable for professional players, clubs, and tournaments. PAN India supply available.",
 
@@ -3298,7 +3405,11 @@ export const categories = [
           "O'Min Gunman Cue Stick – 57 inch professional wooden cue with 9.5mm tip designed for powerful, precise, and consistent snooker performance.",
 
         colors: [
-          { name: "Wood Finish", class: "bg-gradient-to-r from-amber-700 to-yellow-900 border-gray-900" },
+          {
+            name: "Wood Finish",
+            class:
+              "bg-gradient-to-r from-amber-700 to-yellow-900 border-gray-900",
+          },
         ],
 
         description: [
@@ -3370,15 +3481,14 @@ export const categories = [
             alt: "Omin Gunman Cue Stick",
           },
         ],
-      }
-
-      ,
+      },
 
       // product 5
       {
         id: "omin-victory-cue-stick",
         name: "Omin Victory Cue Stick",
-        metaTitle: "Omin Victory Cue Stick Supplier in India | Professional Pool & Snooker Cue",
+        metaTitle:
+          "Omin Victory Cue Stick Supplier in India | Professional Pool & Snooker Cue",
         metaDescription:
           "Premium Omin Victory Cue Stick crafted for superior balance, precise control, and smooth stroke performance. Ideal for professional players, clubs, and tournaments. Durable build with PAN India supply available.",
 
@@ -3386,7 +3496,11 @@ export const categories = [
           "O'Min Victory Cue Stick – 57 inch professional ashwood snooker cue with 9.5mm tip built for precision, balance, and competitive performance.",
 
         colors: [
-          { name: "Natural Ashwood", class: "bg-gradient-to-r from-amber-600 to-yellow-800 border-gray-900" },
+          {
+            name: "Natural Ashwood",
+            class:
+              "bg-gradient-to-r from-amber-600 to-yellow-800 border-gray-900",
+          },
         ],
 
         description: [
@@ -3459,18 +3573,15 @@ export const categories = [
             alt: "Omin Victory Cue Stick",
           },
         ],
-      }
-
-      ,
-
+      },
 
       // 6
-
 
       {
         id: "rest-stick-with-extension",
         name: "Rest Stick With Extension",
-        metaTitle: "Rest Stick with Extension Supplier in India | Snooker & Pool Accessories",
+        metaTitle:
+          "Rest Stick with Extension Supplier in India | Snooker & Pool Accessories",
         metaDescription:
           "Premium Rest Stick with Extension designed for extended reach and precision shots on snooker and pool tables. Strong, durable, and ideal for clubs, tournaments, and professional players. PAN India bulk supply available.",
 
@@ -3478,7 +3589,11 @@ export const categories = [
           "Rest Stick With Extension – Professional wooden and metal snooker rest accessory designed for extended reach and accurate shot support.",
 
         colors: [
-          { name: "Wood & Metal Finish", class: "bg-gradient-to-r from-amber-700 to-gray-700 border-gray-900" },
+          {
+            name: "Wood & Metal Finish",
+            class:
+              "bg-gradient-to-r from-amber-700 to-gray-700 border-gray-900",
+          },
         ],
 
         description: [
@@ -3554,28 +3669,21 @@ export const categories = [
             alt: "Rest Stick With Extension",
           },
         ],
-      }
-      ,
+      },
 
+      ,
       // 7
-
-
-
-
-      ,
-
 
       {
         id: "5-feet-rest-cue-for-snooker",
         name: "5 Feet Rest Cue For Snooker",
-        metaTitle: "5 Feet Rest Cue for Snooker Manufacturer & Supplier in India | Premium Quality",
+        metaTitle:
+          "5 Feet Rest Cue for Snooker Manufacturer & Supplier in India | Premium Quality",
         metaDescription:
           "Buy high-quality 5 Feet Rest Cue for Snooker designed for precision shots and extended reach. Durable, well-balanced, and ideal for clubs, tournaments, and professional use. Bulk orders available across India.",
 
         excerpt:
           "Enhance your gameplay precision with the 5 Feet Rest Cue for Snooker by PM Billiards, crafted for stability, balance, and professional performance. Enhance your gameplay precision with the 5 Feet Rest Cue for Snooker by PM Billiards, crafted for stability, balance, and professional performance",
-
-
 
         description: [
           {
@@ -3645,20 +3753,17 @@ export const categories = [
         ],
       },
 
-
-
       // product 2
       {
         id: "7-feet-long-cue-and-rest-combo",
         name: "7 Feet Long Cue And Rest Combo",
-        metaTitle: "7 Feet Long Cue and Rest Combo Manufacturer & Supplier in India",
+        metaTitle:
+          "7 Feet Long Cue and Rest Combo Manufacturer & Supplier in India",
         metaDescription:
           "Premium 7 Feet Long Cue and Rest Combo designed for extended reach and precision gameplay. Ideal for snooker clubs, tournaments, and professional tables. Durable build and perfect balance. Bulk supply available across India.",
 
         excerpt:
-          "Enhance long-distance shot precision with the 7 Feet Long Cue and Rest Combo, designed for professional gameplay and full-size snooker tables.",
-
-
+          "Enhance your snooker and billiards performance with the 7 Feet Long Cue and Rest Combo, specially designed to deliver superior reach, stability, and control during long-distance and hard-to-reach shots. Ideal for professional players as well as enthusiasts, this combo is an essential addition to full-size snooker tables.",
 
         description: [
           {
@@ -3726,13 +3831,13 @@ export const categories = [
         ],
       },
 
-
       // 3
 
       {
         id: "blp-snooker-cue-9mm",
         name: "BLP Snooker Cue 9 mm",
-        metaTitle: "BLP Snooker Cue 9 mm Manufacturer & Supplier in India | Professional Cue Stick",
+        metaTitle:
+          "BLP Snooker Cue 9 mm Manufacturer & Supplier in India | Professional Cue Stick",
         metaDescription:
           "Premium BLP Snooker Cue 9 mm designed for precision control and smooth gameplay. Crafted with high-quality wood, perfect balance, and professional finish. Ideal for clubs, tournaments, and serious players. Bulk supply available.",
 
@@ -3808,9 +3913,7 @@ export const categories = [
             alt: "BLP Snooker Cue 9 mm",
           },
         ],
-      }
-
-
+      },
     ],
   },
 
@@ -3828,16 +3931,15 @@ export const categories = [
       {
         id: "leadsuper-round-case",
         name: "Leadsuper Round Case",
-        metaTitle: "Leadsuper Round Case Manufacturer & Supplier in India | Premium Cue Case",
+        metaTitle:
+          "Leadsuper Round Case Manufacturer & Supplier in India | Premium Cue Case",
         metaDescription:
           "Premium Leadsuper Round Case designed for safe and stylish storage of pool and snooker cues. Durable, lightweight, and travel-friendly with superior protection. Ideal for professionals and clubs. Bulk supply available in India.",
 
         excerpt:
           "Protect and transport your cues safely with the Leadsuper Round Case, a durable 65-inch protective storage solution designed for professional gameplay needs.",
 
-        colors: [
-          { name: "Black", class: "bg-black border-gray-800" },
-        ],
+        colors: [{ name: "Black", class: "bg-black border-gray-800" }],
 
         description: [
           {
@@ -3904,26 +4006,22 @@ export const categories = [
             alt: "Leadsuper Round Case",
           },
         ],
-      }
-
-      ,
-
+      },
 
       // product 2
 
       {
         id: "omin-cue-case",
         name: "Omin Cue Case",
-        metaTitle: "Omin Cue Case Manufacturer & Supplier in India | Premium Pool & Snooker Cue Case",
+        metaTitle:
+          "Omin Cue Case Manufacturer & Supplier in India | Premium Pool & Snooker Cue Case",
         metaDescription:
           "High-quality Omin Cue Case designed for secure storage and easy transport of pool and snooker cues. Durable construction, stylish finish, and superior protection for professional and club use. Bulk supply available in India.",
 
         excerpt:
           "Protect your snooker cue with the Omin Cue Case, a lightweight premium leather case designed for durability, safety, and professional appearance.",
 
-        colors: [
-          { name: "Black", class: "bg-black border-gray-800" },
-        ],
+        colors: [{ name: "Black", class: "bg-black border-gray-800" }],
 
         description: [
           {
@@ -3990,16 +4088,14 @@ export const categories = [
             alt: "Omin Cue Case",
           },
         ],
-      }
-
-
-      ,
+      },
       // product 3
 
       {
         id: "wiraka-snooker-cue-case-3-4-single",
         name: "Wiraka Snooker Cue Case For 3/4 N Single",
-        metaTitle: "Wiraka Snooker Cue Case for 3/4 & Single Piece Cue | Supplier in India",
+        metaTitle:
+          "Wiraka Snooker Cue Case for 3/4 & Single Piece Cue | Supplier in India",
         metaDescription:
           "Premium Wiraka Snooker Cue Case designed for 3/4 and single-piece cues. Strong, durable, and lightweight with superior protection for professional and club use. Ideal for safe storage and travel. Bulk supply available in India.",
 
@@ -4008,7 +4104,10 @@ export const categories = [
 
         colors: [
           { name: "Blue Camouflage", class: "bg-blue-700 border-blue-900" },
-          { name: "Orange Camouflage", class: "bg-orange-600 border-orange-800" },
+          {
+            name: "Orange Camouflage",
+            class: "bg-orange-600 border-orange-800",
+          },
           { name: "Cream Camouflage", class: "bg-amber-200 border-amber-400" },
         ],
 
@@ -4062,7 +4161,10 @@ export const categories = [
         ],
 
         specs: [
-          { label: "Product Name", value: "Wiraka Snooker Cue Case For 3/4 N Single" },
+          {
+            label: "Product Name",
+            value: "Wiraka Snooker Cue Case For 3/4 N Single",
+          },
           { label: "Minimum Order Quantity", value: "1 Piece" },
           { label: "Material", value: "Nylon" },
           { label: "Size", value: "60 Inches" },
@@ -4082,27 +4184,22 @@ export const categories = [
             alt: "Wiraka Snooker Cue Case For 3/4 N Single",
           },
         ],
-      }
-
-
-      ,
-
+      },
 
       // 4
 
       {
         id: "metal-snooker-cue-case-3-4-single",
         name: "Metal Snooker Cue Case For 3/4 N Single Cues",
-        metaTitle: "Metal Snooker Cue Case for 3/4 & Single Cues | Manufacturer & Supplier in India",
+        metaTitle:
+          "Metal Snooker Cue Case for 3/4 & Single Cues | Manufacturer & Supplier in India",
         metaDescription:
           "Durable Metal Snooker Cue Case designed for 3/4 and single-piece cues. Strong aluminum body, secure locking system, and superior protection for travel and storage. Ideal for professional players and clubs. Bulk supply available in India.",
 
         excerpt:
           "Protect your professional snooker cues with the heavy-duty Metal Cue Case by PM Billiards, designed for maximum durability, impact resistance, and secure storage.",
 
-        colors: [
-          { name: "Black", class: "bg-black border-gray-800" },
-        ],
+        colors: [{ name: "Black", class: "bg-black border-gray-800" }],
 
         description: [
           {
@@ -4155,7 +4252,10 @@ export const categories = [
         ],
 
         specs: [
-          { label: "Product Name", value: "Metal Snooker Cue Case For 3/4 N Single Cues" },
+          {
+            label: "Product Name",
+            value: "Metal Snooker Cue Case For 3/4 N Single Cues",
+          },
           { label: "Minimum Order Quantity", value: "1 Piece" },
           { label: "Size", value: "60 Inches" },
           { label: "Material", value: "Metal" },
@@ -4172,11 +4272,7 @@ export const categories = [
             alt: "Metal Snooker Cue Case For 3/4 N Single Cues",
           },
         ],
-      }
-
-
-
-
+      },
     ],
   },
 
@@ -4184,29 +4280,26 @@ export const categories = [
   {
     id: "soccer-table",
     name: "Soccer Table",
-    metaTitle: "Soccer Table Manufacturer & Supplier in India | Premium Foosball Tables",
+    metaTitle:
+      "Soccer Table Manufacturer & Supplier in India | Premium Foosball Tables",
     metaDescription:
       "Shop high-quality soccer tables (foosball tables) from top manufacturers in India. Durable, premium designs perfect for home, office, and entertainment centers. PAN-India delivery available.",
 
     products: [
-
-
-
       //product 1
 
       {
         id: "wooden-soccer-table",
         name: " Wooden Soccer Table",
-        metaTitle: "Wooden Soccer Table Manufacturer & Supplier in India | Premium Foosball Tables",
+        metaTitle:
+          "Wooden Soccer Table Manufacturer & Supplier in India | Premium Foosball Tables",
         metaDescription:
           "Buy high-quality wooden soccer tables (foosball tables) from trusted manufacturers in India. Durable, stylish, and perfect for home, office, and entertainment centers. PAN-India delivery available.",
 
         excerpt:
           "Wooden Soccer Table – Professionally engineered  table with compact 4x2.5 Ft dimensions, heavy-duty construction, and smooth, stable gameplay for soccer enthusiasts.",
 
-        colors: [
-          { name: "Black", class: "bg-black border-gray-800" },
-        ],
+        colors: [{ name: "Black", class: "bg-black border-gray-800" }],
 
         description: [
           {
@@ -4246,7 +4339,7 @@ export const categories = [
               "Heavy build (~70 kg) enhances stability and prevents sliding during intense matches.",
               "Complete accessory package included for immediate setup and play.",
               "Premium black finish adds a professional and modern look.",
-              "Secure wooden packaging ensures safe transport and protection during delivery."
+              "Secure wooden packaging ensures safe transport and protection during delivery.",
             ],
           },
           {
@@ -4260,13 +4353,12 @@ export const categories = [
               "All products undergo strict quality control ensuring durability, structural strength, and long-term reliability.",
               "Preferred by clubs, gaming zones, academies, and entertainment centers for dependable performance.",
               "Provides expert guidance, installation assistance, and complete gaming solutions tailored to customer requirements.",
-              "Ensures premium finish and professional-grade indoor gaming experiences."
+              "Ensures premium finish and professional-grade indoor gaming experiences.",
             ],
           },
         ],
 
         specs: [
-
           { label: "Brand", value: "Leadsuper" },
           { label: "Material", value: "Wooden" },
           { label: "Color", value: "Black" },
@@ -4279,7 +4371,6 @@ export const categories = [
           { label: "Games Available", value: "Soccer" },
           { label: "Accessories Included", value: "Yes" },
           { label: "Packaging Type", value: "Wooden" },
-
         ],
 
         image: [
@@ -4288,16 +4379,14 @@ export const categories = [
             alt: "Leadsuper 4 Ft Soccer Game Table",
           },
         ],
-      }
-      ,
-
-
+      },
 
       // product 2
       {
         id: "pm-billiards-foosball-table",
         name: "PM Billiards Foosball Table",
-        metaTitle: "PM Billiards Medium Foosball Table | 3-3-4-4 Player Layout Indoor Table",
+        metaTitle:
+          "PM Billiards Medium Foosball Table | 3-3-4-4 Player Layout Indoor Table",
         metaDescription:
           "PM Billiards Foosball Table – High-quality MDF indoor table with 3-3-4-4 player layout, 2.5x4.5 ft dimensions, and 100kg sturdy construction. Perfect for homes, clubs, and offices. Stable, durable, and professional-grade gaming experience.",
 
@@ -4305,7 +4394,8 @@ export const categories = [
           "PM Billiards Foosball Table – Compact 2.5x4.5 ft table with durable MDF build, 3-3-4-4 player layout, solid 4-leg support, and professional-grade stability for competitive foosball.",
 
         colors: [
-          { name: "Wood Finish", class: "bg-yellow-700 border-gray-900" }
+          { name: "Finish green", class: "bg-green-700 border-green-900" },
+          { name: "Wood Finish", class: "bg-yellow-700 border-gray-900" },
         ],
 
         description: [
@@ -4350,7 +4440,7 @@ export const categories = [
               "Four solid legs provide stability and prevent wobbling during play.",
               "Heavy 100 kg frame supports professional-grade gaming experience.",
               "Optimized design for smooth ball movement, precise passing, and accurate shooting.",
-              "Perfect for competitive matches and recreational gaming."
+              "Perfect for competitive matches and recreational gaming.",
             ],
           },
           {
@@ -4364,13 +4454,16 @@ export const categories = [
               "Durable and stable MDF construction ensures years of reliable gameplay.",
               "Professional 3-3-4-4 layout offers realistic competitive experience.",
               "Compact and space-efficient design suitable for homes, clubs, and offices.",
-              "Solid frame and legs ensure safe, wobble-free gameplay."
+              "Solid frame and legs ensure safe, wobble-free gameplay.",
             ],
           },
         ],
 
         specs: [
-          { label: "Product Name", value: "PM Billiards Medium Foosball Table" },
+          {
+            label: "Product Name",
+            value: "PM Billiards Medium Foosball Table",
+          },
           { label: "Brand", value: "PM Billiards" },
           { label: "Material", value: "MDF" },
           { label: "Color", value: "Wood Finish" },
@@ -4380,7 +4473,7 @@ export const categories = [
           { label: "Legs", value: "4" },
           { label: "Weight", value: "100 Kg" },
           { label: "Availability", value: "In Stock" },
-          { label: "Usage/Application", value: "Play" }
+          { label: "Usage/Application", value: "Play" },
         ],
 
         image: [
@@ -4389,29 +4482,22 @@ export const categories = [
             alt: "PM Billiards Medium Foosball Table",
           },
         ],
-      }
-
-
-      ,
-
-
-
+      },
 
       // 3
 
       {
         id: "wooden-foosball-kids-indoor-game",
         name: "Wooden Foosball Kids Table Indoor Football Game",
-        metaTitle: "Soccer Table for Kids | Safe & Fun Foosball Tables in India",
+        metaTitle:
+          "Soccer Table for Kids | Safe & Fun Foosball Tables in India",
         metaDescription:
           "Shop high-quality soccer tables for kids in India. Durable, safe, and designed for fun home or school play. Perfect for children’s entertainment and indoor games.",
 
         excerpt:
           "Wooden Foosball Table – Compact 4x2.5 ft indoor football game with durable wooden build, steel rods, movable goalkeepers, and complete accessories for family-friendly fun.",
 
-        colors: [
-          { name: "Black", class: "bg-black border-gray-900" }
-        ],
+        colors: [{ name: "Black", class: "bg-black border-gray-900" }],
 
         description: [
           {
@@ -4459,7 +4545,7 @@ export const categories = [
               "Sturdy four-leg design prevents wobbling and ensures balance.",
               "High-quality steel rods for smooth, precise ball control.",
               "Complete accessories included for easy assembly and immediate play.",
-              "Safe and family-friendly design suitable for kids, adults, and groups."
+              "Safe and family-friendly design suitable for kids, adults, and groups.",
             ],
           },
           {
@@ -4473,13 +4559,16 @@ export const categories = [
               "Durable and stable construction ensures years of reliable gameplay.",
               "Designed for family fun, clubs, and recreational spaces.",
               "Includes all necessary accessories for quick setup and immediate play.",
-              "Trusted brand offering safe, high-quality, and professionally engineered products."
+              "Trusted brand offering safe, high-quality, and professionally engineered products.",
             ],
           },
         ],
 
         specs: [
-          { label: "Product Name", value: "Wooden Foosball Table Indoor Football Game" },
+          {
+            label: "Product Name",
+            value: "Wooden Foosball Table Indoor Football Game",
+          },
           { label: "Brand", value: "Imported" },
           { label: "Material", value: "Wooden" },
           { label: "Color", value: "Black" },
@@ -4489,10 +4578,13 @@ export const categories = [
           { label: "Legs", value: "4 Solid legs" },
           { label: "Rods Material", value: "Steel" },
           { label: "Accessories", value: "Everything included" },
-          { label: "Packaging Type", value: "Package consists of uninstalled soccer table" },
+          {
+            label: "Packaging Type",
+            value: "Package consists of uninstalled soccer table",
+          },
           { label: "Usage/Application", value: "For fun" },
           { label: "Weight", value: "60 Kg" },
-          { label: "Availability", value: "In Stock" }
+          { label: "Availability", value: "In Stock" },
         ],
 
         image: [
@@ -4502,14 +4594,6 @@ export const categories = [
           },
         ],
       },
-
-
-
-
-
-
-
-
     ],
   },
 
@@ -4522,23 +4606,18 @@ export const categories = [
       "Leading Billiards Accessories manufacturer and supplier in India offering high-quality pool balls, cue sticks, chalk, racks, table covers,at competitive prices.",
 
     products: [
-
-
-
       //product 1
-
 
       {
         id: "omin-billiard-chalk",
         name: "Omin Billiard Chalk",
-        metaTitle: "Omin Billiard Chalk Supplier in India | Premium Pool & Snooker Chalk",
+        metaTitle:
+          "Omin Billiard Chalk Supplier in India | Premium Pool & Snooker Chalk",
         metaDescription:
           "High-quality Omin Billiard Chalk designed for better grip, smooth cue control, and reduced miscues. Ideal for professional players, clubs, and tournaments. Durable and consistent performance. PAN India supply available.",
 
         excerpt:
           "Omin Billiard Chalk – Premium green square chalk designed for improved cue control, reduced miscues, and consistent billiards & pool performance. Ideal for professionals and clubs. Bulk supply available .",
-
-
 
         description: [
           {
@@ -4600,7 +4679,10 @@ export const categories = [
           { label: "Material", value: "Plastic" },
           { label: "Shape Type", value: "Square" },
           { label: "Sports Type", value: "Billiards" },
-          { label: "Usage/Application", value: "Billiards and Pool Table Game" },
+          {
+            label: "Usage/Application",
+            value: "Billiards and Pool Table Game",
+          },
           { label: "Thickness", value: "5–7 mm" },
           { label: "Box Contains", value: "2 Pieces" },
           { label: "Packaging Type", value: "Box" },
@@ -4614,14 +4696,13 @@ export const categories = [
         ],
       },
 
-
-
       // product 2
 
       {
         id: "billiards-ball-plastic-tray",
         name: "Billiards Ball Plastic Tray",
-        metaTitle: "Billiards Ball Plastic Tray Manufacturer & Supplier in India",
+        metaTitle:
+          "Billiards Ball Plastic Tray Manufacturer & Supplier in India",
         metaDescription:
           "High-quality Billiards Ball Plastic Tray designed for safe storage and organized display of pool and snooker balls. Durable, lightweight, and ideal for clubs, tournaments, and home tables. Bulk supply available across India.",
 
@@ -4629,7 +4710,10 @@ export const categories = [
           "Keep your gaming space organized with the Billiards Ball Plastic Tray, a lightweight and durable accessory designed for smooth and uninterrupted gameplay.",
 
         colors: [
-          { name: "Standard Plastic Finish", class: "bg-gray-600 border-gray-800" },
+          {
+            name: "Standard Plastic Finish",
+            class: "bg-gray-600 border-gray-800",
+          },
         ],
 
         description: [
@@ -4683,8 +4767,14 @@ export const categories = [
         specs: [
           { label: "Product Name", value: "Billiards Ball Plastic Tray" },
           { label: "Material", value: "High-Quality Plastic" },
-          { label: "Usage/Application", value: "Pool, Snooker & Billiards Games" },
-          { label: "Suitable For", value: "Clubs, Academies, Home & Commercial Use" },
+          {
+            label: "Usage/Application",
+            value: "Pool, Snooker & Billiards Games",
+          },
+          {
+            label: "Suitable For",
+            value: "Clubs, Academies, Home & Commercial Use",
+          },
           { label: "Feature", value: "Lightweight & Durable Construction" },
         ],
 
@@ -4694,21 +4784,7 @@ export const categories = [
             alt: "Billiards Ball Plastic Tray",
           },
         ],
-      }
-
-      ,
-
-
-
-
-
-
-
-
-
-
-
-
+      },
     ],
   },
 
@@ -4723,11 +4799,11 @@ export const categories = [
     products: [
       // product 1
 
-
       {
         id: "wiraka-6565-billiard-cloth",
         name: "Wiraka 6565 Billiard Cloth",
-        metaTitle: "Wiraka 6565 Billiard Cloth Supplier in India | Premium Pool & Snooker Table Cloth",
+        metaTitle:
+          "Wiraka 6565 Billiard Cloth Supplier in India | Premium Pool & Snooker Table Cloth",
         metaDescription:
           "Premium Wiraka 6565 Billiard Cloth designed for smooth ball roll, durability, and professional gameplay. Ideal for pool tables, snooker tables, clubs, and tournaments. High-quality fabric with PAN India supply available.",
 
@@ -4741,7 +4817,7 @@ export const categories = [
           { name: "Blue", class: "bg-blue-600 border-blue-800" },
 
           { name: "Yellow", class: "bg-yellow-400 border-yellow-600" },
-          { name: "Purple", class: "bg-purple-600 border-purple-800" }
+          { name: "Purple", class: "bg-purple-600 border-purple-800" },
         ],
 
         description: [
@@ -4778,7 +4854,7 @@ export const categories = [
               "Standard 1.95 meter roll size allows easy installation and full table coverage.",
               "Plain weave pattern provides uniform surface and predictable rebound angles.",
               "Classic green color enhances player focus and table aesthetics.",
-              "Compatible with billiards, pool, and snooker tables for versatile use."
+              "Compatible with billiards, pool, and snooker tables for versatile use.",
             ],
           },
           {
@@ -4792,7 +4868,7 @@ export const categories = [
               "Each cloth undergoes strict quality checks for weave consistency and durability.",
               "Trusted by clubs, academies, and tournament organizers for reliable performance.",
               "Ensures secure packaging and consistent product availability.",
-              "Known for expert guidance and complete solutions for billiards and pool table requirements."
+              "Known for expert guidance and complete solutions for billiards and pool table requirements.",
             ],
           },
         ],
@@ -4805,7 +4881,7 @@ export const categories = [
           { label: "Pattern", value: "Plain" },
           { label: "Size/Dimension", value: "1.95 Meter Roll" },
           { label: "Minimum Order Quantity", value: "3 Pieces" },
-          { label: "Usage", value: "Billiards, Pool & Snooker Tables" }
+          { label: "Usage", value: "Billiards, Pool & Snooker Tables" },
         ],
 
         image: [
@@ -4816,14 +4892,13 @@ export const categories = [
         ],
       },
 
-
-
       // product 2
 
       {
         id: "strachan-6811-30oz-tournament-cloth",
         name: "Strachan 6811 30 OZ Tournament Cloth For Snooker",
-        metaTitle: "Strachan 6811 30 OZ Tournament Cloth for Snooker | Supplier in India",
+        metaTitle:
+          "Strachan 6811 30 OZ Tournament Cloth for Snooker | Supplier in India",
         metaDescription:
           "Premium Strachan 6811 30 OZ Tournament Cloth for Snooker tables, offering exceptional speed, durability, and professional tournament performance. Ideal for clubs and competitive play. PAN India supply available.",
 
@@ -4837,7 +4912,7 @@ export const categories = [
           { name: "Blue", class: "bg-blue-600 border-blue-800" },
 
           { name: "Yellow", class: "bg-yellow-400 border-yellow-600" },
-          { name: "Purple", class: "bg-purple-600 border-purple-800" }
+          { name: "Purple", class: "bg-purple-600 border-purple-800" },
         ],
 
         description: [
@@ -4874,7 +4949,7 @@ export const categories = [
               "Durable 30 oz fabric resists wear, pilling, and stretching under intensive use.",
               "Standard 1.95 meter width provides full coverage for professional snooker tables.",
               "Widely used in international competitions and preferred by professional players.",
-              "Classic green color enhances visibility, contrast, and player focus."
+              "Classic green color enhances visibility, contrast, and player focus.",
             ],
           },
           {
@@ -4888,20 +4963,23 @@ export const categories = [
               "Each cloth undergoes strict quality checks for weave consistency and durability.",
               "Trusted by clubs, academies, and tournament organizers for reliable performance.",
               "Ensures secure packaging and consistent product availability.",
-              "Known for expertise and complete solutions for billiard, pool, and snooker table needs."
+              "Known for expertise and complete solutions for billiard, pool, and snooker table needs.",
             ],
           },
         ],
 
         specs: [
-          { label: "Product Name", value: "Strachan 6811 30 OZ Tournament Cloth" },
+          {
+            label: "Product Name",
+            value: "Strachan 6811 30 OZ Tournament Cloth",
+          },
           { label: "Brand", value: "Strachan 6811" },
           { label: "Model", value: "30 OZ" },
           { label: "Material", value: "Wool" },
           { label: "Color", value: "Green" },
           { label: "Size/Dimension", value: "1.95 Meter Width" },
           { label: "Minimum Order Quantity", value: "1 Set" },
-          { label: "Usage", value: "Professional Snooker Tables" }
+          { label: "Usage", value: "Professional Snooker Tables" },
         ],
 
         image: [
@@ -4910,15 +4988,15 @@ export const categories = [
             alt: "Strachan 6811 30 OZ Tournament Cloth For Snooker",
           },
         ],
-      }
-      ,
+      },
 
       // product 3
 
       {
         id: "strachan-6811-32oz-cloth",
         name: "Strachan 6811 32 OZ Cloth",
-        metaTitle: "Strachan 6811 32 OZ Cloth for Snooker Tables | Supplier in India",
+        metaTitle:
+          "Strachan 6811 32 OZ Cloth for Snooker Tables | Supplier in India",
         metaDescription:
           "Premium Strachan 6811 32 OZ Cloth designed for professional snooker tables, offering excellent durability, smooth ball roll, and consistent tournament performance. Ideal for clubs and competitive play. PAN India supply available.",
 
@@ -4932,7 +5010,7 @@ export const categories = [
           { name: "Blue", class: "bg-blue-600 border-blue-800" },
 
           { name: "Yellow", class: "bg-yellow-400 border-yellow-600" },
-          { name: "Purple", class: "bg-purple-600 border-purple-800" }
+          { name: "Purple", class: "bg-purple-600 border-purple-800" },
         ],
 
         description: [
@@ -4969,7 +5047,7 @@ export const categories = [
               "Precision-woven surface enhances cue ball control and shot accuracy.",
               "Tailored for full-size 6 ft x 12 ft billiard tables for perfect coverage.",
               "Simple wool pattern maintains classic appearance and functional consistency.",
-              "Strachan is globally recognized for premium tournament-grade billiard cloth."
+              "Strachan is globally recognized for premium tournament-grade billiard cloth.",
             ],
           },
           {
@@ -4983,7 +5061,7 @@ export const categories = [
               "Each cloth undergoes strict quality inspections for weave integrity and durability.",
               "Preferred by clubs, academies, and professional players for reliable installations.",
               "Ensures secure packaging and dependable delivery.",
-              "Provides complete and professional solutions for snooker and pool table setups."
+              "Provides complete and professional solutions for snooker and pool table setups.",
             ],
           },
         ],
@@ -4996,7 +5074,7 @@ export const categories = [
           { label: "Pattern", value: "Simple Wool" },
           { label: "Size/Dimension", value: "6 ft x 12 ft" },
           { label: "Minimum Order Quantity", value: "1 Set" },
-          { label: "Weight", value: "32 OZ" }
+          { label: "Weight", value: "32 OZ" },
         ],
 
         image: [
@@ -5005,17 +5083,100 @@ export const categories = [
             alt: "Strachan 6811 32 OZ Cloth",
           },
         ],
-      }
-      ,
-
-
-
-
-
-
-
-
-
+      },
     ],
   },
 ];
+
+
+export const serviceCity=[
+  { label: "Delhi", href: "/billiard-table-in-delhi" },
+  { label: "Greater Noida", href: "/billiard-table-in-greater-noida" },
+  { label: "Gurugram", href: "/billiard-table-in-gurugram" },
+  { label: "Faridabad", href: "/billiard-table-in-faridabad" },
+  { label: "Sonipat", href: "/billiard-table-in-sonipat" },
+  { label: "Panipat", href: "/billiard-table-in-panipat" },
+  { label: "Rohtak", href: "/billiard-table-in-rohtak" },
+  { label: "Bahadurgarh", href: "/billiard-table-in-bahadurgarh" },
+  { label: "Karnal", href: "/billiard-table-in-karnal" },
+  { label: "Hisar", href: "/billiard-table-in-hisar" },
+  { label: "Ambala", href: "/billiard-table-in-ambala" },
+  { label: "Yamunanagar", href: "/billiard-table-in-yamunanagar" },
+  { label: "Bhiwani", href: "/billiard-table-in-bhiwani" },
+  { label: "Sirsa", href: "/billiard-table-in-sirsa" },
+  { label: "Kurukshetra", href: "/billiard-table-in-kurukshetra" },
+  { label: "Rewari", href: "/billiard-table-in-rewari" },
+  { label: "Palwal", href: "/billiard-table-in-palwal" },
+  { label: "Jind", href: "/billiard-table-in-jind" },
+  { label: "Chandigarh", href: "/billiard-table-in-chandigarh" },
+  { label: "Ludhiana", href: "/billiard-table-in-ludhiana" },
+  { label: "Amritsar", href: "/billiard-table-in-amritsar" },
+  { label: "Jalandhar", href: "/billiard-table-in-jalandhar" },
+  { label: "Patiala", href: "/billiard-table-in-patiala" },
+  { label: "Bathinda", href: "/billiard-table-in-bathinda" },
+  { label: "Mohali", href: "/billiard-table-in-mohali" },
+  { label: "Hoshiarpur", href: "/billiard-table-in-hoshiarpur" },
+  { label: "Pathankot", href: "/billiard-table-in-pathankot" },
+  { label: "Moga", href: "/billiard-table-in-moga" },
+  { label: "Lucknow", href: "/billiard-table-in-lucknow" },
+  { label: "Kanpur", href: "/billiard-table-in-kanpur" },
+  { label: "Varanasi", href: "/billiard-table-in-varanasi" },
+  { label: "Prayagraj", href: "/billiard-table-in-prayagraj" },
+  { label: "Agra", href: "/billiard-table-in-agra" },
+  { label: "Meerut", href: "/billiard-table-in-meerut" },
+  { label: "Ghaziabad", href: "/billiard-table-in-ghaziabad" },
+  { label: "Aligarh", href: "/billiard-table-in-aligarh" },
+  { label: "Bareilly", href: "/billiard-table-in-bareilly" },
+  { label: "Moradabad", href: "/billiard-table-in-moradabad" },
+  { label: "Gorakhpur", href: "/billiard-table-in-gorakhpur" },
+  { label: "Saharanpur", href: "/billiard-table-in-saharanpur" },
+  { label: "Noida", href: "/billiard-table-in-noida" },
+  { label: "Mathura", href: "/billiard-table-in-mathura" },
+  { label: "Jhansi", href: "/billiard-table-in-jhansi" },
+  { label: "Firozabad", href: "/billiard-table-in-firozabad" },
+  { label: "Rampur", href: "/billiard-table-in-rampur" },
+  { label: "Muzaffarnagar", href: "/billiard-table-in-muzaffarnagar" },
+  { label: "Shahjahanpur", href: "/billiard-table-in-shahjahanpur" },
+  { label: "Etawah", href: "/billiard-table-in-etawah" },
+  { label: "Patna", href: "/billiard-table-in-patna" },
+  { label: "Jaipur", href: "/billiard-table-in-jaipur" },
+  { label: "Jodhpur", href: "/billiard-table-in-jodhpur" },
+  { label: "Udaipur", href: "/billiard-table-in-udaipur" },
+  { label: "Kota", href: "/billiard-table-in-kota" },
+  { label: "Ajmer", href: "/billiard-table-in-ajmer" },
+  { label: "Bikaner", href: "/billiard-table-in-bikaner" },
+  { label: "Alwar", href: "/billiard-table-in-alwar" },
+  { label: "Bharatpur", href: "/billiard-table-in-bharatpur" },
+  { label: "Sikar", href: "/billiard-table-in-sikar" },
+  { label: "Pali", href: "/billiard-table-in-pali" },
+  { label: "Dehradun", href: "/billiard-table-in-dehradun" },
+  { label: "Haridwar", href: "/billiard-table-in-haridwar" },
+  { label: "Roorkee", href: "/billiard-table-in-roorkee" },
+  { label: "Haldwani", href: "/billiard-table-in-haldwani" },
+  { label: "Rudrapur", href: "/billiard-table-in-rudrapur" },
+  { label: "Kashipur", href: "/billiard-table-in-kashipur" },
+  { label: "Rishikesh", href: "/billiard-table-in-rishikesh" },
+  { label: "Almora", href: "/billiard-table-in-almora" },
+  { label: "Nainital", href: "/billiard-table-in-nainital" },
+  { label: "Pithoragarh", href: "/billiard-table-in-pithoragarh" },
+  { label: "Shimla", href: "/billiard-table-in-shimla" },
+  { label: "Manali", href: "/billiard-table-in-manali" },
+  { label: "Dharamshala", href: "/billiard-table-in-dharamshala" },
+  { label: "Solan", href: "/billiard-table-in-solan" },
+  { label: "Mandi", href: "/billiard-table-in-mandi" },
+  { label: "Kullu", href: "/billiard-table-in-kullu" },
+  { label: "Hamirpur", href: "/billiard-table-in-hamirpur" },
+  { label: "Una", href: "/billiard-table-in-una" },
+  { label: "Chamba", href: "/billiard-table-in-chamba" },
+  { label: "Bilaspur", href: "/billiard-table-in-bilaspur" },
+  { label: "Srinagar", href: "/billiard-table-in-srinagar" },
+  { label: "Jammu", href: "/billiard-table-in-jammu" },
+  { label: "Leh", href: "/billiard-table-in-leh" },
+  { label: "Anantnag", href: "/billiard-table-in-anantnag" },
+  { label: "Baramulla", href: "/billiard-table-in-baramulla" },
+  { label: "Greater Faridabad", href: "/billiard-table-in-greater-faridabad" },
+  { label: "Jewar", href: "/billiard-table-in-jewar" },
+  { label: "Dadri", href: "/billiard-table-in-dadri" },
+  { label: "Modinagar", href: "/billiard-table-in-modinagar" },
+  { label: "Hapur", href: "/billiard-table-in-hapur" }
+]

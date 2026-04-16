@@ -17,8 +17,10 @@ export const metadata = {
   title: "PM Billiards – Snooker Tables, Pool Tables & Billiards Tables in India",
   description:
     "PM Billiards is a leading supplier of snooker tables, pool tables, billiard Tables, cue sticks, chalk, and accessories in India. Quality billiards equipment at competitive prices.",
-  icons: {
-    icon: "/logo.webp",
+    icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 

@@ -93,6 +93,21 @@ export async function GET() {
     )
     .join("");
 
+
+    // cities
+const locationUrls = serviceCity
+  .map(
+    (loc) => `
+      <url>
+        <loc>${baseUrl}${loc.href}</loc>
+        <lastmod>${new Date().toISOString()}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+      </url>
+    `
+  )
+  .join("");
+
    
 
   // Combine all
@@ -103,6 +118,7 @@ export async function GET() {
     ${categoryUrls}
     ${productUrls}
     ${blogUrls}
+    ${locationUrls}
  
   </urlset>`;
 

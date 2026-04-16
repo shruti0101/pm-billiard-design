@@ -3,6 +3,7 @@ export const dynamic = "force-dynamic";
 import { categories } from "@/Data";
 import { client } from "@/lib/sanity";
 import { groq } from "next-sanity";
+import { serviceCity } from "@/Data";
 
 // Fetch all blogs from Sanity
 async function getAllBlogs() {
@@ -91,6 +92,8 @@ export async function GET() {
     `
     )
     .join("");
+
+   
 
   // Combine all
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

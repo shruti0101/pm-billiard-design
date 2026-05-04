@@ -10,10 +10,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Hero from "@/components/Landingpage/Hero";
 import ContactPopup from "@/components/ContactPopup";
-import BestSellerSection from "@/components/Landingpage/Bestseller";
 import Cta from "./Cta";
 import Products from "@/components/Landingpage/Products";
 import Faq from "./Faq";
+import BestSellerSection from "./Best";
 const categories = [
   {
     title: "Snooker Ball",
@@ -72,8 +72,7 @@ const images = [
   "/try/office9.webp",
 ];
 
-const Location = ({city}) => {
-  
+const Location = ({ city }) => {
   const [open, setOpen] = useState(false);
   return (
     <div>
@@ -287,17 +286,11 @@ const Location = ({city}) => {
             </div>
 
             <div className="hidden md:block w-px bg-gray-200"></div>
-
-            
-
-            
-
-            
           </div>
         </div>
       </section>
 
-      <BestSellerSection></BestSellerSection>
+      <BestSellerSection />
 
       <div>
         <section className="w-full bg-center bg-cover py-5 md:py-16 bg-white">
@@ -305,13 +298,15 @@ const Location = ({city}) => {
             {/* LEFT — TEXT CONTENT */}
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-extrabold text-black leading-tight px-2">
-                Why Choose PM Billiards as Billiard Table in <span className="capitalize">{city}</span>
+                Why Choose PM Billiards as Billiard Table in{" "}
+                <span className="capitalize">{city}</span>
               </h2>
 
               <p className="text-black px-2">
                 Choosing the right manufacturer is crucial when investing in a
                 premium gaming table. PM Billiards stands out as a trusted
-                billiard table manufacturer in <span className="capitalize">{city}</span> known for quality,
+                billiard table manufacturer in{" "}
+                <span className="capitalize">{city}</span> known for quality,
                 precision, and reliability. We combine skilled craftsmanship
                 with modern manufacturing techniques to deliver tables that
                 offer excellent performance and long-lasting durability for both
@@ -412,28 +407,41 @@ const Location = ({city}) => {
           </div>
         </section>
       </div>
+      <Products></Products>
 
       <Cta city={city}></Cta>
 
-      <Products></Products>
+      
 
       <section className="text-gray-600 body-font bg-white">
-        <div className="container mx-auto flex px-5 py-16 md:py-24 flex-col md:flex-row items-center gap-10">
+        <div className="container mx-auto flex px-5 py-16 md:py-9 flex-col md:flex-row items-center gap-10">
           {/* CONTENT */}
           <div
             className="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center 
     transition-all duration-500 ease-in-out hover:-translate-y-1"
           >
             <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-4 leading-tight transition-all duration-300">
-              Pool Table Manufacturer in <span className="capitalize">{city}</span>
+              Pool Table Manufacturer in{" "}
+              <span className="capitalize">{city}</span>
             </h1>
 
             <p className="mb-8 leading-relaxed text-black/90 text-sm md:text-base lg:text-xl text-base/6 transition-all duration-300">
-              PM Billiards is a reliable pool table manufacturer in <span className="capitalize">{city}</span>, known
-              for delivering stylish and durable pool tables for modern spaces.
-              Whether you are setting up a home gaming area or a commercial
-              entertainment zone, our pool tables are designed to provide a
-              perfect balance of performance and design.
+              PM Billiards is a reliable pool table manufacturer in{" "}
+              <span className="capitalize">{city}</span>, known for delivering
+              stylish and durable pool tables for modern spaces. Whether you are
+              setting up a home gaming area or a commercial entertainment zone,
+              our pool tables are designed to provide a perfect balance of
+              performance and design. We use high-quality materials and advanced
+              craftsmanship to ensure every table offers smooth gameplay,
+              long-lasting durability, and a premium finish. Our collection
+              includes a variety of sizes, styles, and customization options to
+              match different interiors and user preferences. From elegant
+              wooden finishes to modern minimal designs, we provide solutions
+              that enhance both aesthetics and functionality. With a strong
+              commitment to quality and customer satisfaction, PM Billiards
+              ensures reliable service, timely delivery, and professional
+              support. Choose us for a superior gaming experience backed by
+              precision engineering and attention to detail.
             </p>
           </div>
 
@@ -450,7 +458,7 @@ const Location = ({city}) => {
       </section>
 
       <section className="text-gray-600 body-font bg-white">
-        <div className="container mx-auto flex px-5 py-16 md:py-24 flex-col md:flex-row items-center gap-10">
+        <div className="container mx-auto flex px-5 py-16 md:py-9 flex-col md:flex-row items-center gap-10">
           {/* IMAGE */}
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full overflow-hidden rounded-xl">
             <img
@@ -470,22 +478,31 @@ const Location = ({city}) => {
               className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-4 leading-tight
       transition-all duration-300"
             >
-              Snooker Table Manufacturer in <span className="capitalize">{city}</span> 
+              Snooker Table Manufacturer in{" "}
+              <span className="capitalize">{city}</span>
             </h1>
 
             <p
               className="mb-8 leading-relaxed text-black/90 text-sm md:text-base lg:text-xl text-base/6
-      transition-all duration-300"
+  transition-all duration-300"
             >
-              We are a trusted snooker table supplier in <span className="capitalize">{city}</span>  committed to
-              quality and excellence. Using premium slate beds, high-grade baize
-              cloth, and expertly designed cushions, we ensure every snooker
-              table meets professional standards. Our team also provides
-              customization and installation services across <span className="capitalize">{city}</span>, making us a
-              preferred choice for snooker tables.
+              We are a trusted snooker table supplier in{" "}
+              <span className="capitalize">{city}</span> committed to quality
+              and excellence. Using premium slate beds, high-grade baize cloth,
+              and expertly designed cushions, we ensure every snooker table
+              meets professional standards. Our focus on precision engineering
+              and fine craftsmanship allows us to deliver tables that provide a
+              smooth, consistent, and tournament-level playing experience. We
+              offer a wide range of snooker tables suitable for homes, clubs,
+              and commercial spaces, with options for customization in size,
+              design, and finish. Our team also provides complete installation
+              and setup services across{" "}
+              <span className="capitalize">{city}</span>, ensuring hassle-free
+              delivery and perfect alignment. With reliable after-sales support
+              and a strong commitment to customer satisfaction, we have become a
+              preferred choice for snooker tables among professionals and
+              enthusiasts alike.
             </p>
-
-            
           </div>
         </div>
       </section>

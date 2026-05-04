@@ -15,6 +15,8 @@ export default function Navbar() {
   const [activeMobileCat, setActiveMobileCat] = useState(null);
   const [mounted, setMounted] = useState(false);
 
+  
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
     window.addEventListener("scroll", onScroll);

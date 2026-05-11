@@ -77,9 +77,9 @@ export default function CategorySection() {
             <SwiperSlide key={i} className="!h-auto">
               <Link
                 href={cat.link}
-                className="relative flex flex-col items-center justify-center w-full h-[200px] rounded-xl border-2 border-yellow-500 bg-black overflow-hidden p-4"
+                className="relative flex flex-col items-center justify-center w-full h-full rounded-xl border-2 border-yellow-500 bg-white overflow-hidden p-4"
               >
-                <div className="relative w-[110px] h-[110px]">
+                <div className="relative w-[200px] h-[150px]">
                   <Image
                     src={cat.icon}
                     alt={cat.title}
@@ -88,7 +88,7 @@ export default function CategorySection() {
                   />
                 </div>
 
-                <p className="text-white font-bold text-xs uppercase tracking-wide mt-4 text-center">
+                <p className="text-black font-bold text-xs uppercase tracking-wide mt-2 text-center">
                   {cat.title}
                 </p>
               </Link>

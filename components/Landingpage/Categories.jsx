@@ -16,7 +16,7 @@ const categories = [
   },
   {
     title: "Snooker Table",
-    icon: "/cat-table.png",
+    icon: "/cat-tablee.png",
     link: "/categories/snooker-table",
   },
   {
@@ -87,6 +87,7 @@ export default function CategorySection() {
                     className="object-contain drop-shadow-lg"
                   />
                 </div>
+
 
                 <p className="text-black font-bold text-xs uppercase tracking-wide mt-2 text-center">
                   {cat.title}

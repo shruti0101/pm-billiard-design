@@ -21,7 +21,7 @@ const categories = [
   },
   {
     title: "Snooker Cue",
-    icon: "/cat-cue.jpeg",
+    icon: "/cat-cue.png",
     link: "/categories/snooker-cues",
   },
   {

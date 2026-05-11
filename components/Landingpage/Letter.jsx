@@ -11,7 +11,7 @@ const Letter = () => {
 
         {/* IMAGE NEXT TO "PM" */}
         <img
-          src="/try/3.png"
+          src="/try/soccer.png"
           alt="icon-left"
           className="
             w-44 h-44 object-contain 

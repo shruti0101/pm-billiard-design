@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -9,17 +9,41 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const categories = [
-  { title: "Snooker Ball", imagebg: "/try/1-1.avif", icon: "/try/1.png", link: "/categories/billiard-balls" },
-  { title: "Snooker Table", imagebg: "/try/2-2.jpg", icon: "/try/2.webp", link: "/categories/snooker-table" },
-  { title: "Snooker Cue", imagebg: "/try/4-4.jpg", icon: "/try/3.png", link: "/categories/snooker-cues" },
+  {
+    title: "Snooker Ball",
+    icon: "/cat-ball.png",
+    link: "/categories/billiard-balls",
+  },
+  {
+    title: "Snooker Table",
+    icon: "/cat-table.png",
+    link: "/categories/snooker-table",
+  },
+  {
+    title: "Snooker Cue",
+    icon: "/cat-cue.jpeg",
+    link: "/categories/snooker-cues",
+  },
   {
     title: "Accessories",
-    imagebg: "/try/2-2.jpg",
-    icon: "/try/accessories.png", link: "/categories/billiards-accessories"
+    icon: "/cat-acc.png",
+    link: "/categories/billiards-accessories",
   },
-  { title: "Table Cloth", imagebg: "/try/4-4.jpg", icon: "/try/5.png", link: "/categories/snooker-table-cloth" },
-  { title: "Cue Cases", imagebg: "/try/2-2.jpg", icon: "/try/6.png", link: "/categories/cue-case" },
-  { title: "Foosball Table", imagebg: "/try/2-2.jpg", icon: "/try/soccer.png", link: "/categories/soccer-table" },
+  {
+    title: "Table Cloth",
+    icon: "/cat-clothh.png",
+    link: "/categories/snooker-table-cloth",
+  },
+  {
+    title: "Cue Cases",
+    icon: "/cat-case.png",
+    link: "/categories/cue-case",
+  },
+  {
+    title: "Foosball Table",
+    icon: "/cat-soccer.png",
+    link: "/categories/soccer-table",
+  },
 ];
 
 export default function CategorySection() {
@@ -37,7 +61,6 @@ export default function CategorySection() {
       </div>
 
       {/* ================= MOBILE SLIDER ================= */}
-      {/* ================= MOBILE SLIDER ================= */}
       <div className="block md:hidden px-3">
         <Swiper
           spaceBetween={12}
@@ -54,28 +77,20 @@ export default function CategorySection() {
             <SwiperSlide key={i} className="!h-auto">
               <Link
                 href={cat.link}
-                className="relative block w-full h-[200px] rounded-lg border-2 border-yellow-500 overflow-hidden"
-                style={{
-                  backgroundImage: `url(${cat.imagebg})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
+                className="relative flex flex-col items-center justify-center w-full h-[200px] rounded-xl border-2 border-yellow-500 bg-black overflow-hidden p-4"
               >
-                <div className="absolute inset-0 bg-black/45" />
-
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <img
+                <div className="relative w-[110px] h-[110px]">
+                  <Image
                     src={cat.icon}
                     alt={cat.title}
-                    className="w-25 h-25 object-cover drop-shadow-lg"
+                    fill
+                    className="object-contain drop-shadow-lg"
                   />
                 </div>
 
-                <div className="absolute bottom-3 left-0 right-0 text-center">
-                  <p className="text-white font-bold text-xs uppercase tracking-wide">
-                    {cat.title}
-                  </p>
-                </div>
+                <p className="text-white font-bold text-xs uppercase tracking-wide mt-4 text-center">
+                  {cat.title}
+                </p>
               </Link>
             </SwiperSlide>
           ))}
@@ -83,30 +98,24 @@ export default function CategorySection() {
       </div>
 
       {/* ================= DESKTOP STRIP ================= */}
-      <div className="hidden md:flex w-full h-[320px] overflow-hidden">
+      <div className="hidden md:flex w-full h-[300px] overflow-hidden">
         {categories.map((cat, i) => (
-          <Link href={cat.link}
+          <Link
+            href={cat.link}
             key={i}
-            className="relative flex-1 border-2 border-yellow-500 group overflow-hidden perspective-[1000px]"
-            style={{
-              backgroundImage: `url(${cat.imagebg})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
+            className="relative flex-1 border-2 border-yellow-500 bg-white group overflow-hidden flex flex-col items-center justify-center"
           >
-            <div className="absolute inset-0 bg-black/45 group-hover:bg-black/35 transition duration-300" />
-
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="relative w-[200px] h-[250px]">
               <Image
                 src={cat.icon}
                 alt={cat.title}
                 fill
-                className=" object-contain  drop-shadow-lg transition-all duration-500 ease-out group-hover:scale-125 group-hover:-translate-y-2"
+                className="object-cover drop-shadow-lg transition-all duration-500 ease-out group-hover:scale-125 group-hover:-translate-y-2"
               />
             </div>
 
-            <div className="absolute bottom-6 left-0 right-0 text-center">
-              <p className="text-white font-bold text-lg uppercase transition-all duration-300 group-hover:tracking-[0.2em]">
+            <div className="mt-6 text-center">
+              <p className="text-black font-bold text-lg uppercase transition-all duration-300 group-hover:tracking-[0.2em]">
                 {cat.title}
               </p>
             </div>

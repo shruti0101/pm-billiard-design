@@ -12,14 +12,19 @@ const Whychoose = () => {
   const images = [
     "/clients/15.png",
 
-    "/try/office2.webp",
-    "/try/office3.webp",
-    "/try/office4.webp",
-    "/try/office6.webp",
-    "/try/office9.webp",
-    "/pm Billards Product/luxuryTable.webp",
-    "/try/office11.webp",
-    "/try/office9.webp",
+    "/new/1.webp",
+    "/new/2.webp",
+    "/new/3.webp",
+    "/new/4.webp",
+    "/new/5.webp",
+    "/new/6.webp",
+    "/new/7.webp",
+    "/new/8.webp",
+    "/new/9.jpeg",
+    "/new/10.webp",
+    "/new/11.jpeg",
+
+    
   ];
 
   return (

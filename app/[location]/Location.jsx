@@ -15,21 +15,10 @@ import Products from "@/components/Landingpage/Products";
 import Faq from "./Faq";
 import BestSellerSection from "./Best";
 import Categories from "@/components/Landingpage/Categories";
+import Whychoose from "@/components/Landingpage/Whychoose";
 
 
 
-const images = [
-  "/clients/15.png",
-
-  "/try/office2.webp",
-  "/try/office3.webp",
-  "/try/office4.webp",
-  "/try/office6.webp",
-  "/try/office9.webp",
-  "/pm Billards Product/luxuryTable.webp",
-  "/try/office11.webp",
-  "/try/office9.webp",
-];
 
 const Location = ({ city }) => {
   const [open, setOpen] = useState(false);
@@ -161,121 +150,9 @@ const Location = ({ city }) => {
 
       <BestSellerSection />
 
-      <div>
-        <section className="w-full bg-center bg-cover py-5 md:py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-2 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-18 items-center">
-            {/* LEFT — TEXT CONTENT */}
-            <div className="space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-extrabold text-black leading-tight px-2">
-                Why Choose PM Billiards as Billiard Table in{" "}
-                <span className="capitalize">{city}</span>
-              </h2>
 
-              <p className="text-black px-2">
-                Choosing the right manufacturer is crucial when investing in a
-                premium gaming table. PM Billiards stands out as a trusted
-                billiard table manufacturer in{" "}
-                <span className="capitalize">{city}</span> known for quality,
-                precision, and reliability. We combine skilled craftsmanship
-                with modern manufacturing techniques to deliver tables that
-                offer excellent performance and long-lasting durability for both
-                professional and recreational users.
-              </p>
-
-              <div className="grid grid-cols-2 md:gap-6 gap-2 mt-6">
-                <div className="bg-yellow-100 p-5 rounded-2xl shadow-sm">
-                  <h3 className="font-semibold text-lg text-black">
-                    Experienced Manufacturer
-                  </h3>
-                  <p className="text-sm text-black mt-2">
-                    Years of industry experience and a strong reputation for
-                    delivering international-standard billiard tables.
-                  </p>
-                </div>
-
-                <div className="bg-green-100 p-5 rounded-2xl shadow-sm">
-                  <h3 className="font-semibold text-lg text-black">
-                    Premium Materials
-                  </h3>
-                  <p className="text-sm text-black mt-2">
-                    High-quality hardwood, slate, and professional cloth for
-                    smooth gameplay and durability.
-                  </p>
-                </div>
-
-                <div className="bg-green-100 p-5 rounded-2xl shadow-sm">
-                  <h3 className="font-semibold text-lg text-black">
-                    Customization Options
-                  </h3>
-                  <p className="text-sm text-black mt-2">
-                    Fully customized tables in size, design, finish, and
-                    branding to match your space and needs.
-                  </p>
-                </div>
-
-                <div className="bg-yellow-100 p-5 rounded-2xl shadow-sm">
-                  <h3 className="font-semibold text-lg text-black">
-                    Professional Installation
-                  </h3>
-                  <p className="text-sm text-black mt-2">
-                    Complete delivery and expert installation with perfect
-                    leveling for a ready-to-play experience.
-                  </p>
-                </div>
-
-                <div className="bg-yellow-100 p-5 rounded-2xl shadow-sm">
-                  <h3 className="font-semibold text-lg text-black">
-                    Competitive Pricing
-                  </h3>
-                  <p className="text-sm text-black mt-2">
-                    Best value for premium quality tables as a leading
-                    manufacturer in <span className="capitalize">{city}</span>.
-                  </p>
-                </div>
-
-                <div className="bg-green-100 p-5 rounded-2xl shadow-sm">
-                  <h3 className="font-semibold text-lg text-black">
-                    After-Sales Support
-                  </h3>
-                  <p className="text-sm text-black mt-2">
-                    Reliable maintenance, cloth replacement, and long-term
-                    service support.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* RIGHT — IMAGE SLIDER */}
-            <div>
-              <Swiper
-                modules={[Pagination, Autoplay]}
-                pagination={{ clickable: true }}
-                autoplay={{ delay: 2500 }}
-                loop={true}
-                className="rounded-xl overflow-hidden"
-              >
-                {images.map((src, i) => (
-                  <SwiperSlide key={i}>
-                    <div className="w-full h-[500px] md:h-[600px] relative">
-                      <Image
-                        src={src}
-                        alt="PM Billiards table"
-                        fill
-                        className="object-cover rounded-xl"
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-
-              <p className="font-semibold text-black mt-5 text-xl md:text-2xl text-center">
-                Trusted by clubs, academies, gaming centers, and professional
-                players.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
+<Whychoose/>
+    
       <Products></Products>
 
       <Cta city={city}></Cta>
